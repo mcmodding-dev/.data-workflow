@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260505015005",
-    "commit_date": "20260504162315",
+    "lastupdated": "20260507015255",
+    "commit_date": "20260506165915",
     "version": "26.1.x",
-    "last_commit": "[960b8976273c897d732300aca5cbf49464368bc1] [26.1] Fix missing block model rendering with \"random\" texture (#3139)",
+    "last_commit": "[555adfcf183effd32e94977bdb88be429d188d04] Add window resize event (#3145)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -3544,6 +3544,24 @@
                         "type": "float",
                         "kind": "field",
                         "mutable": true
+                    }
+                ]
+            },
+            {
+                "event": "WindowResizeEvent",
+                "package": "net.neoforged.neoforge.client.event",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/WindowResizeEvent.java#L15",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "window",
+                        "type": "Window",
+                        "kind": "field",
+                        "mutable": false
                     }
                 ]
             }
