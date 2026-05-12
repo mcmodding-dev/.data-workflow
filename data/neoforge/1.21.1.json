@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260429201159",
-    "commit_date": "20260423123756",
+    "lastupdated": "20260512015740",
+    "commit_date": "20260511134439",
     "version": "1.21.1",
-    "last_commit": "[751c990308cb2002327d4dd473d029d47dd90528] [1.21.1] Add a data map to replace `AxeItem#STRIPPABLES` (#2941)",
+    "last_commit": "[d1ee810bc8a089e665e1913d4b76508b680ca24d] [21.1] Limit initial capacity size for collections and maps during network decode (#3164)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

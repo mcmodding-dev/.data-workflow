@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260429200952",
-    "commit_date": "20260203091212",
+    "lastupdated": "20260512015659",
+    "commit_date": "20260511114735",
     "version": "1.21.11",
-    "last_commit": "[79c7eb83d4b4c65f9c518b40d29e6911c58e7f4b] Bump version",
+    "last_commit": "[6b6d71a503d41fff22d38b63cc278f2893b8b775] Limit initial capacity of collections/maps when decoding packets",
     "data": {
         "fabric-loot-api-v2": [
             {

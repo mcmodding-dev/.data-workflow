@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260508015801",
-    "commit_date": "20260507143521",
+    "lastupdated": "20260512015747",
+    "commit_date": "20260512001947",
     "version": "26.1.x",
-    "last_commit": "[cae9f23d665ac0d8696811c94dd0c9196770f662] [26.1] Rework the `RegisterDebugEntriesEvent` event (#3144)",
+    "last_commit": "[1eb832c87e0c579dc9a3b383e0ec0091b4e10971] Move useful methods from StructureTemplateBuilder to TemplateBuilderHelper (#3159)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

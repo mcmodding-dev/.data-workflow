@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260429200919",
-    "commit_date": "20260415093226",
+    "lastupdated": "20260512015648",
+    "commit_date": "20260511114726",
     "version": "1.21.1",
-    "last_commit": "[b6d8e650dede49004b2836b292c83a2747002d34] Bump version",
+    "last_commit": "[d30f6a79f79ab8a85e7e2e9bc8c304ce74e34f51] Limit initial capacity of collections/maps when decoding packets",
     "data": {
         "fabric-command-api-v1": [
             {
