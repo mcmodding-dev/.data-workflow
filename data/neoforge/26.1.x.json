@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260512015747",
-    "commit_date": "20260512001947",
+    "lastupdated": "20260513020148",
+    "commit_date": "20260512033713",
     "version": "26.1.x",
-    "last_commit": "[1eb832c87e0c579dc9a3b383e0ec0091b4e10971] Move useful methods from StructureTemplateBuilder to TemplateBuilderHelper (#3159)",
+    "last_commit": "[39aa4ba441351eb5ba12ef136a060ac0849b3e58] [26.1] Re-implement support for emissivity in item layer models (#3137)\n\nThis PR reimplements the ability for item layer models to be emissive, using the following syntax:  \n\n\"layer0\": {\n    \"sprite\": \"minecraft:item/redstone\",\n    \"neoforge_data\": {\n        \"light_emission\": 15\n    }\n}",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -9124,7 +9124,7 @@
             {
                 "event": "LevelEvent",
                 "package": "net.neoforged.neoforge.event.level",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L30",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L29",
                 "cancellable": false,
                 "description": "This event is fired whenever an event involving a LevelAccessor occurs. All children of this event are fired on the main Forge event bus",
                 "side": null,
@@ -9142,7 +9142,7 @@
             {
                 "event": "LevelEvent.Load",
                 "package": "net.neoforged.neoforge.event.level",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L54",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L53",
                 "cancellable": false,
                 "description": "This event is fired whenever a level loads. This event is fired whenever a level loads in ClientLevel's constructor and {@literal MinecraftServer#createLevels(ChunkProgressListener)}. This event is not cancellable and does not have a result. This event is fired on the main Forge event bus on both logical sides",
                 "side": null,
@@ -9152,9 +9152,9 @@
             {
                 "event": "LevelEvent.Unload",
                 "package": "net.neoforged.neoforge.event.level",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L72",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L64",
                 "cancellable": false,
-                "description": "This event is fired whenever a level unloads. This event is fired whenever a level unloads in setLevel(ClientLevel), stopServer(), clearLevel(Screen). This event is not cancellable and does not have a result. This event is fired on the main Forge event bus on both logical sides",
+                "description": "",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false
@@ -9162,7 +9162,7 @@
             {
                 "event": "LevelEvent.Save",
                 "package": "net.neoforged.neoforge.event.level",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L88",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L80",
                 "cancellable": false,
                 "description": "This event fires whenever a level is saved. This event is fired when a level is saved in boolean, boolean). This event is not cancellable and does not have a result. This event is fired on the main Forge event bus only on the logical server",
                 "side": "server",
@@ -9172,7 +9172,7 @@
             {
                 "event": "LevelEvent.CreateSpawnPosition",
                 "package": "net.neoforged.neoforge.event.level",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L106",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L98",
                 "cancellable": true,
                 "description": "This event fires whenever a ServerLevel is initialized for the first time and a spawn position needs to be chosen. This event is cancellable and does not have a result. If the event is canceled, the vanilla logic to choose a spawn position will be skipped. This event is fired on the main Forge event bus only on the logical server",
                 "side": "server",
@@ -9190,7 +9190,7 @@
             {
                 "event": "LevelEvent.PotentialSpawns",
                 "package": "net.neoforged.neoforge.event.level",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L130",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L122",
                 "cancellable": true,
                 "description": "Fired when building a list of all possible entities that can spawn at the specified location. If an entry is added to the list, it needs to be a globally unique instance. The event is called in StructureManager, ChunkGenerator, MobCategory, RandomSource, BlockPos). This event is cancellable, and does not have a result. Canceling the event will result in an empty list, meaning no entity will be spawned",
                 "side": null,
