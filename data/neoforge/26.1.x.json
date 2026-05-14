@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260513020148",
-    "commit_date": "20260512033713",
+    "lastupdated": "20260514020441",
+    "commit_date": "20260513153350",
     "version": "26.1.x",
-    "last_commit": "[39aa4ba441351eb5ba12ef136a060ac0849b3e58] [26.1] Re-implement support for emissivity in item layer models (#3137)\n\nThis PR reimplements the ability for item layer models to be emissive, using the following syntax:  \n\n\"layer0\": {\n    \"sprite\": \"minecraft:item/redstone\",\n    \"neoforge_data\": {\n        \"light_emission\": 15\n    }\n}",
+    "last_commit": "[47be954d8aa046fa6599fae69792d719e77d6a5b] Expose Game Profiles of Command Sources for Permission Checks (#3154)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
