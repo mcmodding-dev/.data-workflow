@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260514020441",
-    "commit_date": "20260513153350",
+    "lastupdated": "20260515020246",
+    "commit_date": "20260514234427",
     "version": "26.1.x",
-    "last_commit": "[47be954d8aa046fa6599fae69792d719e77d6a5b] Expose Game Profiles of Command Sources for Permission Checks (#3154)",
+    "last_commit": "[4e17cec6b3016fd9d209a4012c34889749149369] Fix AnyHolderSet being unusuable in datagen (#3170)\n\nThis PR fixes the inability to datagen an AnyHolderSet for a data registry, due to a flawed assumption that we could pull a `RegistryLookup` out of the `BuildState`. Turns out we can only do that for builtin registries.",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -4914,25 +4914,49 @@
             {
                 "event": "TagsUpdatedEvent",
                 "package": "net.neoforged.neoforge.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/TagsUpdatedEvent.java#L14",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/TagsUpdatedEvent.java#L19",
                 "cancellable": false,
-                "description": "Fired when tags are updated on either server or client. This event can be used to refresh data that depends on tags",
+                "description": "",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,
                 "fields": [
                     {
-                        "name": "lookupProvider",
-                        "type": "HolderLookup.Provider",
+                        "name": "registries",
+                        "type": "RegistryAccess",
                         "kind": "field",
                         "mutable": false
-                    },
+                    }
+                ]
+            },
+            {
+                "event": "TagsUpdatedEvent.ServerDataLoad",
+                "package": "net.neoforged.neoforge.event",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/TagsUpdatedEvent.java#L54",
+                "cancellable": false,
+                "description": "",
+                "side": "server",
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
                     {
-                        "name": "updateCause",
-                        "type": "UpdateCause",
+                        "name": "serverResources",
+                        "type": "ReloadableServerResources",
                         "kind": "field",
                         "mutable": false
-                    },
+                    }
+                ]
+            },
+            {
+                "event": "TagsUpdatedEvent.ClientPacketReceived",
+                "package": "net.neoforged.neoforge.event",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/TagsUpdatedEvent.java#L70",
+                "cancellable": false,
+                "description": "",
+                "side": "client",
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
                     {
                         "name": "integratedServer",
                         "type": "boolean",

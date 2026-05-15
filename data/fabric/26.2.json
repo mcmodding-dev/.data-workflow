@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260513020115",
-    "commit_date": "20260512160129",
+    "lastupdated": "20260515020216",
+    "commit_date": "20260514135715",
     "version": "26.2",
-    "last_commit": "[46a6d00c555e49da9bdbcd42dc1c1660a101d629] 26.2-snapshot-7",
+    "last_commit": "[4a7fa081b66ede5c04cb20b074ec76a21ee9fc6a] Improve gametest logging/error messages (#5385)",
     "data": {
         "fabric-command-api-v2": [
             {
@@ -1695,6 +1695,30 @@
                 "url": "https://github.com/FabricMC/fabric/blob/26.2/fabric-particles-v1/src/client/java/net/fabricmc/fabric/api/client/particle/v1/ParticleRenderEvents.java#L40",
                 "description": "An event that checks if a terrain particle can be tinted using the corresponding block's BlockTintSource. The default return value of this event is true. If any callback returns false for a given call, further iteration will be canceled and the event invoker will return false",
                 "side": "client",
+                "deprecated": false
+            }
+        ],
+        "fabric-permission-api-v1": [
+            {
+                "file": "PermissionEvents.java",
+                "package": "net.fabricmc.fabric.api.permission.v1",
+                "interface": "OnRequest",
+                "variable": "ON_REQUEST",
+                "function": "<T> T handlePermissionRequest(PermissionContext context, PermissionNode<T> permission);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.2/fabric-permission-api-v1/src/main/java/net/fabricmc/fabric/api/permission/v1/PermissionEvents.java#L50",
+                "description": "Event used for handling permission resolution. This event is invoked by methods provided by PermissionContextOwner",
+                "side": null,
+                "deprecated": false
+            },
+            {
+                "file": "PermissionEvents.java",
+                "package": "net.fabricmc.fabric.api.permission.v1",
+                "interface": "PrepareOfflinePlayer",
+                "variable": "PREPARE_OFFLINE_PLAYER",
+                "function": "CompletableFuture<@Nullable Consumer<MutablePermissionContext>> prepareOfflinePlayer(PermissionContext context, MinecraftServer server);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.2/fabric-permission-api-v1/src/main/java/net/fabricmc/fabric/api/permission/v1/PermissionEvents.java#L70",
+                "description": "Event for preparing for offline player checks. This event is invoked by offlinePlayer",
+                "side": null,
                 "deprecated": false
             }
         ],

@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260512015740",
-    "commit_date": "20260511134439",
+    "lastupdated": "20260515020241",
+    "commit_date": "20260514233905",
     "version": "1.21.1",
-    "last_commit": "[d1ee810bc8a089e665e1913d4b76508b680ca24d] [21.1] Limit initial capacity size for collections and maps during network decode (#3164)",
+    "last_commit": "[869777fa2e6fc91b55a406e4b9733cb1dca92402] Backport to 1.21.1: Fire LevelEvent.Unload from Minecraft#clearClientLevel (#3168)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {
@@ -8308,7 +8308,7 @@
             {
                 "event": "LevelEvent",
                 "package": "net.neoforged.neoforge.event.level",
-                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L34",
+                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L30",
                 "cancellable": false,
                 "description": "This event is fired whenever an event involving a LevelAccessor occurs. All children of this event are fired on the main Forge event bus",
                 "side": null,
@@ -8326,7 +8326,7 @@
             {
                 "event": "LevelEvent.Load",
                 "package": "net.neoforged.neoforge.event.level",
-                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L58",
+                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L54",
                 "cancellable": false,
                 "description": "This event is fired whenever a level loads. This event is fired whenever a level loads in ClientLevel's constructor and {@literal MinecraftServer#createLevels(ChunkProgressListener)}. This event is not cancellable and does not have a result. This event is fired on the main Forge event bus on both logical sides",
                 "side": null,
@@ -8336,9 +8336,9 @@
             {
                 "event": "LevelEvent.Unload",
                 "package": "net.neoforged.neoforge.event.level",
-                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L76",
+                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L67",
                 "cancellable": false,
-                "description": "This event is fired whenever a level unloads. This event is fired whenever a level unloads in setLevel(ClientLevel), stopServer(), clearLevel(Screen). This event is not cancellable and does not have a result. This event is fired on the main Forge event bus on both logical sides",
+                "description": "Fired whenever a level unloads. This may be due to the server being stopped, or the client switching to another level or server. This event is not cancellable. This event is fired on the game event bus on both logical sides",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false
@@ -8346,7 +8346,7 @@
             {
                 "event": "LevelEvent.Save",
                 "package": "net.neoforged.neoforge.event.level",
-                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L92",
+                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L83",
                 "cancellable": false,
                 "description": "This event fires whenever a level is saved. This event is fired when a level is saved in boolean, boolean). This event is not cancellable and does not have a result. This event is fired on the main Forge event bus only on the logical server",
                 "side": "server",
@@ -8356,7 +8356,7 @@
             {
                 "event": "LevelEvent.CreateSpawnPosition",
                 "package": "net.neoforged.neoforge.event.level",
-                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L110",
+                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L101",
                 "cancellable": true,
                 "description": "This event fires whenever a ServerLevel is initialized for the first time and a spawn position needs to be chosen. This event is cancellable and does not have a result. If the event is canceled, the vanilla logic to choose a spawn position will be skipped. This event is fired on the main Forge event bus only on the logical server",
                 "side": "server",
@@ -8374,7 +8374,7 @@
             {
                 "event": "LevelEvent.PotentialSpawns",
                 "package": "net.neoforged.neoforge.event.level",
-                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L134",
+                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/level/LevelEvent.java#L125",
                 "cancellable": true,
                 "description": "Fired when building a list of all possible entities that can spawn at the specified location. If an entry is added to the list, it needs to be a globally unique instance. The event is called in StructureManager, ChunkGenerator, MobCategory, RandomSource, BlockPos). This event is cancellable, and does not have a result. Canceling the event will result in an empty list, meaning no entity will be spawned",
                 "side": null,
