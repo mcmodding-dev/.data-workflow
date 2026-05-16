@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260515020246",
-    "commit_date": "20260514234427",
+    "lastupdated": "20260516015512",
+    "commit_date": "20260515040725",
     "version": "26.1.x",
-    "last_commit": "[4e17cec6b3016fd9d209a4012c34889749149369] Fix AnyHolderSet being unusuable in datagen (#3170)\n\nThis PR fixes the inability to datagen an AnyHolderSet for a data registry, due to a flawed assumption that we could pull a `RegistryLookup` out of the `BuildState`. Turns out we can only do that for builtin registries.",
+    "last_commit": "[55545d7d38e73dcce8ac2bd2c9b0772435d9046f] Add enchanted loot events (#3065)\n\nThis PR adds `EnchantedBlockLootEvent` and `EnchantedEntityLootEvent`, which replace the now-long-gone `LootingLevelEvent`, allowing mods to contextually modify the levels of enchantments requested in loot contexts.",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -5085,6 +5085,66 @@
             }
         ],
         "net.neoforged.neoforge.event.enchanting": [
+            {
+                "event": "EnchantedBlockLootEvent",
+                "package": "net.neoforged.neoforge.event.enchanting",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedBlockLootEvent.java#L29",
+                "cancellable": false,
+                "description": "Fired on the server when a block's loot table queries the level of an enchantment to determine what the block will drop. Notably, this fires when ApplyBonusCount or BonusLevelTableCondition check the level of an enchantment in-context. Mods that implement similar loot conditions or functions should fire this event as well. If you do not need the additional context of this event, prefer GetEnchantmentLevelEvent for managing enchantment levels",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "tool",
+                        "type": "ItemInstance",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "enchantment",
+                        "type": "Holder<Enchantment>",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "enchantmentLevel",
+                        "type": "int",
+                        "kind": "field",
+                        "mutable": true
+                    }
+                ]
+            },
+            {
+                "event": "EnchantedEntityLootEvent",
+                "package": "net.neoforged.neoforge.event.enchanting",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedEntityLootEvent.java#L28",
+                "cancellable": false,
+                "description": "Fired on the server when an entity is dropping loot and the level of a specific enchantment is being queried. Notably, this fires when EnchantedCountIncreaseFunction or LootItemRandomChanceWithEnchantedBonusCondition are evaluated, as well as when EQUIPMENT_DROPS is being processed. Mods that implement similar loot conditions or functions should fire this event as well. If you do not need the additional context of this event, prefer GetEnchantmentLevelEvent for managing enchantment levels",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "damageSource",
+                        "type": "DamageSource",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "enchantment",
+                        "type": "Holder<Enchantment>",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "enchantmentLevel",
+                        "type": "int",
+                        "kind": "field",
+                        "mutable": true
+                    }
+                ]
+            },
             {
                 "event": "EnchantmentLevelSetEvent",
                 "package": "net.neoforged.neoforge.event.enchanting",
