@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260516015512",
-    "commit_date": "20260515040725",
+    "lastupdated": "20260517015736",
+    "commit_date": "20260516045214",
     "version": "26.1.x",
-    "last_commit": "[55545d7d38e73dcce8ac2bd2c9b0772435d9046f] Add enchanted loot events (#3065)\n\nThis PR adds `EnchantedBlockLootEvent` and `EnchantedEntityLootEvent`, which replace the now-long-gone `LootingLevelEvent`, allowing mods to contextually modify the levels of enchantments requested in loot contexts.",
+    "last_commit": "[9ca0a34ab4469ed65ae9efef3126d58cb24773ab] [26.1] Retain datapack reload listeners in ReloadableServerResources (#3172)\n\nThis PR allows mods to opt-in to retaining their reload listeners for the lifetime of the current reload. Opt-in is done via `AddServerReloadListenersEvent#addRetainedListener`, and retained listeners are available through `ReloadableServerResources#getListener`. You can get a `ReloadableServerResources` through `server.getServerResources().managers()`.",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -4020,7 +4020,7 @@
             {
                 "event": "AddServerReloadListenersEvent",
                 "package": "net.neoforged.neoforge.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/AddServerReloadListenersEvent.java#L25",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/AddServerReloadListenersEvent.java#L27",
                 "cancellable": false,
                 "description": "The main ResourceManager is recreated on each reload, just after ReloadableServerResources's creation. The event is fired on each reload and lets modders add their own ReloadListeners, for server-side resources. The event is fired on the EVENT_BUS",
                 "side": null,
@@ -4036,6 +4036,12 @@
                     {
                         "name": "registryAccess",
                         "type": "RegistryAccess",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "retainedListeners",
+                        "type": "Map<ListenerKey<?>, PreparableReloadListener>",
                         "kind": "field",
                         "mutable": false
                     }
@@ -7330,6 +7336,36 @@
                         "type": "boolean",
                         "kind": "field",
                         "mutable": true
+                    }
+                ]
+            },
+            {
+                "event": "CustomClickActionEvent",
+                "package": "net.neoforged.neoforge.event.entity.player",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/entity/player/CustomClickActionEvent.java#L25",
+                "cancellable": true,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "player",
+                        "type": "ServerPlayer",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "identifier",
+                        "type": "Identifier",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "payload",
+                        "type": "Tag",
+                        "kind": "field",
+                        "mutable": false
                     }
                 ]
             },
