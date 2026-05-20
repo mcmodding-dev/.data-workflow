@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260517015736",
-    "commit_date": "20260516045214",
+    "lastupdated": "20260520020806",
+    "commit_date": "20260519174504",
     "version": "26.1.x",
-    "last_commit": "[9ca0a34ab4469ed65ae9efef3126d58cb24773ab] [26.1] Retain datapack reload listeners in ReloadableServerResources (#3172)\n\nThis PR allows mods to opt-in to retaining their reload listeners for the lifetime of the current reload. Opt-in is done via `AddServerReloadListenersEvent#addRetainedListener`, and retained listeners are available through `ReloadableServerResources#getListener`. You can get a `ReloadableServerResources` through `server.getServerResources().managers()`.",
+    "last_commit": "[e011d144e12bae59e421323ed5356e4b313ab779] Query crafting remainders prior to shrinkage to fix bug caused by querying the empty stack's remainder (#3179)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

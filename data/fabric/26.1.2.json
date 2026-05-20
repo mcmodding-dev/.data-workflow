@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260515020214",
-    "commit_date": "20260514135658",
+    "lastupdated": "20260520020724",
+    "commit_date": "20260519085250",
     "version": "26.1.2",
-    "last_commit": "[867b876219518df0862da04ad8b21ed158799a70] Improve gametest logging/error messages (#5385)",
+    "last_commit": "[b9cacd723116221d9b9e1ce03f411efb7fe59282] Bump version",
     "data": {
         "fabric-command-api-v2": [
             {
