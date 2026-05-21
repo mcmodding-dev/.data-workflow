@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260520020806",
-    "commit_date": "20260519174504",
+    "lastupdated": "20260521020736",
+    "commit_date": "20260520023156",
     "version": "26.1.x",
-    "last_commit": "[e011d144e12bae59e421323ed5356e4b313ab779] Query crafting remainders prior to shrinkage to fix bug caused by querying the empty stack's remainder (#3179)",
+    "last_commit": "[60b7fe5859d85d7f1edd7e458673a6f23e43a694] Fix CustomClickActionEvent missing player context in configuration phase (#3175)\n\nThis PR adds `GameProfile` context to the CustomClickActionEvent so the sending player can be identified in the configuration phase.",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -7342,7 +7342,7 @@
             {
                 "event": "CustomClickActionEvent",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/entity/player/CustomClickActionEvent.java#L25",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/entity/player/CustomClickActionEvent.java#L28",
                 "cancellable": true,
                 "description": "",
                 "side": null,
@@ -7352,6 +7352,12 @@
                     {
                         "name": "player",
                         "type": "ServerPlayer",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "profile",
+                        "type": "GameProfile",
                         "kind": "field",
                         "mutable": false
                     },
