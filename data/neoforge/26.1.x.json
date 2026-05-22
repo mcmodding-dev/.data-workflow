@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260521020736",
-    "commit_date": "20260520023156",
+    "lastupdated": "20260522020947",
+    "commit_date": "20260521143549",
     "version": "26.1.x",
-    "last_commit": "[60b7fe5859d85d7f1edd7e458673a6f23e43a694] Fix CustomClickActionEvent missing player context in configuration phase (#3175)\n\nThis PR adds `GameProfile` context to the CustomClickActionEvent so the sending player can be identified in the configuration phase.",
+    "last_commit": "[863ab914793797f523f64f47d38b2f624237372a] Reimplement access to OBJ model part names and root parts, and remove double prefix from nested groups for part visibility checks (#3169)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
