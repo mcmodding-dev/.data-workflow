@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260522020947",
-    "commit_date": "20260521143549",
+    "lastupdated": "20260524020603",
+    "commit_date": "20260523151101",
     "version": "26.1.x",
-    "last_commit": "[863ab914793797f523f64f47d38b2f624237372a] Reimplement access to OBJ model part names and root parts, and remove double prefix from nested groups for part visibility checks (#3169)",
+    "last_commit": "[357d9afe962b901419e2ea3ffdd5c3a5044f6b21] Add missing nullability annotations to ItemeAccess#exchange, and DataComponentHolderResource#with (#3187)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
