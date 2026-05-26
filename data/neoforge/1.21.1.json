@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260515020241",
-    "commit_date": "20260514233905",
+    "lastupdated": "20260526020457",
+    "commit_date": "20260525234347",
     "version": "1.21.1",
-    "last_commit": "[869777fa2e6fc91b55a406e4b9733cb1dca92402] Backport to 1.21.1: Fire LevelEvent.Unload from Minecraft#clearClientLevel (#3168)",
+    "last_commit": "[f03701f390dd255873fecbc20c3fd448123e2135] Backport to 1.21.1: Patch to fix MC-308222 by persisting `_WG` heightmap to and from worldgen chunk save (#3191)\n\nCo-authored-by: TelepathicGrunt <40846040+TelepathicGrunt@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

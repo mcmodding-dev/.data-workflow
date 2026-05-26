@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260524020603",
-    "commit_date": "20260523151101",
+    "lastupdated": "20260526020502",
+    "commit_date": "20260525181946",
     "version": "26.1.x",
-    "last_commit": "[357d9afe962b901419e2ea3ffdd5c3a5044f6b21] Add missing nullability annotations to ItemeAccess#exchange, and DataComponentHolderResource#with (#3187)",
+    "last_commit": "[71666ae55e9fbe959bccc42736ad17170ae53622] Patch to fix MC-308222 by persisting `_WG` heightmap to and from worldgen chunk save (#3180)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
