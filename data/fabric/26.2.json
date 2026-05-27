@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260523015706",
-    "commit_date": "20260522075056",
+    "lastupdated": "20260527021235",
+    "commit_date": "20260526151517",
     "version": "26.2",
-    "last_commit": "[0b561df1c2bdda94c7277d7c4f7e0ce5e448ce17] Update Gradle and Loom (#5398)",
+    "last_commit": "[f83d74dd0bc1e7ae25832a968423922037f28ec0] 26.2-pre-1",
     "data": {
         "fabric-command-api-v2": [
             {
