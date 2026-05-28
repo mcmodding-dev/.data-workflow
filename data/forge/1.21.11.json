@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260429201132",
-    "commit_date": "20260323184501",
+    "lastupdated": "20260528015558",
+    "commit_date": "20260527160731",
     "version": "1.21.11",
-    "last_commit": "[5ac2675f8700591a81e39d7414b24dd291818013] Fix server data packs from mods using incorrect version. Closes #10794",
+    "last_commit": "[66e4dab83b47f0ea11a955202c82d16593a08658] Bump MDK gradle and fix missing and wrong dependency in installer",
     "data": {
         "net.minecraftforge.fml.config": [
             {
