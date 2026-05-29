@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260527021235",
-    "commit_date": "20260526151517",
+    "lastupdated": "20260529020418",
+    "commit_date": "20260528141934",
     "version": "26.2",
-    "last_commit": "[f83d74dd0bc1e7ae25832a968423922037f28ec0] 26.2-pre-1",
+    "last_commit": "[cd7236368027bdef2f1d8f297755976d8517c51e] 26.2-pre-2",
     "data": {
         "fabric-command-api-v2": [
             {
@@ -568,9 +568,9 @@
                 "package": "net.fabricmc.fabric.api.event.player",
                 "interface": "UseEntityCallback",
                 "variable": "EVENT",
-                "function": "InteractionResult interact(Player player, Level level, InteractionHand hand, Entity entity, @Nullable EntityHitResult hitResult);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.2/fabric-events-interaction-v0/src/main/java/net/fabricmc/fabric/api/event/player/UseEntityCallback.java#L55",
-                "description": "Callback for right-clicking (\"using\") an entity. Is hooked in before the spectator check, so make sure to check for the player's game mode as well! On the logical client, the return values have the following meaning: SUCCESS cancels further processing, causes a hand swing, and sends a packet to the server. CONSUME cancels further processing, and sends a packet to the server. It does NOT cause a hand swing. PASS falls back to further processing. FAIL cancels further processing and does not send a packet to the server. On the logical server, the return values have the following meaning: PASS falls back to further processing. Any other value cancels further processing. Note that on the server, the EntityHitResult may be null if the client successfully interacted using the InteractionHand, Vec3) position-less overload}. On the client, the EntityHitResult will never be null",
+                "function": "InteractionResult interact(Player player, Level level, InteractionHand hand, Entity entity, EntityHitResult hitResult);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.2/fabric-events-interaction-v0/src/main/java/net/fabricmc/fabric/api/event/player/UseEntityCallback.java#L48",
+                "description": "Callback for right-clicking (\"using\") an entity. Is hooked in before the spectator check, so make sure to check for the player's game mode as well! On the logical client, the return values have the following meaning: SUCCESS cancels further processing, causes a hand swing, and sends a packet to the server. CONSUME cancels further processing, and sends a packet to the server. It does NOT cause a hand swing. PASS falls back to further processing. FAIL cancels further processing and does not send a packet to the server. On the logical server, the return values have the following meaning: PASS falls back to further processing. Any other value cancels further processing",
                 "side": null,
                 "deprecated": false
             },
