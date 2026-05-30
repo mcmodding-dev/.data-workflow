@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260529020501",
-    "commit_date": "20260528020432",
+    "lastupdated": "20260530015908",
+    "commit_date": "20260529110435",
     "version": "26.1.x",
-    "last_commit": "[cacdbb01b0d0cd1d5f5ae7cceed5fb719641e3a0] Fix nullability on crafting player (#3188)",
+    "last_commit": "[10e1ba2c93deda5487ca4178e0c189bf758cc49b] Fix invisible channel name text on ModMismatchDisconnectedScreen (#3196)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
