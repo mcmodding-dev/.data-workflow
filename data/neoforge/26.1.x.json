@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260530015908",
-    "commit_date": "20260529110435",
+    "lastupdated": "20260601023601",
+    "commit_date": "20260531065626",
     "version": "26.1.x",
-    "last_commit": "[10e1ba2c93deda5487ca4178e0c189bf758cc49b] Fix invisible channel name text on ModMismatchDisconnectedScreen (#3196)",
+    "last_commit": "[e684d91048b0681fbcbf045e928357c0543da008] Various fixes to damage pipeline events (#3101)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -6154,10 +6154,16 @@
                         "mutable": false
                     },
                     {
-                        "name": "newDamage",
+                        "name": "inflictedDamage",
                         "type": "float",
                         "kind": "field",
-                        "mutable": true
+                        "mutable": false
+                    },
+                    {
+                        "name": "healthDamage",
+                        "type": "float",
+                        "kind": "field",
+                        "mutable": false
                     },
                     {
                         "name": "blockedDamage",
