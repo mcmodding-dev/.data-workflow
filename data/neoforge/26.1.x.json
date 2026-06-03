@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260601023601",
-    "commit_date": "20260531065626",
+    "lastupdated": "20260603024111",
+    "commit_date": "20260602054104",
     "version": "26.1.x",
-    "last_commit": "[e684d91048b0681fbcbf045e928357c0543da008] Various fixes to damage pipeline events (#3101)",
+    "last_commit": "[b11dde09319ec1ec286e6c2c6fb5a7e48d122697] 26.1.2 Stable",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
