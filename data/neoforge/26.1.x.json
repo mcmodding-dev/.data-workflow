@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260603024111",
-    "commit_date": "20260602054104",
+    "lastupdated": "20260605021146",
+    "commit_date": "20260604165600",
     "version": "26.1.x",
-    "last_commit": "[b11dde09319ec1ec286e6c2c6fb5a7e48d122697] 26.1.2 Stable",
+    "last_commit": "[4530b606c5812dea738bf59a5b8480671147098a] Add flip frame event for managing per-frame GPU resources and rotating custom dynamic uniforms. (#3197)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -832,6 +832,16 @@
                         "mutable": false
                     }
                 ]
+            },
+            {
+                "event": "FlipFrameEvent",
+                "package": "net.neoforged.neoforge.client.event",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/FlipFrameEvent.java#L24",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false
             },
             {
                 "event": "FrameGraphSetupEvent",
