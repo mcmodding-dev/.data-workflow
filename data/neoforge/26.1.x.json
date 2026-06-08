@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260605021146",
-    "commit_date": "20260604165600",
+    "lastupdated": "20260608023449",
+    "commit_date": "20260607151025",
     "version": "26.1.x",
-    "last_commit": "[4530b606c5812dea738bf59a5b8480671147098a] Add flip frame event for managing per-frame GPU resources and rotating custom dynamic uniforms. (#3197)",
+    "last_commit": "[5fd57e4327b7ac5080b3f30be0e1344dbde9fd60] Fix some inconsistencies in FluidUtil#tryPlaceFluid and allow calling FluidUtil methods from a transactional context (#3207)\n\n- Added a variant of `FluidUtil#tryPickupFluid` that doesn't fall back to picking up from a fluid handler\n- Fix `DispenseFluidContainer` deleting items due to passing the wrong stack to `consumeWithRemainder`",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
