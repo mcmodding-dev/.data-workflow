@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260608023449",
-    "commit_date": "20260607151025",
+    "lastupdated": "20260609015857",
+    "commit_date": "20260608163024",
     "version": "26.1.x",
-    "last_commit": "[5fd57e4327b7ac5080b3f30be0e1344dbde9fd60] Fix some inconsistencies in FluidUtil#tryPlaceFluid and allow calling FluidUtil methods from a transactional context (#3207)\n\n- Added a variant of `FluidUtil#tryPickupFluid` that doesn't fall back to picking up from a fluid handler\n- Fix `DispenseFluidContainer` deleting items due to passing the wrong stack to `consumeWithRemainder`",
+    "last_commit": "[580f67e1ef0807c0d670c9a1b80e4755b2419c1e] Fix lastHurt tracking post-reduction damage (#3203)\n\nCo-authored-by: Shadows_of_Fire <3682588+Shadows-of-Fire@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
