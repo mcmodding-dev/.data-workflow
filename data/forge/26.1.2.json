@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260505014954",
-    "commit_date": "20260504162636",
+    "lastupdated": "20260610021202",
+    "commit_date": "20260609182151",
     "version": "26.1.2",
-    "last_commit": "[6665cdcf4e137380770df4264247ef6beb373cc6] Fix misaligned ClientLevel load patch",
+    "last_commit": "[d3476f3f800d38b84673bc1522186c4e3171c318] [26.1.2] Split hotbar rendering into components, allow replacing renders (#10824)",
     "data": {
         "net.minecraftforge.fml.config": [
             {
