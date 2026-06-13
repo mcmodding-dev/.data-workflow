@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260609015857",
-    "commit_date": "20260608163024",
+    "lastupdated": "20260613021039",
+    "commit_date": "20260612140429",
     "version": "26.1.x",
-    "last_commit": "[580f67e1ef0807c0d670c9a1b80e4755b2419c1e] Fix lastHurt tracking post-reduction damage (#3203)\n\nCo-authored-by: Shadows_of_Fire <3682588+Shadows-of-Fire@users.noreply.github.com>",
+    "last_commit": "[272ac27afcffbdff6aa081f7ea236433a9a5b505] Add missing nullable annotations to IPlayerExtension#openMenu (#3215)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
