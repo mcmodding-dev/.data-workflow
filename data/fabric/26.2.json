@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260612022924",
-    "commit_date": "20260611130638",
+    "lastupdated": "20260616024013",
+    "commit_date": "20260615093007",
     "version": "26.2",
-    "last_commit": "[5eb83891618a97b847fcb0a03622338b1028c80c] 26.2-pre-6",
+    "last_commit": "[e14617e8d44c8eacf6c24e63dc6a694c283bf9f7] Bump version",
     "data": {
         "fabric-command-api-v2": [
             {
