@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260610021202",
-    "commit_date": "20260609182151",
+    "lastupdated": "20260619025133",
+    "commit_date": "20260618180943",
     "version": "26.1.2",
-    "last_commit": "[d3476f3f800d38b84673bc1522186c4e3171c318] [26.1.2] Split hotbar rendering into components, allow replacing renders (#10824)",
+    "last_commit": "[6a702686dbee2b4ecdc55468a6e98d4d3752a033] Toml parsing errors are now visible in the latest log. (#10825)",
     "data": {
         "net.minecraftforge.fml.config": [
             {

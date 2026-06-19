@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260617023805",
-    "commit_date": "20260616210054",
+    "lastupdated": "20260619025144",
+    "commit_date": "20260619015451",
     "version": "26.2.x",
-    "last_commit": "[248da1109ab876dcd466086f142553c9ad6d5c9f] Fix misapplied patch in LootPool (#3228)",
+    "last_commit": "[acb08366ce245d678714c7c1fff1f5e7e63f02d8] Exclude main LWJGL dependency from FML-loader (#3250)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
