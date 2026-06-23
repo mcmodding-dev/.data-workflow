@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260619025144",
-    "commit_date": "20260619015451",
+    "lastupdated": "20260623020637",
+    "commit_date": "20260622221034",
     "version": "26.2.x",
-    "last_commit": "[acb08366ce245d678714c7c1fff1f5e7e63f02d8] Exclude main LWJGL dependency from FML-loader (#3250)",
+    "last_commit": "[4a632391aa4df8ef9b8b0521ab84da5a90bbfc94] Update C tags to include 26.2 content (#3251)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

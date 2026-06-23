@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260616024011",
-    "commit_date": "20260615092957",
+    "lastupdated": "20260623020604",
+    "commit_date": "20260622171633",
     "version": "26.1.2",
-    "last_commit": "[52695ffdff2c1e530b70e72fa8065d780139d7ef] Bump version",
+    "last_commit": "[7a67ac95e02324ac97a4e9cc0e84253a16aeb592] Bump version",
     "data": {
         "fabric-command-api-v2": [
             {
@@ -637,7 +637,7 @@
                 "interface": "AllowEnchanting",
                 "variable": "ALLOW_ENCHANTING",
                 "function": ");",
-                "url": "https://github.com/FabricMC/fabric/blob/26.1.2/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/api/item/v1/EnchantmentEvents.java#L53",
+                "url": "https://github.com/FabricMC/fabric/blob/26.1.2/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/api/item/v1/EnchantmentEvents.java#L54",
                 "description": "An event that allows overriding whether an Enchantment can be applied to an ItemStack. This should only be used to modify the behavior of external items with regards to external enchantments, where 'external' means either vanilla or from another mod. For instance, a mod might allow enchanting a pickaxe with Sharpness (and only Sharpness) under certain specific conditions. To modify the behavior of your own modded enchantments, specify a custom tag for supportedItems() instead. To modify the behavior of your own modded items, add to the applicable tags instead, when that suffices. Note that this event triggers before Holder, EnchantingContext), and that method will only be called if no listeners override it. Note that allowing an enchantment using this event does not guarantee the item will receive that enchantment, only that it isn't forbidden from doing so",
                 "side": null,
                 "deprecated": false
@@ -648,8 +648,19 @@
                 "interface": "Modify",
                 "variable": "MODIFY",
                 "function": ");",
-                "url": "https://github.com/FabricMC/fabric/blob/26.1.2/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/api/item/v1/EnchantmentEvents.java#L80",
-                "description": "An event that allows an Enchantment to be modified without needing to fully override an enchantment. This should only be used to modify the behavior of external enchantments, where 'external' means either vanilla or from another mod. For instance, a mod might add a bleed effect to Sharpness (and only Sharpness). For your own enchantments, you should simply define them in your mod's data pack. See the Enchantment Definition page on the Minecraft Wiki for more information. Note: If you wish to modify the exclusive set of the enchantment, consider extending the relevant tag through your mod's data pack instead",
+                "url": "https://github.com/FabricMC/fabric/blob/26.1.2/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/api/item/v1/EnchantmentEvents.java#L84",
+                "description": "An event that allows an Enchantment to be modified without needing to fully override an enchantment. This should only be used to modify the behavior of external enchantments, where 'external' means either vanilla or from another mod. For instance, a mod might add a bleed effect to Sharpness (and only Sharpness). For your own enchantments, you should simply define them in your mod's data pack. See the Enchantment Definition page on the Minecraft Wiki for more information. Note: If you wish to modify the exclusive set of the enchantment, consider extending the relevant tag through your mod's data pack instead\nDeprecated: Use MODIFY_WITH_LOOKUP instead, which provides registry access via RegistryInfoLookup",
+                "side": null,
+                "deprecated": true
+            },
+            {
+                "file": "EnchantmentEvents.java",
+                "package": "net.fabricmc.fabric.api.item.v1",
+                "interface": "ModifyWithLookup",
+                "variable": "MODIFY_WITH_LOOKUP",
+                "function": ");",
+                "url": "https://github.com/FabricMC/fabric/blob/26.1.2/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/api/item/v1/EnchantmentEvents.java#L107",
+                "description": "An event that allows an Enchantment to be modified without needing to fully override an enchantment. This should only be used to modify the behavior of external enchantments, where 'external' means either vanilla or from another mod. For instance, a mod might add a bleed effect to Sharpness (and only Sharpness). For your own enchantments, you should simply define them in your mod's data pack. See the Enchantment Definition page on the Minecraft Wiki for more information. Note: If you wish to modify the exclusive set of the enchantment, consider extending the relevant tag through your mod's data pack instead. This is the preferred replacement for MODIFY, providing access to registry information via RegistryInfoLookup",
                 "side": null,
                 "deprecated": false
             }
