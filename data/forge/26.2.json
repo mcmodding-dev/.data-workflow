@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260619025135",
-    "commit_date": "20260618023527",
+    "lastupdated": "20260626020954",
+    "commit_date": "20260625155858",
     "version": "26.2",
-    "last_commit": "[3da1b644d01c7b7a49bf689ff5effb9eeb9d67b1] 26.2",
+    "last_commit": "[dabe919492cea8dec022afadd944bfc186a9053c] Remove IForgeShearable Closes #10826\n Entities use vanilla's Shearable interface\n Blocks use loot table conditions or useItemOn if you need positional information",
     "data": {
         "net.minecraftforge.fml.config": [
             {
