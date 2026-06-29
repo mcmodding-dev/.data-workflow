@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260619025133",
-    "commit_date": "20260618180943",
+    "lastupdated": "20260629021545",
+    "commit_date": "20260628202148",
     "version": "26.1.2",
-    "last_commit": "[6a702686dbee2b4ecdc55468a6e98d4d3752a033] Toml parsing errors are now visible in the latest log. (#10825)",
+    "last_commit": "[6c3729d6e96d5d07526c0572962f502f5fd645f3] ForgeDev 7 (#10821)\n\nCo-authored-by: LexManos <LexManos@gmail.com>\nCo-authored-by: Jonathing <me@jonathing.me>",
     "data": {
         "net.minecraftforge.fml.config": [
             {
