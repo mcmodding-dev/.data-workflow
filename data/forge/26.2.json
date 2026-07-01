@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260626020954",
-    "commit_date": "20260625155858",
+    "lastupdated": "20260701021537",
+    "commit_date": "20260630225735",
     "version": "26.2",
-    "last_commit": "[dabe919492cea8dec022afadd944bfc186a9053c] Remove IForgeShearable Closes #10826\n Entities use vanilla's Shearable interface\n Blocks use loot table conditions or useItemOn if you need positional information",
+    "last_commit": "[c5d015e60adb9f0b4a925a6cce360e6a47c1c7da] Add mechanic for ImmediateWindowProviders to react to Graphics backed settings\nDisable early loading screen when using Vulkan. Fixes #10829",
     "data": {
         "net.minecraftforge.fml.config": [
             {
