@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260623020604",
-    "commit_date": "20260622171633",
+    "lastupdated": "20260702020642",
+    "commit_date": "20260701125324",
     "version": "26.1.2",
-    "last_commit": "[7a67ac95e02324ac97a4e9cc0e84253a16aeb592] Bump version",
+    "last_commit": "[3f753ebe745ce50e2838aa4b055107fd1f1b8414] Bump version",
     "data": {
         "fabric-command-api-v2": [
             {
@@ -1696,6 +1696,41 @@
                 "deprecated": false
             }
         ],
+        "fabric-object-builder-api-v1": [
+            {
+                "file": "FabricDefaultAttributeRegistry.java",
+                "package": "net.fabricmc.fabric.api.object.builder.v1.entity",
+                "interface": "ModifyContext",
+                "variable": "MODIFY_CONTEXT",
+                "function": "void modify(Predicate<EntityType<? extends LivingEntity>> entityTypePredicate, ModifyConsumer consumer);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.1.2/fabric-object-builder-api-v1/src/main/java/net/fabricmc/fabric/api/object/builder/v1/entity/FabricDefaultAttributeRegistry.java#L106",
+                "description": "Registers a default attribute for a type of living entity. It can be used in a fashion similar to this:\n```\n<blockquote>\nFabricDefaultAttributeRegistry.register(type, LivingEntity.createLivingAttributes());\n</blockquote>\n```\nIf a registration overrides another, a debug log message will be emitted. Existing registrations can be checked at hasSupplier(EntityType). For convenience, this can also be done on the Builder to simplify the building process",
+                "side": null,
+                "deprecated": false
+            },
+            {
+                "file": "FabricDefaultAttributeRegistry.java",
+                "package": "net.fabricmc.fabric.api.object.builder.v1.entity",
+                "interface": "ModifyDefaultAttribute",
+                "variable": "MODIFY",
+                "function": "void modify(ModifyContext context);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.1.2/fabric-object-builder-api-v1/src/main/java/net/fabricmc/fabric/api/object/builder/v1/entity/FabricDefaultAttributeRegistry.java#L62",
+                "description": "Private logger, not exposed",
+                "side": null,
+                "deprecated": false
+            },
+            {
+                "file": "FabricDefaultAttributeRegistry.java",
+                "package": "net.fabricmc.fabric.api.object.builder.v1.entity",
+                "interface": "ModifyConsumer",
+                "variable": "MODIFY_CONSUMER",
+                "function": "void accept(EntityType<? extends LivingEntity> type, AttributeSupplier.Builder builder);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.1.2/fabric-object-builder-api-v1/src/main/java/net/fabricmc/fabric/api/object/builder/v1/entity/FabricDefaultAttributeRegistry.java#L146",
+                "description": "",
+                "side": null,
+                "deprecated": false
+            }
+        ],
         "fabric-particles-v1": [
             {
                 "file": "ParticleRenderEvents.java",
@@ -1747,6 +1782,17 @@
             }
         ],
         "fabric-rendering-v1": [
+            {
+                "file": "BuiltInBlockModelsCallback.java",
+                "package": "net.fabricmc.fabric.api.client.rendering.v1",
+                "interface": "BuiltInBlockModelsCallback",
+                "variable": "EVENT",
+                "function": "void createBlockModels(BuiltInBlockModels.Builder builder);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.1.2/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/BuiltInBlockModelsCallback.java#L34",
+                "description": "Called when custom BlockModels are registered in createBlockModels(BlockColors). This allows for overriding block models which eventually end up being used in BlockModelResolver",
+                "side": "client",
+                "deprecated": false
+            },
             {
                 "file": "ClientTooltipComponentCallback.java",
                 "package": "net.fabricmc.fabric.api.client.rendering.v1",
