@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260621023700",
-    "commit_date": "20260620210906",
+    "lastupdated": "20260703015155",
+    "commit_date": "20260702135215",
     "version": "1.21.1",
-    "last_commit": "[2f185f98b868259fef706d7cb6af1c3c3fcd55f1] Backport to 1.21.1: Add a ModelProvider method for flower pots with plants (#3252)",
+    "last_commit": "[b2e8924800962e727be6bd2d9df31d7b60bb5b53] [1.21.1] Improve the MC-43968 fix (#3274)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {
