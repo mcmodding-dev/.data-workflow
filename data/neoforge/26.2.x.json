@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260623020637",
-    "commit_date": "20260622221034",
+    "lastupdated": "20260705015734",
+    "commit_date": "20260704182226",
     "version": "26.2.x",
-    "last_commit": "[4a632391aa4df8ef9b8b0521ab84da5a90bbfc94] Update C tags to include 26.2 content (#3251)",
+    "last_commit": "[2156426e16b5188d9bb5e8fc7a21265978f57e8d] Send initial listening channels to server during negotiation (#3277)\n\nThis fixes a race condition where the server may begin configuration before receiving known common channels from the client.\n\nCloses #3275",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260613021039",
-    "commit_date": "20260612140429",
+    "lastupdated": "20260705015732",
+    "commit_date": "20260704165009",
     "version": "26.1.x",
-    "last_commit": "[272ac27afcffbdff6aa081f7ea236433a9a5b505] Add missing nullable annotations to IPlayerExtension#openMenu (#3215)",
+    "last_commit": "[685bd8cbfa275eb481ddbb2d1886499ddb8f0002] [26.1.x] Update FancyModLoader to `11.0.15` (#3225)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
