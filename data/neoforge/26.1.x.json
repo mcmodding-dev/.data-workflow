@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260705015732",
-    "commit_date": "20260704165009",
+    "lastupdated": "20260707015906",
+    "commit_date": "20260706091101",
     "version": "26.1.x",
-    "last_commit": "[685bd8cbfa275eb481ddbb2d1886499ddb8f0002] [26.1.x] Update FancyModLoader to `11.0.15` (#3225)",
+    "last_commit": "[b6a8c864c321eee0ece5487410e7d2c69a321428] Send initial listening channels to server during negotiation (#3281)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
