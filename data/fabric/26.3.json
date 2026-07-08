@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260707015834",
-    "commit_date": "20260706122226",
+    "lastupdated": "20260708012828",
+    "commit_date": "20260707182353",
     "version": "26.3",
-    "last_commit": "[4401f1500f45ddc84ad975c14a44ea2cd53c3647] Bump version",
+    "last_commit": "[bca5816901f660e1b30bb8b06ac85c7a6d782ba9] 26.3-snapshot-3 (#5478)\n\n* 26.3-snapshot-3\n\n* Bump version",
     "data": {
         "fabric-command-api-v2": [
             {
@@ -94,8 +94,8 @@
                 "interface": "AllowSleeping",
                 "variable": "ALLOW_SLEEPING",
                 "function": "Player.@Nullable BedSleepingProblem allowSleep(Player player, BlockPos sleepingPos);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L66",
-                "description": "An event that checks whether a player can start to sleep in a bed-like block. This event only applies to sleeping using startSleepInBed(BlockPos). Note: Please use the more detailed event ALLOW_NEARBY_MONSTERS if it matches your use case! This helps with mod compatibility. If this event returns a BedSleepingProblem, it is used as the return value of startSleepInBed(BlockPos) and sleeping fails. A null return value means that the player will start sleeping. When this event is called, all vanilla sleeping checks have already succeeded, i.e. this event is used in addition to vanilla checks. The more detailed event ALLOW_NEARBY_MONSTERS is also checked before this event",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L68",
+                "description": "An event that checks whether a player can start to sleep in a bed-like block. This event only applies to sleeping using BlockState, BedRule, BlockPos). Note: Please use the more detailed event ALLOW_NEARBY_MONSTERS if it matches your use case! This helps with mod compatibility. If this event returns a BedSleepingProblem, it is used as the return value of BlockState, BedRule, BlockPos) and sleeping fails. A null return value means that the player will start sleeping. When this event is called, all vanilla sleeping checks have already succeeded, i.e. this event is used in addition to vanilla checks. The more detailed event ALLOW_NEARBY_MONSTERS is also checked before this event",
                 "side": null,
                 "deprecated": false
             },
@@ -105,7 +105,7 @@
                 "interface": "StartSleeping",
                 "variable": "START_SLEEPING",
                 "function": "void onStartSleeping(LivingEntity entity, BlockPos sleepingPos);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L81",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L83",
                 "description": "An event that is called when an entity starts to sleep",
                 "side": null,
                 "deprecated": false
@@ -116,7 +116,7 @@
                 "interface": "StopSleeping",
                 "variable": "STOP_SLEEPING",
                 "function": "void onStopSleeping(LivingEntity entity, BlockPos sleepingPos);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L90",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L92",
                 "description": "An event that is called when an entity stops sleeping and wakes up",
                 "side": null,
                 "deprecated": false
@@ -127,7 +127,7 @@
                 "interface": "AllowBed",
                 "variable": "ALLOW_BED",
                 "function": "EventResult allowBed(LivingEntity entity, BlockPos sleepingPos, BlockState state, boolean vanillaResult);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L108",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L110",
                 "description": "An event that is called to check whether a block is valid for sleeping. Used for checking whether the block at the current sleeping position is a valid bed block. If false, the player wakes up. This event is only checked during sleeping, so an entity can start sleeping on any block, but will immediately wake up if this check fails",
                 "side": null,
                 "deprecated": false
@@ -138,7 +138,7 @@
                 "interface": "AllowSleepTime",
                 "variable": "ALLOW_SLEEP_TIME",
                 "function": "EventResult allowSleepTime(Player player, BlockPos sleepingPos, boolean vanillaResult);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L267",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L269",
                 "description": "Checks whether a block is a valid bed for the entity. Non-passing return values cancel further callbacks",
                 "side": null,
                 "deprecated": false
@@ -149,7 +149,7 @@
                 "interface": "AllowNearbyMonsters",
                 "variable": "ALLOW_NEARBY_MONSTERS",
                 "function": "EventResult allowNearbyMonsters(Player player, BlockPos sleepingPos, boolean vanillaResult);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L125",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L127",
                 "description": "An event that checks whether players can sleep when monsters are nearby. This event can also be used to force a failing result, meaning it can do custom monster checks",
                 "side": null,
                 "deprecated": false
@@ -160,7 +160,7 @@
                 "interface": "AllowResettingTime",
                 "variable": "ALLOW_RESETTING_TIME",
                 "function": "boolean allowResettingTime(Player player);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L143",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L145",
                 "description": "An event that checks whether a sleeping player counts into skipping the current day and resetting the time to 0. When this event is called, all vanilla time resetting checks have already succeeded, i.e. this event is used in addition to vanilla checks",
                 "side": null,
                 "deprecated": false
@@ -171,7 +171,7 @@
                 "interface": "ModifySleepingDirection",
                 "variable": "MODIFY_SLEEPING_DIRECTION",
                 "function": "Direction modifySleepDirection(LivingEntity entity, BlockPos sleepingPos, @Nullable Direction sleepingDirection);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L160",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L162",
                 "description": "An event that can be used to provide the entity's sleep direction if missing. This is useful for custom bed blocks that need to determine the sleeping direction themselves. If the block is not a BedBlock, you need to provide the sleeping direction manually with this event",
                 "side": null,
                 "deprecated": false
@@ -182,7 +182,7 @@
                 "interface": "AllowSettingSpawn",
                 "variable": "ALLOW_SETTING_SPAWN",
                 "function": "boolean allowSettingSpawn(Player player, BlockPos sleepingPos);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L173",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L175",
                 "description": "An event that checks whether a player's spawn can be set when sleeping. Vanilla always allows this operation",
                 "side": null,
                 "deprecated": false
@@ -193,7 +193,7 @@
                 "interface": "SetBedOccupationState",
                 "variable": "SET_BED_OCCUPATION_STATE",
                 "function": "boolean setBedOccupationState(LivingEntity entity, BlockPos sleepingPos, BlockState bedState, boolean occupied);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L189",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L191",
                 "description": "An event that sets the occupation state of a bed. Note that this is not needed for blocks using BedBlock, which are handled automatically",
                 "side": null,
                 "deprecated": false
@@ -204,7 +204,7 @@
                 "interface": "ModifyWakeUpPosition",
                 "variable": "MODIFY_WAKE_UP_POSITION",
                 "function": "Vec3 modifyWakeUpPosition(LivingEntity entity, BlockPos sleepingPos, BlockState bedState, @Nullable Vec3 wakeUpPos);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L206",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-entity-events-v1/src/main/java/net/fabricmc/fabric/api/entity/event/v1/EntitySleepEvents.java#L208",
                 "description": "An event that can be used to provide the entity's wake-up position if missing. This is useful for custom bed blocks that need to determine the wake-up position themselves. If the block is not a BedBlock, you need to provide the wake-up position manually with this event",
                 "side": null,
                 "deprecated": false
