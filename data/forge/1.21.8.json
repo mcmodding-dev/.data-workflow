@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260429201127",
-    "commit_date": "20260323191409",
+    "lastupdated": "20260710014926",
+    "commit_date": "20260709193425",
     "version": "1.21.8",
-    "last_commit": "[451c3a1f0af67df9678837d398f20861f27caecc] Add support for multiple access transformer configs.",
+    "last_commit": "[a6eea5a004097f0b80f286de5f97d01808f8015f] Toml parsing errors are now visible in the latest log (#10839)",
     "data": {
         "net.minecraftforge.fml.config": [
             {

@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260528015558",
-    "commit_date": "20260527160731",
+    "lastupdated": "20260710014930",
+    "commit_date": "20260709191103",
     "version": "1.21.11",
-    "last_commit": "[66e4dab83b47f0ea11a955202c82d16593a08658] Bump MDK gradle and fix missing and wrong dependency in installer",
+    "last_commit": "[4f936fb5f76a12da1bc603243f7b438a4fe9aa34] Toml parsing errors are now visible in the latest log. (#10837)",
     "data": {
         "net.minecraftforge.fml.config": [
             {

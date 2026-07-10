@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260429201118",
-    "commit_date": "20260318231005",
+    "lastupdated": "20260710014921",
+    "commit_date": "20260709200135",
     "version": "1.21.3",
-    "last_commit": "[8bdf29553b12af8d5e2d6eab9d934ea6b7553db7] Migrate the MDK to ForgeGradle 7\n\nBackport of d29524b to 1.21.3",
+    "last_commit": "[afaba58edc0d0cc58122732adf90760ed155c1e7] Toml parsing errors are now visible in the latest log (#10842)",
     "data": {
         "net.minecraftforge.fml.config": [
             {

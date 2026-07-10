@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260705015734",
-    "commit_date": "20260704182226",
+    "lastupdated": "20260710014944",
+    "commit_date": "20260709164840",
     "version": "26.2.x",
-    "last_commit": "[2156426e16b5188d9bb5e8fc7a21265978f57e8d] Send initial listening channels to server during negotiation (#3277)\n\nThis fixes a race condition where the server may begin configuration before receiving known common channels from the client.\n\nCloses #3275",
+    "last_commit": "[87d2471f7ebe8be989699c66954b10d2ccb0c112] Implement entity attribute for gliding flight (#3192)\n\nCo-authored-by: Sara Freimer <sara@freimer.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

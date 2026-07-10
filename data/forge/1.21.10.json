@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260429201129",
-    "commit_date": "20260317214825",
+    "lastupdated": "20260710014928",
+    "commit_date": "20260709192435",
     "version": "1.21.10",
-    "last_commit": "[ac17d668688ae93c6dff44fdab2fa9cda6cea40c] Migrate the MDK to ForgeGradle 7\n\nBackport of d29524b to 1.21.10.\n\nAlso bumped ASM to 9.9.1, EventBus to 7.0.1 (non-beta) and MixinExtras to 0.5.3",
+    "last_commit": "[b44728efa10177608618b319d9b0cac4538a041c] Toml parsing errors are now visible in the latest log (#10838)",
     "data": {
         "net.minecraftforge.fml.config": [
             {
