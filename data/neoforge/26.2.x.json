@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260710014944",
-    "commit_date": "20260709164840",
+    "lastupdated": "20260711012824",
+    "commit_date": "20260710132305",
     "version": "26.2.x",
-    "last_commit": "[87d2471f7ebe8be989699c66954b10d2ccb0c112] Implement entity attribute for gliding flight (#3192)\n\nCo-authored-by: Sara Freimer <sara@freimer.com>",
+    "last_commit": "[a9c1d69499adec49140f2f03a53012fbf2439317] Update parameters that get proxied through RenderArmEvent (#3288)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -1926,10 +1926,10 @@
             {
                 "event": "RenderArmEvent",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/RenderArmEvent.java#L29",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/RenderArmEvent.java#L30",
                 "cancellable": true,
-                "description": "Fired before the player's arm is rendered in first person. This is a more targeted version of RenderHandEvent, and can be used to replace the rendering of the player's arm, such as for rendering armor on the arm or outright replacing the arm with armor. This event is cancellable, and does not have a result. If this event is cancelled, then the arm will not be rendered. This event is fired on the main Forge event bus, only on the logical client",
-                "side": "client",
+                "description": "",
+                "side": null,
                 "deprecated": false,
                 "hasResult": false,
                 "fields": [
@@ -1946,20 +1946,38 @@
                         "mutable": false
                     },
                     {
-                        "name": "packedLight",
+                        "name": "lightCoords",
                         "type": "int",
                         "kind": "field",
                         "mutable": false
                     },
                     {
-                        "name": "player",
-                        "type": "AbstractClientPlayer",
+                        "name": "skinTexture",
+                        "type": "Identifier",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "hasSleeve",
+                        "type": "boolean",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "avatar",
+                        "type": "AvatarlikeEntity",
                         "kind": "field",
                         "mutable": false
                     },
                     {
                         "name": "arm",
                         "type": "HumanoidArm",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "armPart",
+                        "type": "ModelPart",
                         "kind": "field",
                         "mutable": false
                     }
