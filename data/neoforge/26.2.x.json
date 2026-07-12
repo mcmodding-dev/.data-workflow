@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260711012824",
-    "commit_date": "20260710132305",
+    "lastupdated": "20260712013022",
+    "commit_date": "20260711190410",
     "version": "26.2.x",
-    "last_commit": "[a9c1d69499adec49140f2f03a53012fbf2439317] Update parameters that get proxied through RenderArmEvent (#3288)",
+    "last_commit": "[6203e58fad4ed21930c3f95a36e30943e22e7f05] Allow more fine grain control via RegisterRenderStateModifiersEvent of model part visibility (#3290)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
