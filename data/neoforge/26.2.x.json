@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260712013022",
-    "commit_date": "20260711190410",
+    "lastupdated": "20260713014408",
+    "commit_date": "20260712212439",
     "version": "26.2.x",
-    "last_commit": "[6203e58fad4ed21930c3f95a36e30943e22e7f05] Allow more fine grain control via RegisterRenderStateModifiersEvent of model part visibility (#3290)",
+    "last_commit": "[9d94532ab1b83ddfc1c3db3838204ada7fb6681c] [26.2] Add missing display property to `ItemTooltipEvent` (#3293)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -7520,7 +7520,7 @@
             {
                 "event": "ItemTooltipEvent",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/ItemTooltipEvent.java#L16",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/ItemTooltipEvent.java#L17",
                 "cancellable": false,
                 "description": "",
                 "side": null,
@@ -7548,6 +7548,12 @@
                     {
                         "name": "context",
                         "type": "TooltipContext",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "display",
+                        "type": "TooltipDisplay",
                         "kind": "field",
                         "mutable": false
                     }
