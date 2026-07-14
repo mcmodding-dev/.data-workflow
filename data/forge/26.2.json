@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260701021537",
-    "commit_date": "20260630225735",
+    "lastupdated": "20260714012038",
+    "commit_date": "20260714000548",
     "version": "26.2",
-    "last_commit": "[c5d015e60adb9f0b4a925a6cce360e6a47c1c7da] Add mechanic for ImmediateWindowProviders to react to Graphics backed settings\nDisable early loading screen when using Vulkan. Fixes #10829",
+    "last_commit": "[cb2e2058673ef4274e06b5461069ec2862c5b624] Toml parsing errors are now visible in the latest log. (#10847)",
     "data": {
         "net.minecraftforge.fml.config": [
             {
