@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260707015906",
-    "commit_date": "20260706091101",
+    "lastupdated": "20260715011718",
+    "commit_date": "20260714161139",
     "version": "26.1.x",
-    "last_commit": "[b6a8c864c321eee0ece5487410e7d2c69a321428] Send initial listening channels to server during negotiation (#3281)",
+    "last_commit": "[7c371d1d7154b54dc708bdbf8570f3851bc106ec] Backport to 26.1.x: Reimplement missing `AbstractGameRulesScreen` patch (#3298)\n\nCo-authored-by: ApexModder <29412632+ApexModder@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

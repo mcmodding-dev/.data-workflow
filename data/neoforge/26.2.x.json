@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260713014408",
-    "commit_date": "20260712212439",
+    "lastupdated": "20260715011720",
+    "commit_date": "20260714161107",
     "version": "26.2.x",
-    "last_commit": "[9d94532ab1b83ddfc1c3db3838204ada7fb6681c] [26.2] Add missing display property to `ItemTooltipEvent` (#3293)",
+    "last_commit": "[6c06cf43d9b89adde4186307414a16da46cc97bb] [26.2] Reimplement missing `AbstractGameRulesScreen` patch (#3297)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -6190,6 +6190,12 @@
                     {
                         "name": "postAttackInvulnerabilityTicks",
                         "type": "int",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "performSideEffects",
+                        "type": "boolean",
                         "kind": "field",
                         "mutable": false
                     },
