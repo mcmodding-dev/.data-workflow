@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260705015726",
-    "commit_date": "20260704165023",
+    "lastupdated": "20260716012708",
+    "commit_date": "20260715205451",
     "version": "1.21.1",
-    "last_commit": "[19ceb2669d1f599e19accddfe4babfc41749e332] [1.21.1] Update FancyModLoader to `4.0.43` (#3226)",
+    "last_commit": "[371c514c8a862aefdf525fb940ad0532ae7e132d] Backport to 1.21.1: Use extension interface for TooltipFlag patch, and add shouldDisplayAllInformation method (#3312)\n\nCo-authored-by: pupnewfster <1203288+pupnewfster@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

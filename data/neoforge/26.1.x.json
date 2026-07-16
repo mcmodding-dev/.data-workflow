@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260715011718",
-    "commit_date": "20260714161139",
+    "lastupdated": "20260716012717",
+    "commit_date": "20260715200145",
     "version": "26.1.x",
-    "last_commit": "[7c371d1d7154b54dc708bdbf8570f3851bc106ec] Backport to 26.1.x: Reimplement missing `AbstractGameRulesScreen` patch (#3298)\n\nCo-authored-by: ApexModder <29412632+ApexModder@users.noreply.github.com>",
+    "last_commit": "[04176a448f5febbcffbebead63286b482f9dadda] Backport to 26.1.x: Use extension interface for TooltipFlag patch, and add shouldDisplayAllInformation method (#3304)\n\nCo-authored-by: Sara Freimer <sara@freimer.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

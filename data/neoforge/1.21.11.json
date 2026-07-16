@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260429201215",
-    "commit_date": "20260329132205",
+    "lastupdated": "20260716012715",
+    "commit_date": "20260715201619",
     "version": "1.21.11",
-    "last_commit": "[6cb49467014c294e6cd6adae618d516a27c17cb5] [ci skip] New Crowdin updates (#3026)",
+    "last_commit": "[617e5029b09c283a787e68a01d8b880904136808] Backport to 1.21.11: Use extension interface for TooltipFlag patch, and add shouldDisplayAllInformation method (#3307)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

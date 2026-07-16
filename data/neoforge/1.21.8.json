@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260429201211",
-    "commit_date": "20260323174703",
+    "lastupdated": "20260716012714",
+    "commit_date": "20260715210117",
     "version": "1.21.8",
-    "last_commit": "[48d57d71be40405dc3022b02b9ae9468b7edc795] Backport to 1.21.8: Bump MixinExtras to 0.5.3 (#3012)\n\nCo-authored-by: LlamaLad7 <15244077+LlamaLad7@users.noreply.github.com>",
+    "last_commit": "[cd5c25d24cf8e58f4b35a67a895090b0111cd991] Backport to 1.21.8: Use extension interface for TooltipFlag patch, and add shouldDisplayAllInformation method (#3310)\n\nCo-authored-by: pupnewfster <1203288+pupnewfster@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
