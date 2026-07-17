@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260716012718",
-    "commit_date": "20260715225520",
+    "lastupdated": "20260717013008",
+    "commit_date": "20260716032752",
     "version": "26.2.x",
-    "last_commit": "[d01a58f2c7cdbd611c0d92ddb31a9e085a33b1d4] Add support for precise appending of data components and other tooltip entries to item tooltips (#3132)",
+    "last_commit": "[a063325ab943d370aa014b0e48a2cb677b4ac850] Broaden spawn rule helpers to accept subclasses of the entity types (#3245)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260708012825",
-    "commit_date": "20260707082625",
+    "lastupdated": "20260717012939",
+    "commit_date": "20260716120413",
     "version": "26.1.2",
-    "last_commit": "[3ff549fbacd59de82450dc6bbd80830d166cef5b] Fix missing transitive AWs",
+    "last_commit": "[9669e314c53281b6ae6683f97fc4578a8d8de53a] Bump version",
     "data": {
         "fabric-command-api-v2": [
             {
