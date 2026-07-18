@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260717013008",
-    "commit_date": "20260716032752",
+    "lastupdated": "20260718012142",
+    "commit_date": "20260718003244",
     "version": "26.2.x",
-    "last_commit": "[a063325ab943d370aa014b0e48a2cb677b4ac850] Broaden spawn rule helpers to accept subclasses of the entity types (#3245)",
+    "last_commit": "[2398c3d9e306a5d653feeae46ddecaab9c50c252] API for blocks to declare whether they're relocatable from a given area (#3231)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

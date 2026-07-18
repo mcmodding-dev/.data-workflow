@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260716012717",
-    "commit_date": "20260715200145",
+    "lastupdated": "20260718012140",
+    "commit_date": "20260717020603",
     "version": "26.1.x",
-    "last_commit": "[04176a448f5febbcffbebead63286b482f9dadda] Backport to 26.1.x: Use extension interface for TooltipFlag patch, and add shouldDisplayAllInformation method (#3304)\n\nCo-authored-by: Sara Freimer <sara@freimer.com>",
+    "last_commit": "[a6a9482394af13670cb4fb989ee3c9265794aaf3] [26.1 Backport] Fix crash when clicking mod links from main menu mod list screen (#3305)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

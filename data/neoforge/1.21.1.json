@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260716012708",
-    "commit_date": "20260715205451",
+    "lastupdated": "20260718012136",
+    "commit_date": "20260717021513",
     "version": "1.21.1",
-    "last_commit": "[371c514c8a862aefdf525fb940ad0532ae7e132d] Backport to 1.21.1: Use extension interface for TooltipFlag patch, and add shouldDisplayAllInformation method (#3312)\n\nCo-authored-by: pupnewfster <1203288+pupnewfster@users.noreply.github.com>",
+    "last_commit": "[73ab915032bfb2898c82dadabc3f7c4a1ce983bf] Fix FakePlayer leaking CriteriaTrigger listener entries (#3260)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {
