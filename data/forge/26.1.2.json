@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260629021545",
-    "commit_date": "20260628202148",
+    "lastupdated": "20260719012804",
+    "commit_date": "20260718213659",
     "version": "26.1.2",
-    "last_commit": "[6c3729d6e96d5d07526c0572962f502f5fd645f3] ForgeDev 7 (#10821)\n\nCo-authored-by: LexManos <LexManos@gmail.com>\nCo-authored-by: Jonathing <me@jonathing.me>",
+    "last_commit": "[6435274d1e62998c6abe6644a3c0c1a3e0a78466] Handle glfw window pos errors gracefully for wayland (#10852)",
     "data": {
         "net.minecraftforge.fml.config": [
             {

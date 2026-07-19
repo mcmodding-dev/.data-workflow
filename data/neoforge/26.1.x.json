@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260718012140",
-    "commit_date": "20260717020603",
+    "lastupdated": "20260719012816",
+    "commit_date": "20260718052035",
     "version": "26.1.x",
-    "last_commit": "[a6a9482394af13670cb4fb989ee3c9265794aaf3] [26.1 Backport] Fix crash when clicking mod links from main menu mod list screen (#3305)",
+    "last_commit": "[83aae830420a0a33f1948a089f61a97cfe192dfe] Backport to 26.1.x: Fix base components not respecting toValueComponent (#3321)\n\nCo-authored-by: Shadows-of-Fire <3682588+Shadows-of-Fire@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

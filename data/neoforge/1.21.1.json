@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260718012136",
-    "commit_date": "20260717021513",
+    "lastupdated": "20260719012810",
+    "commit_date": "20260718231231",
     "version": "1.21.1",
-    "last_commit": "[73ab915032bfb2898c82dadabc3f7c4a1ce983bf] Fix FakePlayer leaking CriteriaTrigger listener entries (#3260)",
+    "last_commit": "[db942bc1eac7095b238564bc9110d76f91d8f299] Change NoneBiomeModifier/NoneStructureModifier unit codecs to create new instances (#3324)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

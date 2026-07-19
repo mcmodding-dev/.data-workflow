@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260718012142",
-    "commit_date": "20260718003244",
+    "lastupdated": "20260719012817",
+    "commit_date": "20260718045223",
     "version": "26.2.x",
-    "last_commit": "[2398c3d9e306a5d653feeae46ddecaab9c50c252] API for blocks to declare whether they're relocatable from a given area (#3231)",
+    "last_commit": "[604ac6c26b3d8ddfcf7d5f93f2e1c8f619281f12] Fix base components not respecting toValueComponent (#3320)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
