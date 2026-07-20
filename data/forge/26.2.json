@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260717013000",
-    "commit_date": "20260716194753",
+    "lastupdated": "20260720015320",
+    "commit_date": "20260719161542",
     "version": "26.2",
-    "last_commit": "[3bac35089f4df4d53fa8b69a310caeffd9f5856e] Add DeltaTracker (partialTick) context to PassDefinitions (#10831)",
+    "last_commit": "[da353a52feed634beb8e1c87421820d74d8b478f] Handle glfw window pos errors gracefully for wayland (#10853)",
     "data": {
         "net.minecraftforge.fml.config": [
             {
