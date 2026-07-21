@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260719012816",
-    "commit_date": "20260718052035",
+    "lastupdated": "20260721012759",
+    "commit_date": "20260720201458",
     "version": "26.1.x",
-    "last_commit": "[83aae830420a0a33f1948a089f61a97cfe192dfe] Backport to 26.1.x: Fix base components not respecting toValueComponent (#3321)\n\nCo-authored-by: Shadows-of-Fire <3682588+Shadows-of-Fire@users.noreply.github.com>",
+    "last_commit": "[e075646a3311859b61fae41a2378dd423f171bfd] New Crowdin updates (with new language he_il) (#3209)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -4826,6 +4826,48 @@
                     {
                         "name": "map",
                         "type": "Map<String, StructuresBecomeConfiguredFix.Conversion>",
+                        "kind": "field",
+                        "mutable": false
+                    }
+                ]
+            },
+            {
+                "event": "RegisterTooltipAppendersEvent",
+                "package": "net.neoforged.neoforge.event",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/RegisterTooltipAppendersEvent.java#L20",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "appenders",
+                        "type": "Map<TooltipLocation, List<TooltipAppender>>",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "componentAppenders",
+                        "type": "Map<DataComponentType<?>, TooltipAppender>",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "componentGraph",
+                        "type": "MutableGraph<DataComponentType<?>>",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "firstVanillaType",
+                        "type": "DataComponentType<?>",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "lastVanillaType",
+                        "type": "DataComponentType<?>",
                         "kind": "field",
                         "mutable": false
                     }

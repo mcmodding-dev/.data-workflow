@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260719012817",
-    "commit_date": "20260718045223",
+    "lastupdated": "20260721012800",
+    "commit_date": "20260720201514",
     "version": "26.2.x",
-    "last_commit": "[604ac6c26b3d8ddfcf7d5f93f2e1c8f619281f12] Fix base components not respecting toValueComponent (#3320)",
+    "last_commit": "[c3d2267c9ae5b2189ed39d87ca7ffd280c4ab499] New Crowdin updates (with new language he_il) (#3246)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

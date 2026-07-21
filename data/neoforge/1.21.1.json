@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260719012810",
-    "commit_date": "20260718231231",
+    "lastupdated": "20260721012753",
+    "commit_date": "20260720201438",
     "version": "1.21.1",
-    "last_commit": "[db942bc1eac7095b238564bc9110d76f91d8f299] Change NoneBiomeModifier/NoneStructureModifier unit codecs to create new instances (#3324)",
+    "last_commit": "[b589408a085102a0eccb5e0e5f640c62bb8453a4] New Crowdin updates (with new language he_il) (#3223)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {
