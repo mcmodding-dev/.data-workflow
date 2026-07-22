@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260710014918",
-    "commit_date": "20260709202659",
+    "lastupdated": "20260722012732",
+    "commit_date": "20260721181617",
     "version": "1.20.x",
-    "last_commit": "[b7efb8287b6743400c98e3f826e0ac7def943c49] Toml parsing errors are now visible in the latest log (#10844)",
+    "last_commit": "[71d814ffa64fce31b5bf4bebf04915f299a69ae8] Update equality check for RegistryObject to include RegistryObject#key. (#10856)",
     "data": {
         "net.minecraftforge.fml.config": [
             {

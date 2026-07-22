@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260720015320",
-    "commit_date": "20260719161542",
+    "lastupdated": "20260722012755",
+    "commit_date": "20260721230510",
     "version": "26.2",
-    "last_commit": "[da353a52feed634beb8e1c87421820d74d8b478f] Handle glfw window pos errors gracefully for wayland (#10853)",
+    "last_commit": "[d697be351fdd27049c6f23b85c142dc079f1a011] Bump Dependencies, Notably ASM for Java 27 support",
     "data": {
         "net.minecraftforge.fml.config": [
             {

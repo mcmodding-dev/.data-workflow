@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260712013005",
-    "commit_date": "20260711095528",
+    "lastupdated": "20260722012744",
+    "commit_date": "20260721183906",
     "version": "1.21.10",
-    "last_commit": "[5e3a3137c69d5093c8fc0ba87e0132efaa0436f9] Add support for multiple access transformer configs (#10785)\n\nBackport of #10760 to 1.21.10\nCo-authored-by: LexManos <LexManos@gmail.com>\nCo-authored-by: Fealtous <myfavgamer@gmail.com>",
+    "last_commit": "[6efa0681b8d20b6235df98c5a9a42dc214c3f462] Add DeltaTracker (partialTick) context to PassDefinitions (#10850)",
     "data": {
         "net.minecraftforge.fml.config": [
             {

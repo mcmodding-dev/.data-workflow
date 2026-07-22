@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260721012800",
-    "commit_date": "20260720201514",
+    "lastupdated": "20260722012811",
+    "commit_date": "20260721124406",
     "version": "26.2.x",
-    "last_commit": "[c3d2267c9ae5b2189ed39d87ca7ffd280c4ab499] New Crowdin updates (with new language he_il) (#3246)",
+    "last_commit": "[ebd6aed98b7dc23e2b7868c2bc3b5db866347233] Update NeoForm 26.2 to ver. 2 (#3329)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

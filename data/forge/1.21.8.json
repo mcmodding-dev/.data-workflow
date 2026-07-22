@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260710014926",
-    "commit_date": "20260709193425",
+    "lastupdated": "20260722012741",
+    "commit_date": "20260721230923",
     "version": "1.21.8",
-    "last_commit": "[a6eea5a004097f0b80f286de5f97d01808f8015f] Toml parsing errors are now visible in the latest log (#10839)",
+    "last_commit": "[a42ea9bc2c61c86a2689f86cedd60dbc392e47ff] Add DeltaTracker (partialTick) context to PassDefinitions (#10831) (#10851)",
     "data": {
         "net.minecraftforge.fml.config": [
             {
