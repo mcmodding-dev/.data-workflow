@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260721012753",
-    "commit_date": "20260720201438",
+    "lastupdated": "20260723014617",
+    "commit_date": "20260722123313",
     "version": "1.21.1",
-    "last_commit": "[b589408a085102a0eccb5e0e5f640c62bb8453a4] New Crowdin updates (with new language he_il) (#3223)",
+    "last_commit": "[17275e903e82558ee63f04650561ccc5594c69fa] Update dependency org.ow2.asm:asm to v9.10.1 (1.21.1) (#3336)\n\nCo-authored-by: neoforged-renovate[bot] <174042230+neoforged-renovate[bot]@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

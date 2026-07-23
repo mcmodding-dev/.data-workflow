@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260722012811",
-    "commit_date": "20260721124406",
+    "lastupdated": "20260723014624",
+    "commit_date": "20260722232903",
     "version": "26.2.x",
-    "last_commit": "[ebd6aed98b7dc23e2b7868c2bc3b5db866347233] Update NeoForm 26.2 to ver. 2 (#3329)",
+    "last_commit": "[390e2e7b14c700a3ba8a7fe8c6c7492c0047d6fc] Remove neoforge:nametag_distance attribute (#3333)\n\nThis attribute has been superseded by Vanilla's minecraft:name_tag_distance attribute.",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
