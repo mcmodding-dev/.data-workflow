@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260721012759",
-    "commit_date": "20260720201458",
+    "lastupdated": "20260725013002",
+    "commit_date": "20260724065736",
     "version": "26.1.x",
-    "last_commit": "[e075646a3311859b61fae41a2378dd423f171bfd] New Crowdin updates (with new language he_il) (#3209)",
+    "last_commit": "[3ce91c2e2836696c8eb83845e6c1dae2966112cd] Backport to 26.1.x: Fix certain trim quads being invisible on trimmed armor items (#3344)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
