@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260725013002",
-    "commit_date": "20260724065736",
+    "lastupdated": "20260726014436",
+    "commit_date": "20260725163508",
     "version": "26.1.x",
-    "last_commit": "[3ce91c2e2836696c8eb83845e6c1dae2966112cd] Backport to 26.1.x: Fix certain trim quads being invisible on trimmed armor items (#3344)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>",
+    "last_commit": "[852e0a5522a835c88aa377560a9569da3e91132c] [Backport 26.1]: API for blocks to declare whether they're relocatable from a given area (#3129)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
