@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260724013026",
-    "commit_date": "20260723093928",
+    "lastupdated": "20260727015123",
+    "commit_date": "20260726180455",
     "version": "26.2.x",
-    "last_commit": "[1fd4c72df409601cbc4a443c9da2645a84dc4ab7] [26.2] Fix certain trim quads being invisible on trimmed armor items (#3343)",
+    "last_commit": "[312829b555bb30ad9349f6718d30294e51ef8fde] [26.2] Override RegistryOps#withParent() in ConditionalOps (#3351)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

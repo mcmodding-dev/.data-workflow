@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260722012744",
-    "commit_date": "20260721183906",
+    "lastupdated": "20260727015112",
+    "commit_date": "20260726174612",
     "version": "1.21.10",
-    "last_commit": "[6efa0681b8d20b6235df98c5a9a42dc214c3f462] Add DeltaTracker (partialTick) context to PassDefinitions (#10850)",
+    "last_commit": "[62fa5b26a7513a6287bc43c5b7a1f99af3c2e9fb] Split hotbar rendering into components, allow replacing renderers (#10869)",
     "data": {
         "net.minecraftforge.fml.config": [
             {
