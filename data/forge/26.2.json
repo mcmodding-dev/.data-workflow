@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260722012755",
-    "commit_date": "20260721230510",
+    "lastupdated": "20260728012644",
+    "commit_date": "20260727195742",
     "version": "26.2",
-    "last_commit": "[d697be351fdd27049c6f23b85c142dc079f1a011] Bump Dependencies, Notably ASM for Java 27 support",
+    "last_commit": "[d17cfd0b4bbfd192a9007f02240032f19b9b340d] 26.2 RB 1",
     "data": {
         "net.minecraftforge.fml.config": [
             {

@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260722012752",
-    "commit_date": "20260721183401",
+    "lastupdated": "20260728012642",
+    "commit_date": "20260727203436",
     "version": "26.1.2",
-    "last_commit": "[66d4d888eb9f560a35cd3cc8642f5d8f161fba3d] Add DeltaTracker (partialTick) context to PassDefinitions (#10848)",
+    "last_commit": "[211d3aa692716fd0c056ff1f92c010f495359fab] 26.1.2 RB 1",
     "data": {
         "net.minecraftforge.fml.config": [
             {
