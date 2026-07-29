@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260717012936",
-    "commit_date": "20260716102438",
+    "lastupdated": "20260729012636",
+    "commit_date": "20260728082728",
     "version": "1.21.11",
-    "last_commit": "[b8835e0d1fe18bb3b978b51d91afe506750e8024] Bump version",
+    "last_commit": "[28e4019ae9dc6713d6797da19f60386debb25460] Bump version",
     "data": {
         "fabric-loot-api-v2": [
             {
