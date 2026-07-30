@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260716012715",
-    "commit_date": "20260715201619",
+    "lastupdated": "20260730012007",
+    "commit_date": "20260729061217",
     "version": "1.21.11",
-    "last_commit": "[617e5029b09c283a787e68a01d8b880904136808] Backport to 1.21.11: Use extension interface for TooltipFlag patch, and add shouldDisplayAllInformation method (#3307)",
+    "last_commit": "[bef35d56255d4cb4a3aa58e1f4c27b41c61d3000] Backport to 1.21.11: Fire PlayerContainerEvent.Open for nautilus inventory menu (#3328)\n\nCo-authored-by: sciwhiz12 <21304337+sciwhiz12@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260726014432",
-    "commit_date": "20260725175137",
+    "lastupdated": "20260730012002",
+    "commit_date": "20260729061849",
     "version": "1.21.1",
-    "last_commit": "[127d502d9cf0cb3eb8aa0fe22f2f93b6bdae71c6] [1.21.1] Fix tags in datamap values failing to deserialize (#3345)",
+    "last_commit": "[e030f4966c17f0b2dad76c077e2821c5b352f3b7] Backport to 1.21.1: Override RegistryOps#withParent() in ConditionalOps (#3353)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

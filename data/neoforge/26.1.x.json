@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260726014436",
-    "commit_date": "20260725163508",
+    "lastupdated": "20260730012009",
+    "commit_date": "20260729062208",
     "version": "26.1.x",
-    "last_commit": "[852e0a5522a835c88aa377560a9569da3e91132c] [Backport 26.1]: API for blocks to declare whether they're relocatable from a given area (#3129)",
+    "last_commit": "[26e2cf616d0201e852e7e2cf218757460713a209] Backport to 26.1.x: Fix unsynced datamaps on synced datapack registries getting lost in singleplayer (#3338)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -952,7 +952,7 @@
             {
                 "event": "InputEvent",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L29",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L30",
                 "cancellable": false,
                 "description": "Fired when an input is detected from the user's input devices. See the various subclasses to listen for specific devices and inputs",
                 "side": null,
@@ -962,7 +962,7 @@
             {
                 "event": "InputEvent.MouseButton",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L43",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L44",
                 "cancellable": false,
                 "description": "Fired when a mouse button is pressed/released. Sub-events get fired before and after this happens. These events are fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -986,7 +986,7 @@
             {
                 "event": "InputEvent.MouseButton.Pre",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L103",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L104",
                 "cancellable": true,
                 "description": "Fired when a mouse button is pressed/released, before being processed by vanilla. This event is cancellable. If the event is cancelled, then the mouse event will not be processed by vanilla (e.g. keymappings and screens) This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -996,7 +996,7 @@
             {
                 "event": "InputEvent.MouseButton.Post",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L120",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L121",
                 "cancellable": false,
                 "description": "Fired when a mouse button is pressed/released, after processing. This event is not cancellable. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -1006,7 +1006,7 @@
             {
                 "event": "InputEvent.MouseScrollingEvent",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L140",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L141",
                 "cancellable": true,
                 "description": "Fired when a mouse scroll wheel is used outside of a screen and a player is loaded, before being processed by vanilla. This event is cancellable. If the event is cancelled, then the mouse scroll event will not be processed further. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -1022,6 +1022,18 @@
                     {
                         "name": "scrollDeltaY",
                         "type": "double",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "accumulatedScrollX",
+                        "type": "int",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "accumulatedScrollY",
+                        "type": "int",
                         "kind": "field",
                         "mutable": false
                     },
@@ -1060,7 +1072,7 @@
             {
                 "event": "InputEvent.Key",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L218",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L239",
                 "cancellable": false,
                 "description": "Fired when a keyboard key input occurs, such as pressing, releasing, or repeating a key. This event is not cancellable. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -1084,7 +1096,7 @@
             {
                 "event": "InputEvent.InteractionKeyMappingTriggered",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L300",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/InputEvent.java#L321",
                 "cancellable": true,
                 "description": "Fired when a keymapping that by default involves clicking the mouse buttons is triggered. The key bindings that trigger this event are: Use Item - defaults to left mouse click Pick Block - defaults to middle mouse click Attack - defaults to right mouse click This event is cancellable. If this event is cancelled, then the keymapping's action is not processed further, and the hand will be swung according to shouldSwingHand(). This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
