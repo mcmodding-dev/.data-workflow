@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260729012723",
-    "commit_date": "20260728152942",
+    "lastupdated": "20260731014639",
+    "commit_date": "20260730032548",
     "version": "26.2.x",
-    "last_commit": "[6c044ddf435adb4844a4b87395b0172d3bb389ab] [26.2] Add accumulated integral scroll amounts to InputEvent.MouseScrollingEvent (#3354)",
+    "last_commit": "[7b3475c133e1ca56135400a3d4c44bcd633915e2] Move ContainerScreenEvent.Render.Foreground to ScreenEvent (#3342)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -462,64 +462,6 @@
                         "mutable": true
                     }
                 ]
-            },
-            {
-                "event": "ContainerScreenEvent",
-                "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ContainerScreenEvent.java#L25",
-                "cancellable": false,
-                "description": "Fired for hooking into AbstractContainerScreen events. See the subclasses to listen for specific events. These events are fired on the main Forge event bus, only on the logical client",
-                "side": "client",
-                "deprecated": false,
-                "hasResult": false,
-                "fields": [
-                    {
-                        "name": "containerScreen",
-                        "type": "AbstractContainerScreen<?>",
-                        "kind": "field",
-                        "mutable": false
-                    }
-                ]
-            },
-            {
-                "event": "ContainerScreenEvent.Render",
-                "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ContainerScreenEvent.java#L50",
-                "cancellable": false,
-                "description": "Fired every time an AbstractContainerScreen renders. See the two subclasses to listen for foreground or background rendering. These events are fired on the main Forge event bus, only on the logical client",
-                "side": "client",
-                "deprecated": false,
-                "hasResult": false,
-                "fields": [
-                    {
-                        "name": "guiGraphics",
-                        "type": "GuiGraphicsExtractor",
-                        "kind": "field",
-                        "mutable": false
-                    },
-                    {
-                        "name": "mouseX",
-                        "type": "int",
-                        "kind": "field",
-                        "mutable": false
-                    },
-                    {
-                        "name": "mouseY",
-                        "type": "int",
-                        "kind": "field",
-                        "mutable": false
-                    }
-                ]
-            },
-            {
-                "event": "ContainerScreenEvent.Render.Foreground",
-                "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ContainerScreenEvent.java#L98",
-                "cancellable": false,
-                "description": "Fired after the container screen's foreground layer and elements are drawn, but before rendering the tooltips and the item stack being dragged by the player. This can be used for rendering elements that must be above other screen elements, but below tooltips and the dragged stack, such as slot or item stack specific overlays. This event is not cancellable, and does not have a result. This event is fired on the main Forge event bus, only on the logical client",
-                "side": "client",
-                "deprecated": false,
-                "hasResult": false
             },
             {
                 "event": "CustomizeGuiOverlayEvent",
@@ -2798,9 +2740,9 @@
             {
                 "event": "ScreenEvent.Render",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L148",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L149",
                 "cancellable": false,
-                "description": "Fired when a screen is being drawn. See the two subclasses for listening before and after drawing",
+                "description": "Fired when a screen is being drawn. See the subclasses for the various rendering stages",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,
@@ -2834,7 +2776,7 @@
             {
                 "event": "ScreenEvent.Render.Pre",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L200",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L201",
                 "cancellable": true,
                 "description": "Fired before the screen is drawn. This event is cancellable. If the event is cancelled, the screen will not be drawn. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -2844,7 +2786,7 @@
             {
                 "event": "ScreenEvent.Render.Background",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L218",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L219",
                 "cancellable": false,
                 "description": "Fired after the screen's renderBackground and before its render method. This can be used for rendering elements that must be below tooltips and the dragged stack, such as slot or item stack specific overlays. This event is not cancellable. This event is fired on the game event bus, only on the logical client",
                 "side": "client",
@@ -2852,9 +2794,19 @@
                 "hasResult": false
             },
             {
+                "event": "ScreenEvent.Render.Foreground",
+                "package": "net.neoforged.neoforge.client.event",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L232",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false
+            },
+            {
                 "event": "ScreenEvent.Render.Post",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L233",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L247",
                 "cancellable": false,
                 "description": "Fired after the screen is drawn. This event is not cancellable. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -2878,7 +2830,7 @@
             {
                 "event": "ScreenEvent.RenderInventoryMobEffects",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L252",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L266",
                 "cancellable": true,
                 "description": "Fired ahead of rendering any active mob effects in the EffectsInInventory held by a AbstractContainerScreen. Can be used to select the size of the effects display (full or compact) or even hide or replace vanilla's rendering entirely. This event can also be used to modify the horizontal position of the stack of effects being rendered. This event is cancellable. Cancelling this event will prevent vanilla rendering. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -2908,7 +2860,7 @@
             {
                 "event": "ScreenEvent.MouseButtonPressed",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L350",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L364",
                 "cancellable": false,
                 "description": "Fired when a mouse button is pressed. See the two subclasses for listening before and after the normal handling",
                 "side": null,
@@ -2932,7 +2884,7 @@
             {
                 "event": "ScreenEvent.MouseButtonPressed.Pre",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L390",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L404",
                 "cancellable": true,
                 "description": "Fired before the mouse click is handled by the screen. This event is cancellable. If the event is cancelled, the screen's mouse click handler will be bypassed and the corresponding Post will not be fired. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -2942,7 +2894,7 @@
             {
                 "event": "ScreenEvent.MouseButtonPressed.Post",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L403",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L417",
                 "cancellable": false,
                 "description": "This event is fired after the mouse click is handled, if the corresponding Pre was not cancelled. It is only fired on the physical client",
                 "side": null,
@@ -2966,7 +2918,7 @@
             {
                 "event": "ScreenEvent.MouseButtonReleased",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L474",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L488",
                 "cancellable": false,
                 "description": "Fired when a mouse button is released. See the two subclasses for listening before and after the normal handling",
                 "side": null,
@@ -2984,7 +2936,7 @@
             {
                 "event": "ScreenEvent.MouseButtonReleased.Pre",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L507",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L521",
                 "cancellable": true,
                 "description": "Fired before the mouse release is handled by the screen. This event is cancellable. If the event is cancelled, the screen's mouse release handler will be bypassed and the corresponding Post will not be fired. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -2994,7 +2946,7 @@
             {
                 "event": "ScreenEvent.MouseButtonReleased.Post",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L520",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L534",
                 "cancellable": false,
                 "description": "This event is fired after the mouse release is handled, if the corresponding Pre was not cancelled. It is only fired on the physical client",
                 "side": null,
@@ -3018,7 +2970,7 @@
             {
                 "event": "ScreenEvent.MouseDragged",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L591",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L605",
                 "cancellable": false,
                 "description": "Fired when the mouse was dragged while a button is being held down. See the two subclasses for listening before and after the normal handling",
                 "side": null,
@@ -3048,7 +3000,7 @@
             {
                 "event": "ScreenEvent.MouseDragged.Pre",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L642",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L656",
                 "cancellable": true,
                 "description": "Fired before the mouse drag is handled by the screen. This event is cancellable. If the event is cancelled, the screen's mouse drag handler will be bypassed and the corresponding Post will not be fired. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -3058,7 +3010,7 @@
             {
                 "event": "ScreenEvent.MouseDragged.Post",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L659",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L673",
                 "cancellable": false,
                 "description": "Fired after the mouse drag is handled, if not handled by the screen and the corresponding Pre is not cancelled. This event is not cancellable. If the event is cancelled, the mouse drag will be set as handled. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -3082,7 +3034,7 @@
             {
                 "event": "ScreenEvent.MouseScrolled",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L674",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L688",
                 "cancellable": false,
                 "description": "Fired when the mouse was dragged while a button is being held down. See the two subclasses for listening before and after the normal handling",
                 "side": null,
@@ -3106,7 +3058,7 @@
             {
                 "event": "ScreenEvent.MouseScrolled.Pre",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L709",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L723",
                 "cancellable": true,
                 "description": "Fired before the mouse scroll is handled by the screen. This event is cancellable. If the event is cancelled, the screen's mouse scroll handler will be bypassed and the corresponding Post will not be fired. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -3116,7 +3068,7 @@
             {
                 "event": "ScreenEvent.MouseScrolled.Post",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L726",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L740",
                 "cancellable": false,
                 "description": "Fired after the mouse scroll is handled, if not handled by the screen and the corresponding Pre is not cancelled. This event is not cancellable. If the event is cancelled, the mouse scroll will be set as handled. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -3140,7 +3092,7 @@
             {
                 "event": "ScreenEvent.KeyPressed",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L803",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L817",
                 "cancellable": false,
                 "description": "Fired when a keyboard key is pressed. See the two subclasses for listening before and after the normal handling",
                 "side": null,
@@ -3150,7 +3102,7 @@
             {
                 "event": "ScreenEvent.KeyPressed.Pre",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L819",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L833",
                 "cancellable": true,
                 "description": "Fired before the key press is handled by the screen. This event is cancellable. If the event is cancelled, the screen's key press handler will be bypassed and the corresponding Post will not be fired. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -3160,7 +3112,7 @@
             {
                 "event": "ScreenEvent.KeyPressed.Post",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L836",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L850",
                 "cancellable": true,
                 "description": "Fired after the key press is handled, if not handled by the screen and the corresponding Pre is not cancelled. This event is cancellable. If the event is cancelled, the key press will be set as handled. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -3184,7 +3136,7 @@
             {
                 "event": "ScreenEvent.KeyReleased",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L851",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L865",
                 "cancellable": false,
                 "description": "Fired when a keyboard key is released. See the two subclasses for listening before and after the normal handling",
                 "side": null,
@@ -3194,7 +3146,7 @@
             {
                 "event": "ScreenEvent.KeyReleased.Pre",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L867",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L881",
                 "cancellable": true,
                 "description": "Fired before the key release is handled by the screen. This event is cancellable. If the event is cancelled, the screen's key release handler will be bypassed and the corresponding Post will not be fired. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -3204,7 +3156,7 @@
             {
                 "event": "ScreenEvent.KeyReleased.Post",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L884",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L898",
                 "cancellable": true,
                 "description": "Fired after the key release is handled, if not handled by the screen and the corresponding Pre is not cancelled. This event is cancellable. If the event is cancelled, the key release will be set as handled. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -3228,7 +3180,7 @@
             {
                 "event": "ScreenEvent.CharacterTyped",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L900",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L914",
                 "cancellable": false,
                 "description": "Fired when a keyboard key corresponding to a character is typed. See the two subclasses for listening before and after the normal handling",
                 "side": null,
@@ -3246,7 +3198,7 @@
             {
                 "event": "ScreenEvent.CharacterTyped.Pre",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L930",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L944",
                 "cancellable": true,
                 "description": "Fired before the character input is handled by the screen. This event is cancellable. If the event is cancelled, the screen's character input handler will be bypassed and the corresponding Post will not be fired. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -3256,7 +3208,7 @@
             {
                 "event": "ScreenEvent.CharacterTyped.Post",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L947",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L961",
                 "cancellable": false,
                 "description": "Fired after the character input is handled, if not handled by the screen and the corresponding Pre is not cancelled. This event is cancellable. If the event is cancelled, the character input will be set as handled. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -3280,7 +3232,7 @@
             {
                 "event": "ScreenEvent.Opening",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L967",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L981",
                 "cancellable": true,
                 "description": "Fired before any Screen is opened, to allow changing it or preventing it from being opened. All screen layers on the screen are closed before this event is fired. This event is cancellable. If this event is cancelled, then the Screen shall be prevented from opening and any previous screen will remain open. However, cancelling this event will not prevent the closing of screen layers which happened before this event fired. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -3304,7 +3256,7 @@
             {
                 "event": "ScreenEvent.Closing",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L1014",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L1029",
                 "cancellable": false,
                 "description": "Fired before a Screen is closed. All screen layers on the screen are closed before this event is fired. This event is not cancellable. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -8434,6 +8386,50 @@
                         "mutable": true
                     }
                 ]
+            },
+            {
+                "event": "PlayerSwitchHotbarSlotEvent",
+                "package": "net.neoforged.neoforge.event.entity.player",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerSwitchHotbarSlotEvent.java#L21",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "oldSlotIndex",
+                        "type": "int",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "newSlotIndex",
+                        "type": "int",
+                        "kind": "field",
+                        "mutable": false
+                    }
+                ]
+            },
+            {
+                "event": "PlayerSwitchHotbarSlotEvent.Pre",
+                "package": "net.neoforged.neoforge.event.entity.player",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerSwitchHotbarSlotEvent.java#L45",
+                "cancellable": true,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false
+            },
+            {
+                "event": "PlayerSwitchHotbarSlotEvent.Post",
+                "package": "net.neoforged.neoforge.event.entity.player",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerSwitchHotbarSlotEvent.java#L64",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false
             },
             {
                 "event": "PlayerWakeUpEvent",

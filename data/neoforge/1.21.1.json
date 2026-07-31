@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260730012002",
-    "commit_date": "20260729061849",
+    "lastupdated": "20260731014631",
+    "commit_date": "20260730032720",
     "version": "1.21.1",
-    "last_commit": "[e030f4966c17f0b2dad76c077e2821c5b352f3b7] Backport to 1.21.1: Override RegistryOps#withParent() in ConditionalOps (#3353)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>",
+    "last_commit": "[89f705da9e8e4e10931fe7fb258bfff12e027a5d] Backport to 1.21.1: Fix nullability annotations on ScreenEvent$Opening (#3364)\n\nCo-authored-by: DBotThePony <6339511+DBotThePony@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {
@@ -2946,7 +2946,7 @@
             {
                 "event": "ScreenEvent.Closing",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L1025",
+                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L1026",
                 "cancellable": false,
                 "description": "Fired before a Screen is closed. All screen layers on the screen are closed before this event is fired. This event is not cancellable, and does not have a result. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",

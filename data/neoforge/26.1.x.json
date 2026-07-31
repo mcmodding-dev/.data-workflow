@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260730012009",
-    "commit_date": "20260729062208",
+    "lastupdated": "20260731014637",
+    "commit_date": "20260730031759",
     "version": "26.1.x",
-    "last_commit": "[26e2cf616d0201e852e7e2cf218757460713a209] Backport to 26.1.x: Fix unsynced datamaps on synced datapack registries getting lost in singleplayer (#3338)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>",
+    "last_commit": "[b5797a99d3897152ce32a9a797f4e8f0fd0382fe] Backport to 26.1.x: Fix nullability annotations on ScreenEvent$Opening (#3363)\n\nCo-authored-by: DBotThePony <6339511+DBotThePony@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -3298,7 +3298,7 @@
             {
                 "event": "ScreenEvent.Closing",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L1014",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/ScreenEvent.java#L1015",
                 "cancellable": false,
                 "description": "Fired before a Screen is closed. All screen layers on the screen are closed before this event is fired. This event is not cancellable. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
