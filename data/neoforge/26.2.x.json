@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260731014639",
-    "commit_date": "20260730032548",
+    "lastupdated": "20260801014714",
+    "commit_date": "20260731143715",
     "version": "26.2.x",
-    "last_commit": "[7b3475c133e1ca56135400a3d4c44bcd633915e2] Move ContainerScreenEvent.Render.Foreground to ScreenEvent (#3342)",
+    "last_commit": "[1a37f2922046d24ef9b857e680e646d2e97f7f6a] Hotfix PlayerSwitchHotbarSlotEvent firing logic (#3366)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
