@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260802014359",
-    "commit_date": "20260801135347",
+    "lastupdated": "20260803014607",
+    "commit_date": "20260802143558",
     "version": "26.2.x",
-    "last_commit": "[0a295c567152c115676d4691ae8cb82d1f34fcf0] Override context-aware getPlaceSound in SolidBucketItem (#3373)",
+    "last_commit": "[be14a01d6c03c2ac3f2e1cc6af86417d0c1ecefb] [26.2] Combine PlayerEvent.EntityInteract and PlayerEvent.EntityInteractSpecific into one event (#3339)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -8110,41 +8110,11 @@
                 ]
             },
             {
-                "event": "PlayerInteractEvent.EntityInteractSpecific",
-                "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.java#L60",
-                "cancellable": true,
-                "description": "This event is fired on both sides whenever a player right clicks an entity. \"Interact at\" is an interact where the local vector (which part of the entity you clicked) is known. The state of this event affects whether Vec3, InteractionHand) is called. Let result be the return value of Vec3, InteractionHand), or cancellationResult if the event is cancelled. If we are on the client and result is not SUCCESS, the client will then try EntityInteract",
-                "side": null,
-                "deprecated": false,
-                "hasResult": false,
-                "fields": [
-                    {
-                        "name": "cancellationResult",
-                        "type": "InteractionResult",
-                        "kind": "field",
-                        "mutable": true
-                    },
-                    {
-                        "name": "localPos",
-                        "type": "Vec3",
-                        "kind": "field",
-                        "mutable": false
-                    },
-                    {
-                        "name": "target",
-                        "type": "Entity",
-                        "kind": "field",
-                        "mutable": false
-                    }
-                ]
-            },
-            {
                 "event": "PlayerInteractEvent.EntityInteract",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.java#L118",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.java#L61",
                 "cancellable": true,
-                "description": "This event is fired on both sides when the player right clicks an entity. It is responsible for all general entity interactions. This event is fired only if the result of the above EntityInteractSpecific is not SUCCESS. This event's state affects whether InteractionHand) and Player, LivingEntity, InteractionHand) are called. Let result be SUCCESS if InteractionHand) or Player, LivingEntity, InteractionHand) return true, or cancellationResult if the event is cancelled. If we are on the client and result is not SUCCESS, the client will then try RightClickItem",
+                "description": "",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,
@@ -8158,6 +8128,12 @@
                     {
                         "name": "target",
                         "type": "Entity",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "location",
+                        "type": "Vec3",
                         "kind": "field",
                         "mutable": false
                     }
@@ -8166,7 +8142,7 @@
             {
                 "event": "PlayerInteractEvent.RightClickBlock",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.java#L163",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.java#L115",
                 "cancellable": true,
                 "description": "This event is fired on both sides whenever the player right clicks while targeting a block. This event controls which of onItemUseFirst, Level, BlockPos, Player, InteractionHand, BlockHitResult), and useOn(UseOnContext) will be called. Canceling the event will cause none of the above three to be called. Let result be the first non-pass return value of the above three methods, or pass, if they all pass. Or cancellationResult if the event is cancelled. If result equals PASS, we proceed to RightClickItem. There are various results to this event, see the getters below. Note that handling things differently on the client vs server may cause desynchronizations!",
                 "side": null,
@@ -8202,9 +8178,9 @@
             {
                 "event": "PlayerInteractEvent.RightClickItem",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.java#L249",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.java#L201",
                 "cancellable": true,
-                "description": "This event is fired on both sides before the player triggers Player, InteractionHand). Note that this is NOT fired if the player is targeting a block RightClickBlock or entity EntityInteract EntityInteractSpecific. Let result be the return value of Player, InteractionHand), or cancellationResult if the event is cancelled. If we are on the client and result is not SUCCESS, the client will then continue to other hands",
+                "description": "This event is fired on both sides before the player triggers Player, InteractionHand). Note that this is NOT fired if the player is targeting a block RightClickBlock or entity EntityInteract. Let result be the return value of Player, InteractionHand), or cancellationResult if the event is cancelled. If we are on the client and result is not SUCCESS, the client will then continue to other hands",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,
@@ -8220,7 +8196,7 @@
             {
                 "event": "PlayerInteractEvent.RightClickEmpty",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.java#L279",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.java#L231",
                 "cancellable": false,
                 "description": "This event is fired on the client side when the player right clicks empty space with an empty hand. The server is not aware of when the client right clicks empty space with an empty hand, you will need to tell the server yourself. This event cannot be canceled",
                 "side": null,
@@ -8230,7 +8206,7 @@
             {
                 "event": "PlayerInteractEvent.LeftClickBlock",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.java#L300",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.java#L252",
                 "cancellable": true,
                 "description": "This event is fired when a player left clicks while targeting a block. This event controls which of Level, BlockPos, Player) and/or the item harvesting methods will be called Canceling the event will cause none of the above noted methods to be called. There are various results to this event, see the getters below. This event is fired at various points during left clicking on blocks, at both the start and end on the server, and at the start and while held down on the client. Use getAction() to check which type of action triggered this event. Note that if the event is canceled and the player holds down left mouse, the event will continue to fire. This is due to how vanilla calls the left click handler methods. Also note that creative mode directly breaks the block without running any other logic. Therefore, in creative mode, setUseBlock and setUseItem have no effect",
                 "side": null,
@@ -8260,7 +8236,7 @@
             {
                 "event": "PlayerInteractEvent.LeftClickEmpty",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.java#L384",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerInteractEvent.java#L336",
                 "cancellable": false,
                 "description": "This event is fired on the client side when the player left clicks empty space with any ItemStack. The server is not aware of when the client left clicks empty space, you will need to tell the server yourself. This event cannot be canceled",
                 "side": null,
