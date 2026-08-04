@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260803014607",
-    "commit_date": "20260802143558",
+    "lastupdated": "20260804012234",
+    "commit_date": "20260803124421",
     "version": "26.2.x",
-    "last_commit": "[be14a01d6c03c2ac3f2e1cc6af86417d0c1ecefb] [26.2] Combine PlayerEvent.EntityInteract and PlayerEvent.EntityInteractSpecific into one event (#3339)",
+    "last_commit": "[faf29db7f30c1d6c4368ef0ae84051f0b3a41852] [26.2] Fix OBJ model loader ignoring ModelState (#3355)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
