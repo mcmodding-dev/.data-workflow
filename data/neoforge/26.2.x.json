@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260804012234",
-    "commit_date": "20260803124421",
+    "lastupdated": "20260805012759",
+    "commit_date": "20260804155429",
     "version": "26.2.x",
-    "last_commit": "[faf29db7f30c1d6c4368ef0ae84051f0b3a41852] [26.2] Fix OBJ model loader ignoring ModelState (#3355)",
+    "last_commit": "[524121c5cd5a0ce36013b3a9fe6e09002cfddeb3] Fix `PlayerDestroyItemEvent` returning air when a blocking item (shield) is broken (#3238)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
