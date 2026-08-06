@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260728012638",
-    "commit_date": "20260727215015",
+    "lastupdated": "20260806012441",
+    "commit_date": "20260805181316",
     "version": "1.21.11",
-    "last_commit": "[5e6d92a099aa9ae277f20e60d0b9e460a4b2fa98] Fix ModList screen selection getting out of sync. Closes #10855",
+    "last_commit": "[3b981f47252a0719037c81ed35776f4bd9b30049] 1.21.11 RB 2",
     "data": {
         "net.minecraftforge.fml.config": [
             {
