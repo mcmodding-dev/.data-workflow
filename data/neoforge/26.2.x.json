@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260805012759",
-    "commit_date": "20260804155429",
+    "lastupdated": "20260807020435",
+    "commit_date": "20260806152905",
     "version": "26.2.x",
-    "last_commit": "[524121c5cd5a0ce36013b3a9fe6e09002cfddeb3] Fix `PlayerDestroyItemEvent` returning air when a blocking item (shield) is broken (#3238)",
+    "last_commit": "[7e320ff92e514e2f06d6b2302fc4389e0125c166] [26.2] Re-implement entity fluid interaction patches (#3249)\n\nCo-authored-by: mezz <tehgeek@gmail.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -6010,9 +6010,9 @@
             {
                 "event": "LivingBreatheEvent",
                 "package": "net.neoforged.neoforge.event.entity.living",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/living/LivingBreatheEvent.java#L22",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/living/LivingBreatheEvent.java#L23",
                 "cancellable": false,
-                "description": "LivingBreatheEvent is fired whenever a living entity ticks. This event is fired via int, int). This event is not ICancellableEvent. This event is fired on EVENT_BUS",
+                "description": "LivingBreatheEvent is fired whenever a living entity ticks. This event is fired via ServerLevel, int, int). This event is not ICancellableEvent. This event is fired on EVENT_BUS",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,
@@ -6288,9 +6288,9 @@
             {
                 "event": "LivingDrownEvent",
                 "package": "net.neoforged.neoforge.event.entity.living",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/living/LivingDrownEvent.java#L26",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/entity/living/LivingDrownEvent.java#L27",
                 "cancellable": true,
-                "description": "LivingDrownEvent is fired whenever a living entity can't breathe and its air supply is less than or equal to zero. This event is fired via int, int). This event is ICancellableEvent. Effects of cancellation are noted in setCanceled(boolean). This event does not have a result. This event is fired on EVENT_BUS",
+                "description": "LivingDrownEvent is fired whenever a living entity can't breathe and its air supply is less than or equal to zero. This event is fired via ServerLevel, int, int). This event is ICancellableEvent. Effects of cancellation are noted in setCanceled(boolean). This event does not have a result. This event is fired on EVENT_BUS",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,
