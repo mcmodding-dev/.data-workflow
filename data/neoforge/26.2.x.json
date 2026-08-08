@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260807020435",
-    "commit_date": "20260806152905",
+    "lastupdated": "20260808004729",
+    "commit_date": "20260807215857",
     "version": "26.2.x",
-    "last_commit": "[7e320ff92e514e2f06d6b2302fc4389e0125c166] [26.2] Re-implement entity fluid interaction patches (#3249)\n\nCo-authored-by: mezz <tehgeek@gmail.com>",
+    "last_commit": "[ab32e9690265014df8621901fda3e8b4684b923a] Remove EditBox filter functionality (#3370)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
