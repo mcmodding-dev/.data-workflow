@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260808004729",
-    "commit_date": "20260807215857",
+    "lastupdated": "20260809005048",
+    "commit_date": "20260808065838",
     "version": "26.2.x",
-    "last_commit": "[ab32e9690265014df8621901fda3e8b4684b923a] Remove EditBox filter functionality (#3370)",
+    "last_commit": "[0c417ea17e03a33599cf13e4299b30f09247042d] Add cancellation result to `ItemStackedOnOtherEvent` (#3393)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -4382,10 +4382,10 @@
             {
                 "event": "ItemStackedOnOtherEvent",
                 "package": "net.neoforged.neoforge.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/ItemStackedOnOtherEvent.java#L34",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/ItemStackedOnOtherEvent.java#L35",
                 "cancellable": true,
-                "description": "This event provides the functionality of the pair of functions used for the Bundle, in one event: ItemStack, Slot, ClickAction, Player, SlotAccess) Slot, ClickAction, Player) This event is fired before either of the above are called, when a carried item is clicked on top of another in a GUI slot. This event (and items stacking on others in general) is fired on both sides, but only on the client in the creative menu. Practically, that means that listeners of this event should require the player to be in survival mode if using capabilities that are not synced. This event is cancellable, and does not have a result. If the event is cancelled, the container's logic halts, the carried item and the slot will not be swapped, and handling is assumed to have been done by the mod. This also means that the two vanilla checks described above will not be called",
-                "side": "client",
+                "description": "",
+                "side": null,
                 "deprecated": false,
                 "hasResult": false,
                 "fields": [
@@ -4424,6 +4424,12 @@
                         "type": "SlotAccess",
                         "kind": "field",
                         "mutable": false
+                    },
+                    {
+                        "name": "cancelResult",
+                        "type": "boolean",
+                        "kind": "field",
+                        "mutable": true
                     }
                 ]
             },
