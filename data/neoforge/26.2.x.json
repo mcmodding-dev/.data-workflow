@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260809005048",
-    "commit_date": "20260808065838",
+    "lastupdated": "20260810005331",
+    "commit_date": "20260809144503",
     "version": "26.2.x",
-    "last_commit": "[0c417ea17e03a33599cf13e4299b30f09247042d] Add cancellation result to `ItemStackedOnOtherEvent` (#3393)",
+    "last_commit": "[c13ea5b8000ee5333107f2be6416cc860c3f6d39] 26.2.0 Stable",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
