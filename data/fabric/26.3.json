@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260806012416",
-    "commit_date": "20260805172633",
+    "lastupdated": "20260811005211",
+    "commit_date": "20260810125114",
     "version": "26.3",
-    "last_commit": "[28ac08263bd245fe719fedf973823e7317d9b8f0] Bump version",
+    "last_commit": "[5b64ffdecf35d2d8f401a04f6a27dded85f533e0] Bump version",
     "data": {
         "fabric-command-api-v2": [
             {
@@ -2010,7 +2010,7 @@
                 "interface": "Remove",
                 "variable": "REMOVE",
                 "function": "void onRemove(Screen screen);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L184",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L195",
                 "description": "An event that is called after removed() is called. This event signifies that the screen is now closed. This event is typically used to undo any screen specific state changes or to terminate threads spawned by a screen. This event may precede initialization events BEFORE_INIT but there is no guarantee that event will be called immediately afterwards",
                 "side": "client",
                 "deprecated": false
@@ -2021,7 +2021,7 @@
                 "interface": "BeforeExtract",
                 "variable": "BEFORE_EXTRACT",
                 "function": "void beforeExtract(Screen screen, GuiGraphicsExtractor graphics, int mouseX, int mouseY, float tickProgress);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L189",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L200",
                 "description": "An event that is called before a screen is extracted",
                 "side": "client",
                 "deprecated": false
@@ -2032,8 +2032,19 @@
                 "interface": "AfterBackground",
                 "variable": "AFTER_BACKGROUND",
                 "function": "void afterBackground(Screen screen, GuiGraphicsExtractor graphics, int mouseX, int mouseY, float tickProgress);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L194",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L205",
                 "description": "An event that is called after a screen's background is extracted",
+                "side": "client",
+                "deprecated": false
+            },
+            {
+                "file": "ScreenEvents.java",
+                "package": "net.fabricmc.fabric.api.client.screen.v1",
+                "interface": "AfterForeground",
+                "variable": "AFTER_FOREGROUND",
+                "function": "void afterForeground(Screen screen, GuiGraphicsExtractor graphics, int mouseX, int mouseY, float tickProgress);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L210",
+                "description": "An event that is called after a screen's foreground is extracted",
                 "side": "client",
                 "deprecated": false
             },
@@ -2043,7 +2054,7 @@
                 "interface": "AfterExtract",
                 "variable": "AFTER_EXTRACT",
                 "function": "void afterExtract(Screen screen, GuiGraphicsExtractor graphics, int mouseX, int mouseY, float tickProgress);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L199",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L215",
                 "description": "An event that is called after a screen is extracted",
                 "side": "client",
                 "deprecated": false
@@ -2054,7 +2065,7 @@
                 "interface": "BeforeTick",
                 "variable": "BEFORE_TICK",
                 "function": "void beforeTick(Screen screen);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L204",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L220",
                 "description": "An event that is called before a screen is ticked",
                 "side": "client",
                 "deprecated": false
@@ -2065,7 +2076,7 @@
                 "interface": "AfterTick",
                 "variable": "AFTER_TICK",
                 "function": "void afterTick(Screen screen);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L209",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L225",
                 "description": "An event that is called after a screen is ticked",
                 "side": "client",
                 "deprecated": false

@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260810005331",
-    "commit_date": "20260809144503",
+    "lastupdated": "20260811005237",
+    "commit_date": "20260810132128",
     "version": "26.2.x",
-    "last_commit": "[c13ea5b8000ee5333107f2be6416cc860c3f6d39] 26.2.0 Stable",
+    "last_commit": "[9a147e8c009abdc8baf8ab7e4a60adf4f42b6955] Improve mod list icon and banner rendering (#3397)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
