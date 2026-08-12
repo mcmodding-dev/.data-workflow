@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260728012644",
-    "commit_date": "20260727195742",
+    "lastupdated": "20260812005915",
+    "commit_date": "20260811045647",
     "version": "26.2",
-    "last_commit": "[d17cfd0b4bbfd192a9007f02240032f19b9b340d] 26.2 RB 1",
+    "last_commit": "[f0f144156b5c8d7ccbe358772e9e33b57d849d5e] Fix mod packets being processed after vanilla packets when received in the same tick.",
     "data": {
         "net.minecraftforge.fml.config": [
             {

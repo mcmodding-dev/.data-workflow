@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260802014357",
-    "commit_date": "20260801135508",
+    "lastupdated": "20260812005924",
+    "commit_date": "20260811234245",
     "version": "26.1.x",
-    "last_commit": "[984327062e20e74872e20229ed94fde694e00349] Backport to 26.1.x: Override context-aware getPlaceSound in SolidBucketItem (#3374)\n\nCo-authored-by: sciwhiz12 <21304337+sciwhiz12@users.noreply.github.com>",
+    "last_commit": "[ad038e822a142901aeb33b0eedde0a892588b662] Backport to 26.1.x: Re-implement entity fluid interaction patches (#3303)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -6058,9 +6058,9 @@
             {
                 "event": "LivingBreatheEvent",
                 "package": "net.neoforged.neoforge.event.entity.living",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/entity/living/LivingBreatheEvent.java#L22",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/entity/living/LivingBreatheEvent.java#L23",
                 "cancellable": false,
-                "description": "LivingBreatheEvent is fired whenever a living entity ticks. This event is fired via int, int). This event is not ICancellableEvent. This event is fired on EVENT_BUS",
+                "description": "LivingBreatheEvent is fired whenever a living entity ticks. This event is fired via ServerLevel, int, int). This event is not ICancellableEvent. This event is fired on EVENT_BUS",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,
@@ -6330,9 +6330,9 @@
             {
                 "event": "LivingDrownEvent",
                 "package": "net.neoforged.neoforge.event.entity.living",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/entity/living/LivingDrownEvent.java#L26",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/entity/living/LivingDrownEvent.java#L27",
                 "cancellable": true,
-                "description": "LivingDrownEvent is fired whenever a living entity can't breathe and its air supply is less than or equal to zero. This event is fired via int, int). This event is ICancellableEvent. Effects of cancellation are noted in setCanceled(boolean). This event does not have a result. This event is fired on EVENT_BUS",
+                "description": "LivingDrownEvent is fired whenever a living entity can't breathe and its air supply is less than or equal to zero. This event is fired via ServerLevel, int, int). This event is ICancellableEvent. Effects of cancellation are noted in setCanceled(boolean). This event does not have a result. This event is fired on EVENT_BUS",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,
