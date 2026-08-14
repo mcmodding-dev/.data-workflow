@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260727015112",
-    "commit_date": "20260726174612",
+    "lastupdated": "20260814005943",
+    "commit_date": "20260813204038",
     "version": "1.21.10",
-    "last_commit": "[62fa5b26a7513a6287bc43c5b7a1f99af3c2e9fb] Split hotbar rendering into components, allow replacing renderers (#10869)",
+    "last_commit": "[813b53a9f65afec439854771bffb5ce676cc49e7] Fix mod packets being processed after vanilla packets when received in the same tick.",
     "data": {
         "net.minecraftforge.fml.config": [
             {
