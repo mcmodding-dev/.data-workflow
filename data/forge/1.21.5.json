@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260805012739",
-    "commit_date": "20260804180958",
+    "lastupdated": "20260816003654",
+    "commit_date": "20260815203402",
     "version": "1.21.5",
-    "last_commit": "[d32d853c0b06a002177db1bd0f0f98fbbed4158d] Update equality check for RegistryObject to include RegistryObject#key. (#10866)",
+    "last_commit": "[22168f6a69d7b497fb0d9d6eb63e3ee19b46c033] Fix IForgeBlockStateModel.getModelData not being called correct for `#getParticleIcon` (#10818) (#10875)\n\nCo-authored-by: Martijn van den Brand <MartijnvandenBrand@outlook.com>",
     "data": {
         "net.minecraftforge.fml.config": [
             {

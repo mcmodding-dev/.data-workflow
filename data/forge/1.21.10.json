@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260814005943",
-    "commit_date": "20260813204038",
+    "lastupdated": "20260816003656",
+    "commit_date": "20260815074129",
     "version": "1.21.10",
-    "last_commit": "[813b53a9f65afec439854771bffb5ce676cc49e7] Fix mod packets being processed after vanilla packets when received in the same tick.",
+    "last_commit": "[057fc3a309082551ece3c39141062eb4fb417ea3] Fix IForgeBlockStateModel.getModelData not being called correct for `#getParticleIcon` (#10818) (#10873)\n\nCo-authored-by: Martijn van den Brand <MartijnvandenBrand@outlook.com>",
     "data": {
         "net.minecraftforge.fml.config": [
             {
