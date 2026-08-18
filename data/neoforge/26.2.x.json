@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260811005237",
-    "commit_date": "20260810132128",
+    "lastupdated": "20260818003531",
+    "commit_date": "20260817193352",
     "version": "26.2.x",
-    "last_commit": "[9a147e8c009abdc8baf8ab7e4a60adf4f42b6955] Improve mod list icon and banner rendering (#3397)",
+    "last_commit": "[1a92cdc58b178e506624b1c246e41be557e47435] [26.2] Fix modded non-waterlike fluids not affecting fall distance (#3408)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
