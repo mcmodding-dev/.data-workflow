@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260811005209",
-    "commit_date": "20260810125108",
+    "lastupdated": "20260819003520",
+    "commit_date": "20260818131226",
     "version": "26.2",
-    "last_commit": "[adde6ddb087291497b53067151469a83d8886997] Bump version",
+    "last_commit": "[370a4fce9fd391886ac4cdbfaa10a49dc1dca9f4] Bump version",
     "data": {
         "fabric-command-api-v2": [
             {
@@ -661,6 +661,17 @@
                 "function": ");",
                 "url": "https://github.com/FabricMC/fabric/blob/26.2/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/api/item/v1/EnchantmentEvents.java#L107",
                 "description": "An event that allows an Enchantment to be modified without needing to fully override an enchantment. This should only be used to modify the behavior of external enchantments, where 'external' means either vanilla or from another mod. For instance, a mod might add a bleed effect to Sharpness (and only Sharpness). For your own enchantments, you should simply define them in your mod's data pack. See the Enchantment Definition page on the Minecraft Wiki for more information. Note: If you wish to modify the exclusive set of the enchantment, consider extending the relevant tag through your mod's data pack instead. This is the preferred replacement for MODIFY, providing access to registry information via RegistryInfoLookup",
+                "side": null,
+                "deprecated": false
+            },
+            {
+                "file": "ItemClickBehaviorCallback.java",
+                "package": "net.fabricmc.fabric.api.item.v1",
+                "interface": "ItemClickBehaviorCallback",
+                "variable": "EVENT",
+                "function": "EventResult onItemClickBehavior(ItemStack hoveredItem, Slot hoveredSlot, ItemStack itemHeldByCursor, SlotAccess slotHeldByCursor, ClickAction clickAction, Player player);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.2/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/api/item/v1/ItemClickBehaviorCallback.java#L45",
+                "description": "",
                 "side": null,
                 "deprecated": false
             }
