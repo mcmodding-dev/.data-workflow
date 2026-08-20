@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260819003554",
-    "commit_date": "20260818195848",
+    "lastupdated": "20260820003519",
+    "commit_date": "20260819103612",
     "version": "26.2.x",
-    "last_commit": "[fab5865df538377a9157b7c1e518da1c54554654] New Crowdin updates (#3404)",
+    "last_commit": "[e973c1d1bbd2d2cf013b6df2b3c4c050f2b7d2f0] Fix network compatibility with Fabric during configuration phase (#3417)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

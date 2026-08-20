@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260722012727",
-    "commit_date": "20260721182536",
+    "lastupdated": "20260820003458",
+    "commit_date": "20260819170511",
     "version": "1.20.1",
-    "last_commit": "[22d0c94c82aeab89d2c9f85072108b813ba32e6b] Update equality check for RegistryObject to include RegistryObject#key. (#10854)",
+    "last_commit": "[3c3f496015632ab84560be77a57cc57ac42c49e1] Fix BlockElements not properly saving forge_data when writing to json (#10877)",
     "data": {
         "net.minecraftforge.fml.config": [
             {
