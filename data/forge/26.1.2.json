@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260814005947",
-    "commit_date": "20260813202346",
+    "lastupdated": "20260821003817",
+    "commit_date": "20260820154720",
     "version": "26.1.2",
-    "last_commit": "[e14159c05d20c0e2fdaaa13767fb6a141f2340eb] Fix mod packets being processed after vanilla packets when received in the same tick.",
+    "last_commit": "[b1008b481b66f7d8fb7a986a13a5bf6e3c3d6544] Add TooltipContext and TooltipDisplay to ItemTooltipEvent (#10879)",
     "data": {
         "net.minecraftforge.fml.config": [
             {
@@ -4722,7 +4722,7 @@
             {
                 "event": "ItemTooltipEvent",
                 "package": "net.minecraftforge.event.entity.player",
-                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.1.2/src/main/java/net/minecraftforge/event/entity/player/ItemTooltipEvent.java#L20",
+                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.1.2/src/main/java/net/minecraftforge/event/entity/player/ItemTooltipEvent.java#L23",
                 "cancellable": false,
                 "description": "",
                 "side": null,
@@ -4750,6 +4750,18 @@
                     {
                         "name": "toolTip",
                         "type": "List<Component>",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "context",
+                        "type": "Item.TooltipContext",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "display",
+                        "type": "TooltipDisplay",
                         "kind": "field",
                         "mutable": false
                     }
