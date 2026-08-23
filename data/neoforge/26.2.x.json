@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260820003519",
-    "commit_date": "20260819103612",
+    "lastupdated": "20260823003828",
+    "commit_date": "20260822164539",
     "version": "26.2.x",
-    "last_commit": "[e973c1d1bbd2d2cf013b6df2b3c4c050f2b7d2f0] Fix network compatibility with Fabric during configuration phase (#3417)",
+    "last_commit": "[943a213228872b48f8b795e14ea7b5b81a49d16d] Fix mod description translations & add fallback for old key (#3407)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
