@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260819003544",
-    "commit_date": "20260818193410",
+    "lastupdated": "20260827053528",
+    "commit_date": "20260827010647",
     "version": "26.2",
-    "last_commit": "[4dae9908803850c7c305b73c1c3916f7f4b4a637] Add TooltipContext and TooltipDisplay to ItemTooltipEvent",
+    "last_commit": "[41dfdc8f8b0488acbd339d78adc0b03a9f53e0a0] Fixed getToolModifiedState for AXE_SCRAPE (#10880)",
     "data": {
         "net.minecraftforge.fml.config": [
             {

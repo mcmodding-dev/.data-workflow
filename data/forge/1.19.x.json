@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260429201102",
-    "commit_date": "20251202232214",
+    "lastupdated": "20260827053515",
+    "commit_date": "20260827044719",
     "version": "1.19.x",
-    "last_commit": "[448ba8b5d24b377e7ff15b289c2773c12cdad144] Migrate to Github Actions",
+    "last_commit": "[db2634b31d4ad02c76e362a2c33d92a6257f6a2f] Bump SRGUtils to fix build",
     "data": {
         "net.minecraftforge.fml.config": [
             {
@@ -5250,6 +5250,40 @@
                         "type": "LivingEntity",
                         "kind": "field",
                         "mutable": false
+                    }
+                ]
+            },
+            {
+                "event": "LivingSwapItemsEvent",
+                "package": "net.minecraftforge.event.entity.living",
+                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/1.19.x/src/main/java/net/minecraftforge/event/entity/living/LivingSwapItemsEvent.java#L14",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false
+            },
+            {
+                "event": "LivingSwapItemsEvent.Hands",
+                "package": "net.minecraftforge.event.entity.living",
+                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/1.19.x/src/main/java/net/minecraftforge/event/entity/living/LivingSwapItemsEvent.java#L30",
+                "cancellable": true,
+                "description": "This event is fired when a living entity is about to swap the items in their main and offhand. This event is executed in handlePlayerAction This event is cancellable, and does not have a result",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "toMainHand",
+                        "type": "ItemStack",
+                        "kind": "field",
+                        "mutable": true
+                    },
+                    {
+                        "name": "toOffHand",
+                        "type": "ItemStack",
+                        "kind": "field",
+                        "mutable": true
                     }
                 ]
             },
