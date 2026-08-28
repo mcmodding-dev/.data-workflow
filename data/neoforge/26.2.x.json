@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260827053540",
-    "commit_date": "20260826141301",
+    "lastupdated": "20260828074401",
+    "commit_date": "20260828072534",
     "version": "26.2.x",
-    "last_commit": "[c39674bdad3e1804171bf676bc82f491bdf8c215] [26.2] Fix fluid interactions not using fluid-dependent isPushedByFluid() method (#3426)",
+    "last_commit": "[1237a1d8e2da173d5285531ce7e3547260d2884d] Fix ModDisplayInfo javadoc typo: authors to description (#3427)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260826003639",
-    "commit_date": "20260825143614",
+    "lastupdated": "20260828074319",
+    "commit_date": "20260827082640",
     "version": "26.3",
-    "last_commit": "[47f74c98eedb64cdb568a12595dbdb1eaf741906] 26.3-snapshot-10",
+    "last_commit": "[4731dd4d30844172c3fb3163e8fb2bdd98dd0238] Bump version",
     "data": {
         "fabric-command-api-v2": [
             {
@@ -599,6 +599,17 @@
                 "deprecated": false
             },
             {
+                "file": "BlockTransformerEvents.java",
+                "package": "net.fabricmc.fabric.api.item.v1",
+                "interface": "Modify",
+                "variable": "MODIFY",
+                "function": ");",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/api/item/v1/BlockTransformerEvents.java#L52",
+                "description": "An event that allows a BlockTransformer to be modified without needing to fully override it. This should only be used to modify the behavior of external block transformers, where 'external' means either vanilla, from a data pack, or from another mod. For instance, a mod might add a transformer for one of its tools, and you may wish to add a new transformation to the transformer for your own blocks. For your own block transformers, you should simply define them in your mod's data pack. See the Block Transformer Definition page on the Minecraft Wiki for more information, and consider generating the JSON files with data generation. Note: If you wish to add transformations to axes, shovels, or hoes, consider using methods in BlockTransformerHelper or extending the relevant block tags through your mod's data pack instead",
+                "side": null,
+                "deprecated": false
+            },
+            {
                 "file": "DefaultItemComponentEvents.java",
                 "package": "net.fabricmc.fabric.api.item.v1",
                 "interface": "ModifyContext",
@@ -662,7 +673,7 @@
                 "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/api/item/v1/EnchantmentEvents.java#L107",
                 "description": "An event that allows an Enchantment to be modified without needing to fully override an enchantment. This should only be used to modify the behavior of external enchantments, where 'external' means either vanilla or from another mod. For instance, a mod might add a bleed effect to Sharpness (and only Sharpness). For your own enchantments, you should simply define them in your mod's data pack. See the Enchantment Definition page on the Minecraft Wiki for more information. Note: If you wish to modify the exclusive set of the enchantment, consider extending the relevant tag through your mod's data pack instead. This is the preferred replacement for MODIFY, providing access to registry information via RegistryInfoLookup",
                 "side": null,
-                "deprecated": false
+                "deprecated": true
             },
             {
                 "file": "ItemClickBehaviorCallback.java",
