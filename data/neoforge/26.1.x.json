@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260827053538",
-    "commit_date": "20260826180217",
+    "lastupdated": "20260829044032",
+    "commit_date": "20260828075020",
     "version": "26.1.x",
-    "last_commit": "[c1762ce94b5077ae5f1ebf716f905dc72a98659d] Backport to 26.1.x: Add ScreenEvent.Render.Foreground (#3411)\n\nCo-authored-by: vfyjxf <42764413+vfyjxf@users.noreply.github.com>\nCo-authored-by: mezz <tehgeek@gmail.com>",
+    "last_commit": "[f4751c7405e0b1f34c56f188c0a5a89a690914e8] Backport to 26.1.x: Fix fluid interactions not using fluid-dependent isPushedByFluid() method (#3432)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

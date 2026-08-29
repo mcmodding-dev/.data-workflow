@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260802014352",
-    "commit_date": "20260801135836",
+    "lastupdated": "20260829044027",
+    "commit_date": "20260828075831",
     "version": "1.21.1",
-    "last_commit": "[d8d64b44bb46323d44520fe27feda0a9a08c1c82] Backport to 1.21.1: Override context-aware getPlaceSound in SolidBucketItem (#3375)\n\nCo-authored-by: sciwhiz12 <21304337+sciwhiz12@users.noreply.github.com>",
+    "last_commit": "[6d9e718cd4c3c9ed0cfb2cd80480d777ea5feed6] Update FancyModLoader to v4.0.44 (1.21.1) (#3436)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

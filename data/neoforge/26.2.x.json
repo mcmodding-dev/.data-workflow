@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260828074401",
-    "commit_date": "20260828072534",
+    "lastupdated": "20260829044033",
+    "commit_date": "20260829004739",
     "version": "26.2.x",
-    "last_commit": "[1237a1d8e2da173d5285531ce7e3547260d2884d] Fix ModDisplayInfo javadoc typo: authors to description (#3427)",
+    "last_commit": "[ae23038da432de4596177f68ac4a28e47012e013] Stop spawning boat at 0,0,0 when boat is dispensed (#3434)\n\nCo-authored-by: mezz <tehgeek@gmail.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
