@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260829044033",
-    "commit_date": "20260829004739",
+    "lastupdated": "20260830021330",
+    "commit_date": "20260829061423",
     "version": "26.2.x",
-    "last_commit": "[ae23038da432de4596177f68ac4a28e47012e013] Stop spawning boat at 0,0,0 when boat is dispensed (#3434)\n\nCo-authored-by: mezz <tehgeek@gmail.com>",
+    "last_commit": "[a8fceaf78f17626a1c457720d5e6e160af0eac03] Mark POI type and game event registries as synced (#3438)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
