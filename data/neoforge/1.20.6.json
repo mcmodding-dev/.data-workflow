@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260429201155",
-    "commit_date": "20251022152324",
+    "lastupdated": "20260831020919",
+    "commit_date": "20260830205109",
     "version": "1.20.6",
-    "last_commit": "[1d508ab534b547780f20feae1a9e1dd422b31841] Backport to 1.20.6: Add Deprecation Message for `IdMappingEvent` (#2716)\n\nCo-authored-by: ChampionAsh5357 <19510740+ChampionAsh5357@users.noreply.github.com>\nCo-authored-by: ChampionAsh5357 <ash@ashwork.net>",
+    "last_commit": "[bf18eb3bce8a37e3a5e5c0cd8bacd9db557b87ae] Backport to 1.20.6: Increase memory used for forked compiler (#3445)\n\nCo-authored-by: sciwhiz12 <21304337+sciwhiz12@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {
