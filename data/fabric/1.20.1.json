@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260717012925",
-    "commit_date": "20260716095312",
+    "lastupdated": "20260902014904",
+    "commit_date": "20260901095400",
     "version": "1.20.1",
-    "last_commit": "[43c8677721b24b77688d8ad7e2fda2680842ba7f] Update Mod Publish Plugin to accommodate curseforge API breakages.",
+    "last_commit": "[ba3f3da8411fb8dd27fa5eb3551d9ff775bb2c0a] Bump version",
     "data": {
         "fabric-command-api-v1": [
             {
