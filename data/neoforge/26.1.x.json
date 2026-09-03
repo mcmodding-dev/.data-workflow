@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260829044032",
-    "commit_date": "20260828075020",
+    "lastupdated": "20260903015611",
+    "commit_date": "20260902135342",
     "version": "26.1.x",
-    "last_commit": "[f4751c7405e0b1f34c56f188c0a5a89a690914e8] Backport to 26.1.x: Fix fluid interactions not using fluid-dependent isPushedByFluid() method (#3432)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>",
+    "last_commit": "[014f488521a544c1c685213ec52a56a4f0e8efc9] Update IClientMobEffectExtensions methods and deprecate old methods (#3202)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
