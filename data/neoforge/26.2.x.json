@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260831020932",
-    "commit_date": "20260830125456",
+    "lastupdated": "20260905015145",
+    "commit_date": "20260904045553",
     "version": "26.2.x",
-    "last_commit": "[7b9ea6b1103c33e99784da75f3e8e3c808ec0727] Clarify javadocs of `SelectMusicEvent` (#3271)",
+    "last_commit": "[2a50be878853768b37e253962849eb061ac68337] Throw exception in dev if duplicate stacks are added to creative mode tab (#3456)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

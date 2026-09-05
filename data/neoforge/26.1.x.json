@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260904015044",
-    "commit_date": "20260903140812",
+    "lastupdated": "20260905015143",
+    "commit_date": "20260904080652",
     "version": "26.1.x",
-    "last_commit": "[22baf07da5a80fa4bf83c7dfbb7ef0e16d97332b] [26.1] Add conditional model loader (#3448)",
+    "last_commit": "[f001bad6926ac151585b0e29132beff1120f6aef] Backport to 26.1.x: Throw exception in dev if duplicate stacks are added to creative mode tab (#3457)\n\nCo-authored-by: sciwhiz12 <21304337+sciwhiz12@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
