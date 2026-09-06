@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260905015145",
-    "commit_date": "20260904045553",
+    "lastupdated": "20260906014548",
+    "commit_date": "20260905191724",
     "version": "26.2.x",
-    "last_commit": "[2a50be878853768b37e253962849eb061ac68337] Throw exception in dev if duplicate stacks are added to creative mode tab (#3456)",
+    "last_commit": "[accacb5a4d4cc1b11d553be18b469a3371ca1fe7] Log and ignore errors from parsing pack overlays (#3454)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

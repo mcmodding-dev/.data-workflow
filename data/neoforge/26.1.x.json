@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260905015143",
-    "commit_date": "20260904080652",
+    "lastupdated": "20260906014546",
+    "commit_date": "20260905161058",
     "version": "26.1.x",
-    "last_commit": "[f001bad6926ac151585b0e29132beff1120f6aef] Backport to 26.1.x: Throw exception in dev if duplicate stacks are added to creative mode tab (#3457)\n\nCo-authored-by: sciwhiz12 <21304337+sciwhiz12@users.noreply.github.com>",
+    "last_commit": "[35137ec1e45e3262cdac68724f07bf1d7b6feec7] Backport to 26.1.x: Stop spawning boat at 0,0,0 when boat is dispensed (#3435)\n\nCo-authored-by: sciwhiz12 <arnoldnunag12@gmail.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
