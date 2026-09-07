@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260829044027",
-    "commit_date": "20260828075831",
+    "lastupdated": "20260907014304",
+    "commit_date": "20260906164026",
     "version": "1.21.1",
-    "last_commit": "[6d9e718cd4c3c9ed0cfb2cd80480d777ea5feed6] Update FancyModLoader to v4.0.44 (1.21.1) (#3436)",
+    "last_commit": "[327897179428559b4dd7fd29ef3f9f83aa40452f] Backport to 1.21.1: Fix SoundDefinition's SOUND type using the wrong jsonString (#3461)\n\nCo-authored-by: cylian914 <73445993+cylian914@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

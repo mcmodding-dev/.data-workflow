@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260906014546",
-    "commit_date": "20260905161058",
+    "lastupdated": "20260907014309",
+    "commit_date": "20260906162824",
     "version": "26.1.x",
-    "last_commit": "[35137ec1e45e3262cdac68724f07bf1d7b6feec7] Backport to 26.1.x: Stop spawning boat at 0,0,0 when boat is dispensed (#3435)\n\nCo-authored-by: sciwhiz12 <arnoldnunag12@gmail.com>",
+    "last_commit": "[dfe28573ea51212ebdc813783f3de80e8a8aa06c] Backport to 26.1.x: Fix SoundDefinition's SOUND type using the wrong jsonString (#3462)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
