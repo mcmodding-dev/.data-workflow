@@ -1,9 +1,22 @@
 {
-    "lastupdated": "20260905015106",
-    "commit_date": "20260904143413",
+    "lastupdated": "20260908015347",
+    "commit_date": "20260907173444",
     "version": "26.3",
-    "last_commit": "[895f85e25d4b850cc0f2f31b7f8f284b50b5c1fc] 26.3-pre-2",
+    "last_commit": "[7984737f42c8e8a36f4f880014e952a76cbefcdb] Bump version",
     "data": {
+        "fabric-block-api-v1": [
+            {
+                "file": "FluidFlowEvents.java",
+                "package": "net.fabricmc.fabric.api.block.v1",
+                "interface": "Allow",
+                "variable": "ALLOW",
+                "function": "boolean allowFlow(FluidState fluid, LevelAccessor level, BlockPos fluidPosition);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-block-api-v1/src/main/java/net/fabricmc/fabric/api/block/v1/FluidFlowEvents.java#L30",
+                "description": "Holds events related to flowing fluids",
+                "side": null,
+                "deprecated": false
+            }
+        ],
         "fabric-command-api-v2": [
             {
                 "file": "ClientCommandRegistrationCallback.java",

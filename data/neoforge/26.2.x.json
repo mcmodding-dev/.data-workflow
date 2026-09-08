@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260907014310",
-    "commit_date": "20260906054337",
+    "lastupdated": "20260908015412",
+    "commit_date": "20260907174651",
     "version": "26.2.x",
-    "last_commit": "[bfd52252a875bb16cfc39e5d0c1441e1a69e534e] Ignore next key release for new selection by KeyBindsList (#3446)",
+    "last_commit": "[8a8911635f94a2102d0223b3594b69aa136849fb] Fix keypresses being ignored by KeyBindsList after selecting using mouse (#3466)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

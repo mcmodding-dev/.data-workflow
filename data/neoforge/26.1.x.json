@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260907014309",
-    "commit_date": "20260906162824",
+    "lastupdated": "20260908015411",
+    "commit_date": "20260907120616",
     "version": "26.1.x",
-    "last_commit": "[dfe28573ea51212ebdc813783f3de80e8a8aa06c] Backport to 26.1.x: Fix SoundDefinition's SOUND type using the wrong jsonString (#3462)",
+    "last_commit": "[eae4a397b21c4367aec3d0caa3bbeb450cef9517] New Crowdin updates (#3449)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
