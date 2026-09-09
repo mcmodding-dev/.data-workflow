@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260908015412",
-    "commit_date": "20260907174651",
+    "lastupdated": "20260909015959",
+    "commit_date": "20260908050042",
     "version": "26.2.x",
-    "last_commit": "[8a8911635f94a2102d0223b3594b69aa136849fb] Fix keypresses being ignored by KeyBindsList after selecting using mouse (#3466)",
+    "last_commit": "[a4a9dd2ee9e9e05a48eb6269a5148702b9a95d28] Deprecate Font#enableTextTextureLinearFiltering for removal (#3468)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
