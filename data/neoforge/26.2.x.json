@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260909015959",
-    "commit_date": "20260908050042",
+    "lastupdated": "20260910015652",
+    "commit_date": "20260909170607",
     "version": "26.2.x",
-    "last_commit": "[a4a9dd2ee9e9e05a48eb6269a5148702b9a95d28] Deprecate Font#enableTextTextureLinearFiltering for removal (#3468)",
+    "last_commit": "[55b56f02829eaae752029cbce0b6ad8098defbe9] [26.2] Fix full flower pot lookup using ID instead of flower block (#3476)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
