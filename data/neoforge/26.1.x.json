@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260910015650",
-    "commit_date": "20260910013533",
+    "lastupdated": "20260911015518",
+    "commit_date": "20260910210012",
     "version": "26.1.x",
-    "last_commit": "[fc0ad122ac7d4fc0c9acf44a22995bf03defce4d] Backport to 26.1.x: Fix modded non-waterlike fluids not affecting fall distance (#3423)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>",
+    "last_commit": "[0b08e2ceb6a5cabb69a32588f6348d56ac6bdee0] Backport to 26.1.x: Implement SnapshotJournal#hasOngoingTransaction and tests for it (#3478)\n\nCo-authored-by: DBotThePony <6339511+DBotThePony@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

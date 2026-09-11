@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260910015652",
-    "commit_date": "20260909170607",
+    "lastupdated": "20260911015520",
+    "commit_date": "20260910211616",
     "version": "26.2.x",
-    "last_commit": "[55b56f02829eaae752029cbce0b6ad8098defbe9] [26.2] Fix full flower pot lookup using ID instead of flower block (#3476)",
+    "last_commit": "[ee60ae12781fc201a55f9b7807d09bc51b2058ab] Deprecate CreativeModeTab's tabsImage for removal (#3467)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
