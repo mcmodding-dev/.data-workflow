@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260911015520",
-    "commit_date": "20260910211616",
+    "lastupdated": "20260912020025",
+    "commit_date": "20260911135508",
     "version": "26.2.x",
-    "last_commit": "[ee60ae12781fc201a55f9b7807d09bc51b2058ab] Deprecate CreativeModeTab's tabsImage for removal (#3467)",
+    "last_commit": "[c7de8d9989e9ca844f84288b8378d34ec2609ecd] [26.2] Fix registry-based conditions in datapack registry and reloadable registry loading (#3451)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -4816,7 +4816,7 @@
                 "package": "net.neoforged.neoforge.event",
                 "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/RegisterGameTestsEvent.java#L30",
                 "cancellable": false,
-                "description": "Game tests are registered on client or server startup. It is run in List, List, java.util.concurrent.Executor) if isGametestEnabled returns true. Fired on the Mod bus, see IModBusEvent",
+                "description": "Game tests are registered on client or server startup. It is run in List, List, List, java.util.concurrent.Executor) if isGametestEnabled returns true. Fired on the Mod bus, see IModBusEvent",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,
