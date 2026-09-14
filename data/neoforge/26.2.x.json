@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260912020025",
-    "commit_date": "20260911135508",
+    "lastupdated": "20260914021129",
+    "commit_date": "20260913051052",
     "version": "26.2.x",
-    "last_commit": "[c7de8d9989e9ca844f84288b8378d34ec2609ecd] [26.2] Fix registry-based conditions in datapack registry and reloadable registry loading (#3451)",
+    "last_commit": "[1ad7d233fc1ff8c3cb5c8b159f1701aabf4b7b96] [26.2] Add neoforge API for the ManagementApi (#2647)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -9711,6 +9711,24 @@
             }
         ],
         "net.neoforged.neoforge.event.server": [
+            {
+                "event": "RegisterRpcSchemaEvent",
+                "package": "net.neoforged.neoforge.event.server",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.2.x/src/main/java/net/neoforged/neoforge/event/server/RegisterRpcSchemaEvent.java#L28",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "components",
+                        "type": "Map<String, SchemaComponent<?>>",
+                        "kind": "field",
+                        "mutable": false
+                    }
+                ]
+            },
             {
                 "event": "ServerAboutToStartEvent",
                 "package": "net.neoforged.neoforge.event.server",
