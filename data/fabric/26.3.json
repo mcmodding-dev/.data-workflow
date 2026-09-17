@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260915021730",
-    "commit_date": "20260914195442",
+    "lastupdated": "20260917021439",
+    "commit_date": "20260916100748",
     "version": "26.3",
-    "last_commit": "[859f946c67fd441e81a46425238d7684fe4ffa29] Bump version",
+    "last_commit": "[ea97b339cf9e6ef3c115c6755b26addb5d01c40b] Bump version",
     "data": {
         "fabric-block-api-v1": [
             {

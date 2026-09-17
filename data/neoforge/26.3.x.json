@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260916021125",
-    "commit_date": "20260915214308",
+    "lastupdated": "20260917021520",
+    "commit_date": "20260916184934",
     "version": "26.3.x",
-    "last_commit": "[6279ba834410502b52a01bc6e9b97dd85d504762] [26.3] Switch ViewportEvent#partialTick from double to float (#3491)",
+    "last_commit": "[a449ecc8969f8efa4820ab8367d93f4c0f5dbaff] Expose `PlayerRenderState` in `RenderHandEvent` (#3499)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -2162,7 +2162,7 @@
             {
                 "event": "RenderHandEvent",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/client/java/net/neoforged/neoforge/client/event/RenderHandEvent.java#L29",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/client/java/net/neoforged/neoforge/client/event/RenderHandEvent.java#L30",
                 "cancellable": true,
                 "description": "Fired before a hand is rendered in the first person view. This event is cancellable, and does not have a result. If this event is cancelled, then the hand will not be rendered. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",
@@ -2188,8 +2188,8 @@
                         "mutable": false
                     },
                     {
-                        "name": "packedLight",
-                        "type": "int",
+                        "name": "playerState",
+                        "type": "PlayerRenderState",
                         "kind": "field",
                         "mutable": false
                     },
@@ -4112,7 +4112,7 @@
             {
                 "event": "AddServerReloadListenersEvent",
                 "package": "net.neoforged.neoforge.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/AddServerReloadListenersEvent.java#L27",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/AddServerReloadListenersEvent.java#L24",
                 "cancellable": false,
                 "description": "The main ResourceManager is recreated on each reload, just after ReloadableServerResources's creation. The event is fired on each reload and lets modders add their own ReloadListeners, for server-side resources. The event is fired on the EVENT_BUS",
                 "side": null,
@@ -4122,12 +4122,6 @@
                     {
                         "name": "serverResources",
                         "type": "ReloadableServerResources",
-                        "kind": "field",
-                        "mutable": false
-                    },
-                    {
-                        "name": "registryAccess",
-                        "type": "RegistryAccess",
                         "kind": "field",
                         "mutable": false
                     },
@@ -4620,7 +4614,7 @@
             {
                 "event": "ModifyDefaultComponentsEvent",
                 "package": "net.neoforged.neoforge.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/ModifyDefaultComponentsEvent.java#L44",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/ModifyDefaultComponentsEvent.java#L43",
                 "cancellable": false,
                 "description": "",
                 "side": null,
@@ -5030,7 +5024,7 @@
             {
                 "event": "TagsUpdatedEvent",
                 "package": "net.neoforged.neoforge.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/TagsUpdatedEvent.java#L19",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/TagsUpdatedEvent.java#L18",
                 "cancellable": false,
                 "description": "",
                 "side": null,
@@ -5048,7 +5042,7 @@
             {
                 "event": "TagsUpdatedEvent.ServerDataLoad",
                 "package": "net.neoforged.neoforge.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/TagsUpdatedEvent.java#L54",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/TagsUpdatedEvent.java#L37",
                 "cancellable": false,
                 "description": "",
                 "side": "server",
@@ -5066,7 +5060,7 @@
             {
                 "event": "TagsUpdatedEvent.ClientPacketReceived",
                 "package": "net.neoforged.neoforge.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/TagsUpdatedEvent.java#L70",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/TagsUpdatedEvent.java#L53",
                 "cancellable": false,
                 "description": "",
                 "side": "client",
