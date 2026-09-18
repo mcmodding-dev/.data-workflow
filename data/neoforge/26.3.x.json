@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260917021520",
-    "commit_date": "20260916184934",
+    "lastupdated": "20260918020128",
+    "commit_date": "20260917211005",
     "version": "26.3.x",
-    "last_commit": "[a449ecc8969f8efa4820ab8367d93f4c0f5dbaff] Expose `PlayerRenderState` in `RenderHandEvent` (#3499)",
+    "last_commit": "[cfbebfd4b324ce2986a2521408053ec815d37775] Fix OBJ models failing to bake due to glint render type fields not being set (#3502)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

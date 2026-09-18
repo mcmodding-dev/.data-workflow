@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260917021439",
-    "commit_date": "20260916100748",
+    "lastupdated": "20260918020056",
+    "commit_date": "20260917080306",
     "version": "26.3",
-    "last_commit": "[ea97b339cf9e6ef3c115c6755b26addb5d01c40b] Bump version",
+    "last_commit": "[7531c909bc6b73ae59a477b4643979d9e97b2370] Bump version",
     "data": {
         "fabric-block-api-v1": [
             {
@@ -2024,7 +2024,7 @@
                 "variable": "BEFORE_INIT",
                 "function": "void beforeInit(Minecraft client, Screen screen, int scaledWidth, int scaledHeight);",
                 "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L72",
-                "description": "An event that is called before int) a screen is initialized to its default state. It should be noted some methods in Screens such as a screen's font may not be initialized yet, and as such their use is discouraged. Typically this event is used to register screen events such as listening to when child elements are added to the screen. ------ Uncomment when child add/remove event is added for elements--> You can still use AFTER_INIT to register events such as keyboard and mouse events. The ScreenExtensions provided by the info parameter may be used to register tick, render events, keyboard, mouse, additional and removal of child elements (including buttons). For example, to register an event on container-like screens after render, the following code could be used:\n```\n{@code\n&#64;Override\npublic void onInitializeClient() {\n\tScreenEvents.BEFORE_INIT.register((client, screen, scaledWidth, scaledHeight) -> {\n\t\tif (screen instanceof AbstractContainerScreen) {\n\t\t\tScreenEvents.afterRender(screen).register((screen1, graphics, mouseX, mouseY, tickProgress) -> {\n\t\t\t\t...\n\t\t\t});\n\t\t}\n\t});\n}\n}\n```\nThis event indicates a screen has been resized, and therefore is being re-initialized. This event can also indicate that the previous screen has been changed",
+                "description": "An event that is called before int) a screen is initialized to its default state. It should be noted some methods in Screens such as a screen's font may not be initialized yet, and as such their use is discouraged. Typically this event is used to register screen events such as listening to when child elements are added to the screen. ------ Uncomment when child add/remove event is added for elements--> You can still use AFTER_INIT to register events such as keyboard and mouse events. The ScreenExtensions provided by the info parameter may be used to register tick, render events, keyboard, mouse, additional and removal of child elements (including buttons). For example, to register an event on container-like screens after render, the following code could be used:\n```\n{@code\n&#64;Override\npublic void onInitializeClient() {\n\tScreenEvents.BEFORE_INIT.register((client, screen, scaledWidth, scaledHeight) -> {\n\t\tif (screen instanceof AbstractContainerScreen) {\n\t\t\tScreenEvents.afterExtract(screen).register((screen1, graphics, mouseX, mouseY, tickProgress) -> {\n\t\t\t\t...\n\t\t\t});\n\t\t}\n\t});\n}\n}\n```\nThis event indicates a screen has been resized, and therefore is being re-initialized. This event can also indicate that the previous screen has been changed",
                 "side": "client",
                 "deprecated": false
             },
