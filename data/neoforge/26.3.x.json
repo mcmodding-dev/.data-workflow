@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260918020128",
-    "commit_date": "20260917211005",
+    "lastupdated": "20260919020612",
+    "commit_date": "20260918154006",
     "version": "26.3.x",
-    "last_commit": "[cfbebfd4b324ce2986a2521408053ec815d37775] Fix OBJ models failing to bake due to glint render type fields not being set (#3502)",
+    "last_commit": "[12e8412a2532b5caa43358ece8ac9f15b76a1884] Fix misapplied bucket patch causing buckets to delete fluid loggable blocks when logging with a fluid other than water (#3503)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

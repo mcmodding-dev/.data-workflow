@@ -1,9 +1,44 @@
 {
-    "lastupdated": "20260918020056",
-    "commit_date": "20260917080306",
+    "lastupdated": "20260919020530",
+    "commit_date": "20260918172122",
     "version": "26.3",
-    "last_commit": "[7531c909bc6b73ae59a477b4643979d9e97b2370] Bump version",
+    "last_commit": "[84831249df47bd923b48186d169bc0d8501b547b] Bump version",
     "data": {
+        "fabric-advancement-api-v1": [
+            {
+                "file": "AdvancementEvents.java",
+                "package": "net.fabricmc.fabric.api.advancement.v1",
+                "interface": "Replace",
+                "variable": "REPLACE",
+                "function": "Advancement replaceAdvancement(Identifier id, Advancement original, AdvancementSource source, HolderLookup.Provider registries);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-advancement-api-v1/src/main/java/net/fabricmc/fabric/api/advancement/v1/AdvancementEvents.java#L45",
+                "description": "This event can be used to replace advancements. A listener returns the new advancement, or null to leave the advancement as it is. The first listener that returns a new advancement wins: the remaining listeners are not called. If an advancement is replaced, its source will be marked as REPLACED",
+                "side": null,
+                "deprecated": false
+            },
+            {
+                "file": "AdvancementEvents.java",
+                "package": "net.fabricmc.fabric.api.advancement.v1",
+                "interface": "Modify",
+                "variable": "MODIFY",
+                "function": "void modifyAdvancement(Identifier id, Advancement.Builder builder, AdvancementSource source, HolderLookup.Provider registries);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-advancement-api-v1/src/main/java/net/fabricmc/fabric/api/advancement/v1/AdvancementEvents.java#L84",
+                "description": "This event can be used to modify advancements. The main use case is to add new criteria to vanilla or mod advancements (e.g. modded lava bucket to \"Hot Stuff\"). You can also modify advancements that are created by REPLACE. They have the advancement source REPLACED. Example: adding a stone pickaxe criterion to tactical fishing WARNING: When adding a new criterion, you must explicitly update the advancement requirements if you want the new criterion to trigger the advancement on its own. By default, the builder retains the original requirements. {@snippet : // Name of the advancement to modify Identifier advancementId = Identifier.withDefaultNamespace(\"husbandry/tactical_fishing\"); AdvancementEvents.MODIFY.register((id, builder, source, registries) -> { if (id.equals(advancementId)) { // Add your criterion builder.addCriterion(\"stone_pickaxe\", InventoryChangeTrigger.TriggerInstance.hasItems(Items.STONE_PICKAXE)); // Require the new criterion in addition to whatever was already required, // without loosening the existing requirements builder.requireCriterion(\"stone_pickaxe\"); } }); }",
+                "side": null,
+                "deprecated": false
+            },
+            {
+                "file": "AdvancementEvents.java",
+                "package": "net.fabricmc.fabric.api.advancement.v1",
+                "interface": "Loaded",
+                "variable": "ALL_LOADED",
+                "function": "void onAdvancementsLoaded(ResourceManager resourceManager, Registry<Advancement> advancementRegistry, HolderLookup.Provider registries);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-advancement-api-v1/src/main/java/net/fabricmc/fabric/api/advancement/v1/AdvancementEvents.java#L93",
+                "description": "This event can be used for post-processing after all advancements have been loaded, replaced, and modified",
+                "side": null,
+                "deprecated": false
+            }
+        ],
         "fabric-block-api-v1": [
             {
                 "file": "FluidFlowEvents.java",
