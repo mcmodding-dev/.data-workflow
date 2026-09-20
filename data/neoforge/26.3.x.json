@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260919020612",
-    "commit_date": "20260918154006",
+    "lastupdated": "20260920021056",
+    "commit_date": "20260919194805",
     "version": "26.3.x",
-    "last_commit": "[12e8412a2532b5caa43358ece8ac9f15b76a1884] Fix misapplied bucket patch causing buckets to delete fluid loggable blocks when logging with a fluid other than water (#3503)",
+    "last_commit": "[a323cff632de78d54fe82e48ee5e3fa1a82bf4e3] [26.3] Expose more tag providers and provide datagen handful of helpers (#3492)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
