@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260920021048",
-    "commit_date": "20260919210252",
+    "lastupdated": "20260923021645",
+    "commit_date": "20260922231656",
     "version": "26.3",
-    "last_commit": "[839fd66e5248fe137ab9ea54373b6bf9442b2662] Fix players dropping items. Closes #10885",
+    "last_commit": "[5afe3c050c2e4fc1e2df7b4e5cb07de4d9c2f1a0] Migrate to fully declarative ForgeGradlePlugin and local build-logic",
     "data": {
         "net.minecraftforge.fml.config": [
             {
