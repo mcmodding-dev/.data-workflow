@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260923021653",
-    "commit_date": "20260922184731",
+    "lastupdated": "20260924020305",
+    "commit_date": "20260923183029",
     "version": "26.3.x",
-    "last_commit": "[9430784d0783ffb6578477268d38b3999121d597] Add game test for bucket fluidlogging (#3508)",
+    "last_commit": "[d8ba1e13bf5feb5b76f2001ef2db9f131ddc0af6] Apply formatting to Markdown comments",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -4614,7 +4614,7 @@
             {
                 "event": "ModifyDefaultComponentsEvent",
                 "package": "net.neoforged.neoforge.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/ModifyDefaultComponentsEvent.java#L43",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/ModifyDefaultComponentsEvent.java#L46",
                 "cancellable": false,
                 "description": "",
                 "side": null,
