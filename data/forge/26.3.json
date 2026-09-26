@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260923021645",
-    "commit_date": "20260922231656",
+    "lastupdated": "20260926022510",
+    "commit_date": "20260926021342",
     "version": "26.3",
-    "last_commit": "[5afe3c050c2e4fc1e2df7b4e5cb07de4d9c2f1a0] Migrate to fully declarative ForgeGradlePlugin and local build-logic",
+    "last_commit": "[26eeb1cc704c429ea0bfedf3d2026e898ba1d442] Fix typo in BlockScanUtils patch, fixes placing cushions. Closes #10889",
     "data": {
         "net.minecraftforge.fml.config": [
             {

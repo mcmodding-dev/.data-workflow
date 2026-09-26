@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260924020305",
-    "commit_date": "20260923183029",
+    "lastupdated": "20260926022523",
+    "commit_date": "20260925185932",
     "version": "26.3.x",
-    "last_commit": "[d8ba1e13bf5feb5b76f2001ef2db9f131ddc0af6] Apply formatting to Markdown comments",
+    "last_commit": "[b27834c06a6c9a50d62c3033606e0f63a6c0b593] [26.3] Fix AnyHolderSet and NotHolderSet failing to retrieve lookups during deserialization (#3535)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -10010,34 +10010,6 @@
         ],
         "net.neoforged.neoforge.registries": [
             {
-                "event": "DataPackRegistryEvent",
-                "package": "net.neoforged.neoforge.registries",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/registries/DataPackRegistryEvent.java#L23",
-                "cancellable": false,
-                "description": "",
-                "side": null,
-                "deprecated": false,
-                "hasResult": false
-            },
-            {
-                "event": "DataPackRegistryEvent.NewRegistry",
-                "package": "net.neoforged.neoforge.registries",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/registries/DataPackRegistryEvent.java#L36",
-                "cancellable": false,
-                "description": "Fired when datapack registries can be registered. Datapack registries are registries which can only load entries through JSON files from datapacks. Data JSONs will be loaded from data//modid/registryname/, where modid is the namespace of the registry key. This event is not cancellable, and does not have a result. This event is fired on the mod-specific event bus, on both logical sides",
-                "side": null,
-                "deprecated": false,
-                "hasResult": false,
-                "fields": [
-                    {
-                        "name": "registryDataList",
-                        "type": "List<DataPackRegistryData<?>>",
-                        "kind": "field",
-                        "mutable": false
-                    }
-                ]
-            },
-            {
                 "event": "ModifyRegistriesEvent",
                 "package": "net.neoforged.neoforge.registries",
                 "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/registries/ModifyRegistriesEvent.java#L31",
@@ -10048,11 +10020,35 @@
                 "hasResult": false
             },
             {
+                "event": "NewDatapackRegistryEvent",
+                "package": "net.neoforged.neoforge.registries",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/registries/NewDatapackRegistryEvent.java#L30",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "worldRegistries",
+                        "type": "List<RegistryData<?>>",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "reloadableRegistries",
+                        "type": "List<RegistryData<?>>",
+                        "kind": "field",
+                        "mutable": false
+                    }
+                ]
+            },
+            {
                 "event": "NewRegistryEvent",
                 "package": "net.neoforged.neoforge.registries",
                 "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/registries/NewRegistryEvent.java#L31",
                 "cancellable": false,
-                "description": "Fired when new registries can be constructed and registered. This event is fired to register builtin registries, like the registries in BuiltInRegistries. Builtin registries are registries which can only load entries registered in code. For registering datapack registries that only load entries through JSON, see NewRegistry. This event is fired on the mod-specific event bus, on both logical sides",
+                "description": "Fired when new registries can be constructed and registered. This event is fired to register builtin registries, like the registries in BuiltInRegistries. Builtin registries are registries which can only load entries registered in code. For registering datapack registries that only load entries through JSON, see NewDatapackRegistryEvent. This event is fired on the mod-specific event bus, on both logical sides",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,
