@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260926022523",
-    "commit_date": "20260925185932",
+    "lastupdated": "20260927022107",
+    "commit_date": "20260926165304",
     "version": "26.3.x",
-    "last_commit": "[b27834c06a6c9a50d62c3033606e0f63a6c0b593] [26.3] Fix AnyHolderSet and NotHolderSet failing to retrieve lookups during deserialization (#3535)",
+    "last_commit": "[461b0e2746e73bcdf85a4af0709a7d8ccfa02380] Address two TODOs that were waiting until breaking changes would be accepted",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

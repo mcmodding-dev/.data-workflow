@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260911015518",
-    "commit_date": "20260910210012",
+    "lastupdated": "20260927022105",
+    "commit_date": "20260926181050",
     "version": "26.1.x",
-    "last_commit": "[0b08e2ceb6a5cabb69a32588f6348d56ac6bdee0] Backport to 26.1.x: Implement SnapshotJournal#hasOngoingTransaction and tests for it (#3478)\n\nCo-authored-by: DBotThePony <6339511+DBotThePony@users.noreply.github.com>",
+    "last_commit": "[82b8140405a2bba8d0c4535967c6c568011a39f9] Backport to 26.1.x: Mark POI type and game event registries as synced (#3439)\n\nCo-authored-by: sciwhiz12 <21304337+sciwhiz12@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -4868,7 +4868,7 @@
                 "package": "net.neoforged.neoforge.event",
                 "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/RegisterGameTestsEvent.java#L30",
                 "cancellable": false,
-                "description": "Game tests are registered on client or server startup. It is run in List, List, java.util.concurrent.Executor) if isGametestEnabled returns true. Fired on the Mod bus, see IModBusEvent",
+                "description": "Game tests are registered on client or server startup. It is run in List, List, List, java.util.concurrent.Executor) if isGametestEnabled returns true. Fired on the Mod bus, see IModBusEvent",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,

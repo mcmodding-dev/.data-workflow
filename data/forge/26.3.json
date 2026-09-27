@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260926022510",
-    "commit_date": "20260926021342",
+    "lastupdated": "20260927022057",
+    "commit_date": "20260927013239",
     "version": "26.3",
-    "last_commit": "[26eeb1cc704c429ea0bfedf3d2026e898ba1d442] Fix typo in BlockScanUtils patch, fixes placing cushions. Closes #10889",
+    "last_commit": "[49aac2c4967b998934252685ce57b78499deb4c1] Fix entities not being pushed by fluids",
     "data": {
         "net.minecraftforge.fml.config": [
             {

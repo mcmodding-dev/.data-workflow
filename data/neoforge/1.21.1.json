@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260919020604",
-    "commit_date": "20260918161216",
+    "lastupdated": "20260927022101",
+    "commit_date": "20260926184617",
     "version": "1.21.1",
-    "last_commit": "[6c69a6559056e7781980c3f4fc0ae40147f1bdf8] Deprecate bad level getSeaLevel method in favor of chunk generator's (#3507)",
+    "last_commit": "[61045a61fca76876999281676a9e794688390a9e] Backport to 1.21.1: Make StackCopySlot take a slot idx and have ItemHandlerCopySlot provide it (#3469)\n\nCo-authored-by: Shadows_of_Fire <3682588+Shadows-of-Fire@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {
