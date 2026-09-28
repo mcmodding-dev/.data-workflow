@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260927022107",
-    "commit_date": "20260926165304",
+    "lastupdated": "20260928022501",
+    "commit_date": "20260927191236",
     "version": "26.3.x",
-    "last_commit": "[461b0e2746e73bcdf85a4af0709a7d8ccfa02380] Address two TODOs that were waiting until breaking changes would be accepted",
+    "last_commit": "[001c29447adac89b00fff8c32d084d4ee7a63026] [26.3] ELS renderer abstraction (#3493)\n\nCo-authored-by: mezz <tehgeek@gmail.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

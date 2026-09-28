@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260927022105",
-    "commit_date": "20260926181050",
+    "lastupdated": "20260928022459",
+    "commit_date": "20260927171121",
     "version": "26.1.x",
-    "last_commit": "[82b8140405a2bba8d0c4535967c6c568011a39f9] Backport to 26.1.x: Mark POI type and game event registries as synced (#3439)\n\nCo-authored-by: sciwhiz12 <21304337+sciwhiz12@users.noreply.github.com>",
+    "last_commit": "[c0bf100a95cc1d8801257849551626edb960170d] Backport to 26.1.x: Increment Y offset when BossEventProgress is canceled (#3414) (#3550)\n\nCo-authored-by: sciwhiz12 <21304337+sciwhiz12@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -554,10 +554,10 @@
             {
                 "event": "CustomizeGuiOverlayEvent.BossEventProgress",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/CustomizeGuiOverlayEvent.java#L57",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/CustomizeGuiOverlayEvent.java#L55",
                 "cancellable": true,
-                "description": "Fired before a boss health bar is rendered to the screen. This event is cancellable, and does not have a result. Cancelling this event will prevent the given bar from rendering. This event is fired on the main Forge event bus, only on the logical client",
-                "side": "client",
+                "description": "",
+                "side": null,
                 "deprecated": false,
                 "hasResult": false,
                 "fields": [
@@ -590,7 +590,7 @@
             {
                 "event": "CustomizeGuiOverlayEvent.Chat",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/CustomizeGuiOverlayEvent.java#L118",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/client/java/net/neoforged/neoforge/client/event/CustomizeGuiOverlayEvent.java#L107",
                 "cancellable": false,
                 "description": "Fired before the chat messages overlay is rendered to the screen. This event is not cancellable, and does not have a result. This event is fired on the main Forge event bus, only on the logical client",
                 "side": "client",

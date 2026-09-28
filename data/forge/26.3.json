@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260927022057",
-    "commit_date": "20260927013239",
+    "lastupdated": "20260928022452",
+    "commit_date": "20260927161733",
     "version": "26.3",
-    "last_commit": "[49aac2c4967b998934252685ce57b78499deb4c1] Fix entities not being pushed by fluids",
+    "last_commit": "[851a57e8080408b8cb368d923ee4cb5d315f8cd5] Match ForgeRenderTypes OIT pipelines to vanilla, fixes #10890 (#10891)",
     "data": {
         "net.minecraftforge.fml.config": [
             {
