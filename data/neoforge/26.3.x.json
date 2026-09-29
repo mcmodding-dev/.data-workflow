@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260928022501",
-    "commit_date": "20260927191236",
+    "lastupdated": "20260929030855",
+    "commit_date": "20260928211905",
     "version": "26.3.x",
-    "last_commit": "[001c29447adac89b00fff8c32d084d4ee7a63026] [26.3] ELS renderer abstraction (#3493)\n\nCo-authored-by: mezz <tehgeek@gmail.com>",
+    "last_commit": "[9426e39c02933650f37a4ffc93a044a35abe90ec] Fix DirectoryPalettedPermutations not taking into account vanilla path changes (#3560)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -7332,9 +7332,9 @@
             {
                 "event": "CanPlayerSleepEvent",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/CanPlayerSleepEvent.java#L24",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/CanPlayerSleepEvent.java#L34",
                 "cancellable": false,
-                "description": "Called from startSleepInBed(BlockPos) when a player attempts to sleep. This event receives the result of vanilla checking if the sleep attempt is valid, and permits overriding it. This event is only fired on the logical server",
+                "description": "",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,

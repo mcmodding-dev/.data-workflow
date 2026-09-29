@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260928022452",
-    "commit_date": "20260927161733",
+    "lastupdated": "20260929030844",
+    "commit_date": "20260928185503",
     "version": "26.3",
-    "last_commit": "[851a57e8080408b8cb368d923ee4cb5d315f8cd5] Match ForgeRenderTypes OIT pipelines to vanilla, fixes #10890 (#10891)",
+    "last_commit": "[932c6e96491fdb4bcffb74364dd904922cf613dc] Fix checkLicense tasks with projectInfo task",
     "data": {
         "net.minecraftforge.fml.config": [
             {
