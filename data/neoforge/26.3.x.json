@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260929030855",
-    "commit_date": "20260928211905",
+    "lastupdated": "20260930025047",
+    "commit_date": "20260929234938",
     "version": "26.3.x",
-    "last_commit": "[9426e39c02933650f37a4ffc93a044a35abe90ec] Fix DirectoryPalettedPermutations not taking into account vanilla path changes (#3560)",
+    "last_commit": "[601801fc55337c76e46b54b6b66fea08f9d80b0c] Rename COMMON and SERVER config types to LOCAL and SYNCED (#3384)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -3950,7 +3950,7 @@
             {
                 "event": "GatherDataEvent",
                 "package": "net.neoforged.neoforge.data.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L56",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L28",
                 "cancellable": false,
                 "description": "",
                 "side": null,
@@ -3976,29 +3976,17 @@
                         "mutable": false
                     },
                     {
-                        "name": "worldRegistriesWithModdedEntries",
-                        "type": "CompletableFuture<HolderLookup.Provider>",
+                        "name": "defaultPackGenerator",
+                        "type": "PackGenerator",
                         "kind": "field",
-                        "mutable": true
-                    },
-                    {
-                        "name": "reloadableRegistries",
-                        "type": "CompletableFuture<HolderLookup.Provider>",
-                        "kind": "field",
-                        "mutable": true
-                    },
-                    {
-                        "name": "reloadableRegistriesWithModdedEntries",
-                        "type": "CompletableFuture<HolderLookup.Provider>",
-                        "kind": "field",
-                        "mutable": true
+                        "mutable": false
                     }
                 ]
             },
             {
                 "event": "GatherDataEvent.Server",
                 "package": "net.neoforged.neoforge.data.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L119",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L101",
                 "cancellable": false,
                 "description": "",
                 "side": "server",
@@ -4008,7 +3996,7 @@
             {
                 "event": "GatherDataEvent.Client",
                 "package": "net.neoforged.neoforge.data.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L125",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L107",
                 "cancellable": false,
                 "description": "",
                 "side": "client",

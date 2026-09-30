@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260923021624",
-    "commit_date": "20260922200956",
+    "lastupdated": "20260930025019",
+    "commit_date": "20260929141706",
     "version": "26.4",
-    "last_commit": "[33bc4d2bf2739a3982cc138fd8e779cfb40067fa] Port to 26.4-snapshot-1 (#5612)\n\n* Port to 26.4-snapshot-1\n\n* Fix testmods\n\n* Checkstyle\n\n* Fix missing injected interface\n\n* Version bump",
+    "last_commit": "[d432c99ecf17fac526f015c3c00a38ca9a03d496] 26.4-snapshot-2",
     "data": {
         "fabric-advancement-api-v1": [
             {
