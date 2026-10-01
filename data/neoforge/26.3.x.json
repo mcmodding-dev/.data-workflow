@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260930025047",
-    "commit_date": "20260929234938",
+    "lastupdated": "20261001025724",
+    "commit_date": "20260930172708",
     "version": "26.3.x",
-    "last_commit": "[601801fc55337c76e46b54b6b66fea08f9d80b0c] Rename COMMON and SERVER config types to LOCAL and SYNCED (#3384)",
+    "last_commit": "[a418fc890d34e7f648e98f97206f5e3eb81adcc2] Remove no longer needed spawn egg item patch (#3568)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
