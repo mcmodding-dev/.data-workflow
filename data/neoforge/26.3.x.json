@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261001025724",
-    "commit_date": "20260930172708",
+    "lastupdated": "20261002025938",
+    "commit_date": "20261001181128",
     "version": "26.3.x",
-    "last_commit": "[a418fc890d34e7f648e98f97206f5e3eb81adcc2] Remove no longer needed spawn egg item patch (#3568)",
+    "last_commit": "[47c5ff91d743ccbe554727681885e92fd381c7d6] [26.3] Add support for --input option in client datagen entrypoint (#3565)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
