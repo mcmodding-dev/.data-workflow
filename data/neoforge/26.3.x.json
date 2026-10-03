@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261002025938",
-    "commit_date": "20261001181128",
+    "lastupdated": "20261003024527",
+    "commit_date": "20261002202216",
     "version": "26.3.x",
-    "last_commit": "[47c5ff91d743ccbe554727681885e92fd381c7d6] [26.3] Add support for --input option in client datagen entrypoint (#3565)",
+    "last_commit": "[15155d662f740b5d1dfecc1b5973fcfb9e02aa88] [26.3] Expose atlas preparations and MaterialBaker in ModelEvent.ModifyBakingResult for dynamic model baking (#3573)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -1140,8 +1140,20 @@
                         "mutable": false
                     },
                     {
-                        "name": "textureGetter",
-                        "type": "Function<Identifier, TextureAtlasSprite>",
+                        "name": "materialBaker",
+                        "type": "MaterialBaker",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "blockAtlas",
+                        "type": "SpriteLoader.Preparations",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "itemAtlas",
+                        "type": "SpriteLoader.Preparations",
                         "kind": "field",
                         "mutable": false
                     },
@@ -1156,7 +1168,7 @@
             {
                 "event": "ModelEvent.BakingCompleted",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/client/java/net/neoforged/neoforge/client/event/ModelEvent.java#L93",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/client/java/net/neoforged/neoforge/client/event/ModelEvent.java#L108",
                 "cancellable": false,
                 "description": "Fired when the ModelManager is notified of the resource manager reloading. Called after the model registry is set up and cached in the BlockModelShaper. The model registry given by this event is unmodifiable. To modify the model registry, use ModifyBakingResult instead. This event is not cancellable. This event is fired on the mod-specific event bus, only on the logical client",
                 "side": "client",
@@ -1186,7 +1198,7 @@
             {
                 "event": "ModelEvent.RegisterStandalone",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/client/java/net/neoforged/neoforge/client/event/ModelEvent.java#L140",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/client/java/net/neoforged/neoforge/client/event/ModelEvent.java#L155",
                 "cancellable": false,
                 "description": "Fired when the ModelDiscovery is notified of dependency discovery of its top models. Allows developers to register standalone models to be loaded, along with their dependencies. This event is not cancellable. This event is fired on the mod-specific event bus, only on the logical client",
                 "side": "client",
@@ -1204,7 +1216,7 @@
             {
                 "event": "ModelEvent.RegisterLoaders",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/client/java/net/neoforged/neoforge/client/event/ModelEvent.java#L163",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/client/java/net/neoforged/neoforge/client/event/ModelEvent.java#L178",
                 "cancellable": false,
                 "description": "Allows users to register their own unbaked model loaders for use in block/item models. This event is not cancellable. This event is fired on the mod-specific event bus, only on the logical client",
                 "side": "client",
@@ -4848,6 +4860,24 @@
                     {
                         "name": "testsRegistry",
                         "type": "WritableRegistry<GameTestInstance>",
+                        "kind": "field",
+                        "mutable": false
+                    }
+                ]
+            },
+            {
+                "event": "RegisterRecipePropertiesEvent",
+                "package": "net.neoforged.neoforge.event",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/RegisterRecipePropertiesEvent.java#L21",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "propertySets",
+                        "type": "Map<ResourceKey<RecipePropertySet>, RecipeManager.IngredientExtractor>",
                         "kind": "field",
                         "mutable": false
                     }

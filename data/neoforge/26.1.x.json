@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260928022459",
-    "commit_date": "20260927171121",
+    "lastupdated": "20261003024525",
+    "commit_date": "20261002191231",
     "version": "26.1.x",
-    "last_commit": "[c0bf100a95cc1d8801257849551626edb960170d] Backport to 26.1.x: Increment Y offset when BossEventProgress is canceled (#3414) (#3550)\n\nCo-authored-by: sciwhiz12 <21304337+sciwhiz12@users.noreply.github.com>",
+    "last_commit": "[4e35ebee793f48c39f5ddf20121eece88dc2aa0e] [26.1.x] Update MixinExtras to v0.5.5 (#3578)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

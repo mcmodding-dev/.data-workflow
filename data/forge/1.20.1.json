@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260820003458",
-    "commit_date": "20260819170511",
+    "lastupdated": "20261003024505",
+    "commit_date": "20261002201902",
     "version": "1.20.1",
-    "last_commit": "[3c3f496015632ab84560be77a57cc57ac42c49e1] Fix BlockElements not properly saving forge_data when writing to json (#10877)",
+    "last_commit": "[0ec923d7307eb15bef70d6916329642b733a21ed] Group the status ping channels by mod once instead of filtering per mod (#10893)",
     "data": {
         "net.minecraftforge.fml.config": [
             {
