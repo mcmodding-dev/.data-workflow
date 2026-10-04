@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261003024527",
-    "commit_date": "20261002202216",
+    "lastupdated": "20261004031652",
+    "commit_date": "20261003213615",
     "version": "26.3.x",
-    "last_commit": "[15155d662f740b5d1dfecc1b5973fcfb9e02aa88] [26.3] Expose atlas preparations and MaterialBaker in ModelEvent.ModifyBakingResult for dynamic model baking (#3573)",
+    "last_commit": "[6dc5dfc8e3016c40e67a6d56c7e38bade0402b21] Allow passing the holder for a given block transform rather than assuming it is the same as the stack's context (#3575)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

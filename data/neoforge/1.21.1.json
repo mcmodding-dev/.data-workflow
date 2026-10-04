@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260927022101",
-    "commit_date": "20260926184617",
+    "lastupdated": "20261004031646",
+    "commit_date": "20261003173433",
     "version": "1.21.1",
-    "last_commit": "[61045a61fca76876999281676a9e794688390a9e] Backport to 1.21.1: Make StackCopySlot take a slot idx and have ItemHandlerCopySlot provide it (#3469)\n\nCo-authored-by: Shadows_of_Fire <3682588+Shadows-of-Fire@users.noreply.github.com>",
+    "last_commit": "[ea9161e47b7ebe6ffc34ce1b6cda0e17c6ee62ec] [1.21.1] Update dependency FancyModLoader to v4.0.45 (#3581)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {
