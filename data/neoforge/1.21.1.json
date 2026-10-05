@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261004031646",
-    "commit_date": "20261003173433",
+    "lastupdated": "20261005025206",
+    "commit_date": "20261004062619",
     "version": "1.21.1",
-    "last_commit": "[ea9161e47b7ebe6ffc34ce1b6cda0e17c6ee62ec] [1.21.1] Update dependency FancyModLoader to v4.0.45 (#3581)",
+    "last_commit": "[003d690a82bd770bfa7be0c59a69dfa09faf9d5b] [1.21.1] Update dependency MixinExtras to v0.5.5 (#3579)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {
