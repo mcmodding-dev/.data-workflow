@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261005025206",
-    "commit_date": "20261004062619",
+    "lastupdated": "20261006034251",
+    "commit_date": "20261005232359",
     "version": "1.21.1",
-    "last_commit": "[003d690a82bd770bfa7be0c59a69dfa09faf9d5b] [1.21.1] Update dependency MixinExtras to v0.5.5 (#3579)",
+    "last_commit": "[a2d6402a3c1eec093aef7e7d10ac5145906c199e] Remove shader color set call in NeoForgeLoadingOverlay (#3590)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

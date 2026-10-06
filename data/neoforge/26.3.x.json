@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261004031652",
-    "commit_date": "20261003213615",
+    "lastupdated": "20261006034300",
+    "commit_date": "20261005085424",
     "version": "26.3.x",
-    "last_commit": "[6dc5dfc8e3016c40e67a6d56c7e38bade0402b21] Allow passing the holder for a given block transform rather than assuming it is the same as the stack's context (#3575)",
+    "last_commit": "[6edb30da05fe980f03cb205f390f3c7a719faeb6] Mark Neo-added Object#equals(Object) with nullable parameter (#3589)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -5152,7 +5152,7 @@
             {
                 "event": "PotionBrewEvent",
                 "package": "net.neoforged.neoforge.event.brewing",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/brewing/PotionBrewEvent.java#L14",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/brewing/PotionBrewEvent.java#L21",
                 "cancellable": false,
                 "description": "",
                 "side": null,
@@ -5163,7 +5163,7 @@
                         "name": "stacks",
                         "type": "NonNullList<ItemStack>",
                         "kind": "field",
-                        "mutable": true
+                        "mutable": false
                     }
                 ]
             },
@@ -5172,7 +5172,7 @@
                 "package": "net.neoforged.neoforge.event.brewing",
                 "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/brewing/PotionBrewEvent.java#L51",
                 "cancellable": true,
-                "description": "PotionBrewEvent.Pre is fired before vanilla brewing takes place. All changes made to the event's array will be made to the TileEntity if the event is canceled. The event is fired during the BlockPos, NonNullList) method invocation. stacks contains the itemstack array from the TileEntityBrewer holding all items in Brewer. This event is ICancellableEvent. If the event is not canceled, the vanilla brewing will take place instead of modded brewing. This event is fired on the EVENT_BUS. If this event is canceled, and items have been modified, PotionBrewEvent.Post will automatically be fired",
+                "description": "",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false
@@ -5180,9 +5180,9 @@
             {
                 "event": "PotionBrewEvent.Post",
                 "package": "net.neoforged.neoforge.event.brewing",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/brewing/PotionBrewEvent.java#L68",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/brewing/PotionBrewEvent.java#L74",
                 "cancellable": false,
-                "description": "PotionBrewEvent.Post is fired when a potion is brewed in the brewing stand. The event is fired during the BlockPos, NonNullList) method invocation. stacks contains the itemstack array from the TileEntityBrewer holding all items in Brewer. This event is not ICancellableEvent. This event is fired on the EVENT_BUS",
+                "description": "",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false
