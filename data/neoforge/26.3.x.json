@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261006034300",
-    "commit_date": "20261005085424",
+    "lastupdated": "20261007031007",
+    "commit_date": "20261006161032",
     "version": "26.3.x",
-    "last_commit": "[6edb30da05fe980f03cb205f390f3c7a719faeb6] Mark Neo-added Object#equals(Object) with nullable parameter (#3589)",
+    "last_commit": "[89f2d71c9ff34aee172c1523653805e64a2fd4ef] Make HolderExtension#key explicitly throw, and add keyOrNull method in place of old getKey functionality (#3594)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

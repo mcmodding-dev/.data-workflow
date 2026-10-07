@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260930025019",
-    "commit_date": "20260929141706",
+    "lastupdated": "20261007030925",
+    "commit_date": "20261006154004",
     "version": "26.4",
-    "last_commit": "[d432c99ecf17fac526f015c3c00a38ca9a03d496] 26.4-snapshot-2",
+    "last_commit": "[6478c2b4a141347194d762f1a34e576623e9a819] Port to 26.4 snapshot 3 (#5635)\n\n* 26.3 snapshot 3\n\n* bump versions\n\n* generate resources\n\n* checkstyle\n\n* Update SoundsTypeBuilderTest.java\n\n* Update template.classtweaker\n\n* Update template.classtweaker\n\n* Fix build\n\n* Fix formatting\n\n* Bump version\n\n---------\n\nCo-authored-by: modmuss50 <modmuss50@gmail.com>",
     "data": {
         "fabric-advancement-api-v1": [
             {

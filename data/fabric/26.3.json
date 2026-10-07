@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260920021031",
-    "commit_date": "20260919215645",
+    "lastupdated": "20261007030922",
+    "commit_date": "20261006082200",
     "version": "26.3",
-    "last_commit": "[ba0d6c0dc4b4bb6ea12164c33168669515dff49c] Various DX fixes (#5604)",
+    "last_commit": "[0b50ffdc5705b6b3c1d826706347b9adad051dc7] Bump version",
     "data": {
         "fabric-advancement-api-v1": [
             {
