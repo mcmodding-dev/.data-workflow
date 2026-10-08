@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261007031007",
-    "commit_date": "20261006161032",
+    "lastupdated": "20261008032550",
+    "commit_date": "20261007201535",
     "version": "26.3.x",
-    "last_commit": "[89f2d71c9ff34aee172c1523653805e64a2fd4ef] Make HolderExtension#key explicitly throw, and add keyOrNull method in place of old getKey functionality (#3594)",
+    "last_commit": "[f5d81d310b1226d744ae746e76671bea82127500] Add null case inside the switch using the version check status (#3606)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
