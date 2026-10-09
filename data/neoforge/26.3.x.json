@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261008032550",
-    "commit_date": "20261007201535",
+    "lastupdated": "20261009033118",
+    "commit_date": "20261008162150",
     "version": "26.3.x",
-    "last_commit": "[f5d81d310b1226d744ae746e76671bea82127500] Add null case inside the switch using the version check status (#3606)",
+    "last_commit": "[3c1fcb4f4efd6ed0cf60375e8094902426ddc973] [26.3] Gather Datapack Registry Entries Before Data Providers (#3587)\n\nCo-authored-by: sciwhiz12 <sciwhiz12@gmail.com>\nCo-authored-by: Dennis C <11262040+XFactHD@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -3962,7 +3962,7 @@
             {
                 "event": "GatherDataEvent",
                 "package": "net.neoforged.neoforge.data.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L28",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L34",
                 "cancellable": false,
                 "description": "",
                 "side": null,
@@ -3992,13 +3992,19 @@
                         "type": "PackGenerator",
                         "kind": "field",
                         "mutable": false
+                    },
+                    {
+                        "name": "registries",
+                        "type": "DatapackRegistrySets<CompletableFuture<HolderLookup.Provider>>",
+                        "kind": "field",
+                        "mutable": false
                     }
                 ]
             },
             {
                 "event": "GatherDataEvent.Server",
                 "package": "net.neoforged.neoforge.data.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L101",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L99",
                 "cancellable": false,
                 "description": "",
                 "side": "server",
@@ -4008,12 +4014,36 @@
             {
                 "event": "GatherDataEvent.Client",
                 "package": "net.neoforged.neoforge.data.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L107",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L106",
                 "cancellable": false,
                 "description": "",
                 "side": "client",
                 "deprecated": false,
                 "hasResult": false
+            },
+            {
+                "event": "GatherDataRegistryEntriesEvent",
+                "package": "net.neoforged.neoforge.data.event",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataRegistryEntriesEvent.java#L43",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "modContainer",
+                        "type": "ModContainer",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "delegate",
+                        "type": "GlobalDatapackRegistryGatherer",
+                        "kind": "field",
+                        "mutable": false
+                    }
+                ]
             }
         ],
         "net.neoforged.neoforge.entity": [
