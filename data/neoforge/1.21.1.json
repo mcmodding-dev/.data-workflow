@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261006034251",
-    "commit_date": "20261005232359",
+    "lastupdated": "20261010031101",
+    "commit_date": "20261009152743",
     "version": "1.21.1",
-    "last_commit": "[a2d6402a3c1eec093aef7e7d10ac5145906c199e] Remove shader color set call in NeoForgeLoadingOverlay (#3590)",
+    "last_commit": "[d7577623d2bf6b41e345fe356def768e4b79dbb4] New Crowdin updates (#3482)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

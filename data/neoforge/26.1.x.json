@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261003024525",
-    "commit_date": "20261002191231",
+    "lastupdated": "20261010031106",
+    "commit_date": "20261009152755",
     "version": "26.1.x",
-    "last_commit": "[4e35ebee793f48c39f5ddf20121eece88dc2aa0e] [26.1.x] Update MixinExtras to v0.5.5 (#3578)",
+    "last_commit": "[aa824bdc2f68bb4256fd4cd02ee9ac581c1f6838] New Crowdin updates (#3483)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261009033118",
-    "commit_date": "20261008162150",
+    "lastupdated": "20261010031109",
+    "commit_date": "20261009154831",
     "version": "26.3.x",
-    "last_commit": "[3c1fcb4f4efd6ed0cf60375e8094902426ddc973] [26.3] Gather Datapack Registry Entries Before Data Providers (#3587)\n\nCo-authored-by: sciwhiz12 <sciwhiz12@gmail.com>\nCo-authored-by: Dennis C <11262040+XFactHD@users.noreply.github.com>",
+    "last_commit": "[89d5fc58cc3266c205fda70848c285fe5b63ea56] New Crowdin updates (#3487)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -3998,13 +3998,19 @@
                         "type": "DatapackRegistrySets<CompletableFuture<HolderLookup.Provider>>",
                         "kind": "field",
                         "mutable": false
+                    },
+                    {
+                        "name": "packCounter",
+                        "type": "int",
+                        "kind": "field",
+                        "mutable": true
                     }
                 ]
             },
             {
                 "event": "GatherDataEvent.Server",
                 "package": "net.neoforged.neoforge.data.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L99",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L100",
                 "cancellable": false,
                 "description": "",
                 "side": "server",
@@ -4014,7 +4020,7 @@
             {
                 "event": "GatherDataEvent.Client",
                 "package": "net.neoforged.neoforge.data.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L106",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java#L107",
                 "cancellable": false,
                 "description": "",
                 "side": "client",
@@ -4890,6 +4896,24 @@
                     {
                         "name": "testsRegistry",
                         "type": "WritableRegistry<GameTestInstance>",
+                        "kind": "field",
+                        "mutable": false
+                    }
+                ]
+            },
+            {
+                "event": "RegisterLootContextParamsEvent",
+                "package": "net.neoforged.neoforge.event",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/RegisterLootContextParamsEvent.java#L21",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "lootContextParams",
+                        "type": "Map<Identifier, ContextKey<?>>",
                         "kind": "field",
                         "mutable": false
                     }
@@ -7802,7 +7826,7 @@
             {
                 "event": "PlayerEvent",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L52",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L53",
                 "cancellable": false,
                 "description": "Base class of the events specific to Players",
                 "side": null,
@@ -7820,7 +7844,7 @@
             {
                 "event": "PlayerEvent.HarvestCheck",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L80",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L81",
                 "cancellable": false,
                 "description": "HarvestCheck is fired when a player attempts to harvest a block. This event is fired whenever a player attempts to harvest a block in hasCorrectToolForDrops(BlockState). This event is fired via the BlockState, BlockGetter, BlockPos). state contains the BlockState that is being checked for harvesting. success contains the boolean value for whether the Block will be successfully harvested. getEntity contains the player that caused this event to occur. This event is not cancellable, and is fired on the game event bus",
                 "side": null,
@@ -7856,7 +7880,7 @@
             {
                 "event": "PlayerEvent.BreakSpeed",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L134",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L135",
                 "cancellable": true,
                 "description": "BreakSpeed is fired when a player attempts to harvest a block. This event is fired whenever a player attempts to harvest a block in BlockPos). This event is fired via the BlockState, float, BlockPos). state contains the block being broken. originalSpeed contains the original speed at which the player broke the block. newSpeed contains the newSpeed at which the player will break the block. pos contains the coordinates at which this event is occurring. Optional value. getEntity contains the player that caused this event to occur. This event is ICancellableEvent. If it is canceled, the player is unable to break the block. This event is fired on the EVENT_BUS",
                 "side": null,
@@ -7892,7 +7916,7 @@
             {
                 "event": "PlayerEvent.NameFormat",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L184",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L185",
                 "cancellable": false,
                 "description": "NameFormat is fired when a player's display name is retrieved. This event is fired whenever a player's name is retrieved in getDisplayName() or refreshDisplayName(). This event is fired via the Component). username contains the username of the player. displayname contains the display name of the player. This event is not cancellable, and is fired on the game event bus",
                 "side": null,
@@ -7916,7 +7940,7 @@
             {
                 "event": "PlayerEvent.TabListNameFormat",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L220",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L221",
                 "cancellable": false,
                 "description": "TabListNameFormat is fired when a player's display name for the tablist is retrieved. This event is fired whenever a player's display name for the tablist is retrieved in getTabListDisplayName() or refreshTabListName(). This event is fired via the getPlayerTabListDisplayName(Player). getDisplayName() contains the display name of the player or null if the client should determine the display name itself. This event is not cancellable, and is fired on the game event bus",
                 "side": null,
@@ -7934,7 +7958,7 @@
             {
                 "event": "PlayerEvent.Clone",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L245",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L246",
                 "cancellable": false,
                 "description": "Fired when the player is cloned, typically caused by the impl sending a RESPAWN_PLAYER event. Either caused by death, or by traveling from the End to the overworld. This event is not cancellable, and is fired on the game event bus",
                 "side": null,
@@ -7958,7 +7982,7 @@
             {
                 "event": "PlayerEvent.StartTracking",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L277",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L278",
                 "cancellable": false,
                 "description": "Fired when an Entity is started to be \"tracked\" by this player (the player receives updates about this entity, e.g. motion). This event is not cancellable, and is fired on the game event bus",
                 "side": null,
@@ -7976,7 +8000,7 @@
             {
                 "event": "PlayerEvent.StopTracking",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L299",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L300",
                 "cancellable": false,
                 "description": "Fired when an Entity is stopped to be \"tracked\" by this player (the player no longer receives updates about this entity, e.g. motion). This event is not cancellable, and is fired on the game event bus",
                 "side": null,
@@ -7994,7 +8018,7 @@
             {
                 "event": "PlayerEvent.LoadFromFile",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L325",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L326",
                 "cancellable": false,
                 "description": "The player is being loaded from the world save. Note: The player won't have been added to the world yet. Intended to allow mods to load an additional file from the players directory containing additional mod related player data. This event is not cancellable, and is fired on the game event bus",
                 "side": null,
@@ -8018,7 +8042,7 @@
             {
                 "event": "PlayerEvent.SaveToFile",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L379",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L380",
                 "cancellable": false,
                 "description": "The player is being saved to the world store. Note: The player may be in the process of logging out or otherwise departing from the world. Don't assume its association with the world. This allows mods to load an additional file from the players directory containing additional mod related player data. Use this event to save the additional mod related player data to the world. WARNING: Do not overwrite the player's .dat file here. You will corrupt the world state. This event is not cancellable, and is fired on the game event bus",
                 "side": null,
@@ -8042,7 +8066,7 @@
             {
                 "event": "PlayerEvent.ItemCraftedEvent",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L416",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L417",
                 "cancellable": false,
                 "description": "The UUID is the standard for player related file storage. It is broken out here for convenience for quick file generation",
                 "side": null,
@@ -8066,7 +8090,7 @@
             {
                 "event": "PlayerEvent.ItemSmeltedEvent",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L443",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L444",
                 "cancellable": false,
                 "description": "Fired when a player takes the resultant ItemStack from a furnace-like block. This event is fired via the ItemStack, int). This event is not cancellable, and is fired on the game event bus",
                 "side": null,
@@ -8088,9 +8112,33 @@
                 ]
             },
             {
+                "event": "PlayerEvent.ItemSmithedEvent",
+                "package": "net.neoforged.neoforge.event.entity.player",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L469",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "inputs",
+                        "type": "Container",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "result",
+                        "type": "ItemStack",
+                        "kind": "field",
+                        "mutable": false
+                    }
+                ]
+            },
+            {
                 "event": "PlayerEvent.PlayerLoggedInEvent",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L468",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L498",
                 "cancellable": false,
                 "description": "Fired when the player is placed into the server via ServerPlayer, CommonListenerCookie) This event is not cancellable, and is fired on the game event bus",
                 "side": null,
@@ -8100,7 +8148,7 @@
             {
                 "event": "PlayerEvent.PlayerLoggedOutEvent",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L480",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L510",
                 "cancellable": false,
                 "description": "Fired when the player is removed from the server via remove(ServerPlayer) This event is not cancellable, and is fired on the game event bus",
                 "side": null,
@@ -8110,7 +8158,7 @@
             {
                 "event": "PlayerEvent.PlayerRespawnEvent",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L493",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L523",
                 "cancellable": false,
                 "description": "Fired when the player is respawned via boolean) after creating and initializing the new ServerPlayer. This event is not cancellable, and is fired on the game event bus",
                 "side": null,
@@ -8128,7 +8176,7 @@
             {
                 "event": "PlayerEvent.PlayerChangedDimensionEvent",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L517",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L547",
                 "cancellable": false,
                 "description": "Fired when the player is teleported to a new dimension via teleport(TeleportTransition) This event is not cancellable, and is fired on the game event bus",
                 "side": null,
@@ -8152,7 +8200,7 @@
             {
                 "event": "PlayerEvent.PlayerChangeGameModeEvent",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L543",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/PlayerEvent.java#L573",
                 "cancellable": true,
                 "description": "Fired when the game type of a server player is changed to a different value than what it was previously. Eg Creative to Survival, not Survival to Survival. If the event is cancelled the game mode of the player is not changed and the value of newGameMode is ignored. This event is fired on the EVENT_BUS",
                 "side": null,

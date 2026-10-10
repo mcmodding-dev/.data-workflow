@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260914021129",
-    "commit_date": "20260913051052",
+    "lastupdated": "20261010031107",
+    "commit_date": "20261009154630",
     "version": "26.2.x",
-    "last_commit": "[1ad7d233fc1ff8c3cb5c8b159f1701aabf4b7b96] [26.2] Add neoforge API for the ManagementApi (#2647)",
+    "last_commit": "[f40fb568923a50647d0c5f33ec532126e9ce7c62] New Crowdin updates (#3484)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

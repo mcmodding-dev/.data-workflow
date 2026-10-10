@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261001025711",
-    "commit_date": "20260930211121",
+    "lastupdated": "20261010031057",
+    "commit_date": "20261009201839",
     "version": "26.3",
-    "last_commit": "[939fb13d3b96664d6b5057e128bb05395417063b] Fix MDK including wrong resources. Fixes #10892",
+    "last_commit": "[4249a25ec7154c121d9b3196f491e99717568e71] Fix Spectator Mode having block overlay when inside blocks. Fixes #10900",
     "data": {
         "net.minecraftforge.fml.config": [
             {
