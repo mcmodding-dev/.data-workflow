@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261010031106",
-    "commit_date": "20261009152755",
+    "lastupdated": "20261011024319",
+    "commit_date": "20261010204828",
     "version": "26.1.x",
-    "last_commit": "[aa824bdc2f68bb4256fd4cd02ee9ac581c1f6838] New Crowdin updates (#3483)",
+    "last_commit": "[213fd2bf81b251cf847aa05750fd655adae67c0e] Backport to 26.1.x: Fix `Item#onLeftClickEntity` being called using the wrong item stack during spin attacks (#3626)\n\nCo-authored-by: KnightMiner <12155288+KnightMiner@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

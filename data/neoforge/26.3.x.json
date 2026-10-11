@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261010031109",
-    "commit_date": "20261009154831",
+    "lastupdated": "20261011024322",
+    "commit_date": "20261010213412",
     "version": "26.3.x",
-    "last_commit": "[89d5fc58cc3266c205fda70848c285fe5b63ea56] New Crowdin updates (#3487)",
+    "last_commit": "[918f55e357d51a139aef3c1bb6d51a677dcef385] [26.3] Fix various issues with stencil support (#3510)\n\nCo-authored-by: RogueLogix <rogue@logix.dev>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

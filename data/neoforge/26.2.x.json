@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261010031107",
-    "commit_date": "20261009154630",
+    "lastupdated": "20261011024321",
+    "commit_date": "20261010141439",
     "version": "26.2.x",
-    "last_commit": "[f40fb568923a50647d0c5f33ec532126e9ce7c62] New Crowdin updates (#3484)",
+    "last_commit": "[3ce439069c2ee969578bec230e986b3e6e889548] Update Mixin dependencies (#3623)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
