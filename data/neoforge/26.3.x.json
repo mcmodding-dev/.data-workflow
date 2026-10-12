@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261011024322",
-    "commit_date": "20261010213412",
+    "lastupdated": "20261012030737",
+    "commit_date": "20261011193626",
     "version": "26.3.x",
-    "last_commit": "[918f55e357d51a139aef3c1bb6d51a677dcef385] [26.3] Fix various issues with stencil support (#3510)\n\nCo-authored-by: RogueLogix <rogue@logix.dev>",
+    "last_commit": "[68e75538286a318981e17c517b08457419ef7ef4] Change changelog base tag to 26.3.0 (#3635)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -5276,9 +5276,9 @@
             {
                 "event": "EnchantedEntityLootEvent",
                 "package": "net.neoforged.neoforge.event.enchanting",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedEntityLootEvent.java#L28",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedEntityLootEvent.java#L27",
                 "cancellable": false,
-                "description": "Fired on the server when an entity is dropping loot and the level of a specific enchantment is being queried. Notably, this fires when EnchantedCountIncreaseFunction or LootItemRandomChanceWithEnchantedBonusCondition are evaluated, as well as when EQUIPMENT_DROPS is being processed. Mods that implement similar loot conditions or functions should fire this event as well. If you do not need the additional context of this event, prefer GetEnchantmentLevelEvent for managing enchantment levels",
+                "description": "",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,
@@ -6140,6 +6140,48 @@
                         "type": "SpawnGroupData",
                         "kind": "field",
                         "mutable": true
+                    }
+                ]
+            },
+            {
+                "event": "GetEquipmentDropChanceEvent",
+                "package": "net.neoforged.neoforge.event.entity.living",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/living/GetEquipmentDropChanceEvent.java#L29",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "level",
+                        "type": "ServerLevel",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "killingBlow",
+                        "type": "DamageSource",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "chance",
+                        "type": "MutableFloat",
+                        "kind": "field",
+                        "mutable": true
+                    },
+                    {
+                        "name": "originalChance",
+                        "type": "float",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "slot",
+                        "type": "EquipmentSlot",
+                        "kind": "field",
+                        "mutable": false
                     }
                 ]
             },
