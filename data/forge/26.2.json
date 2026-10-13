@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260827053528",
-    "commit_date": "20260827010647",
+    "lastupdated": "20261013042301",
+    "commit_date": "20261012203647",
     "version": "26.2",
-    "last_commit": "[41dfdc8f8b0488acbd339d78adc0b03a9f53e0a0] Fixed getToolModifiedState for AXE_SCRAPE (#10880)",
+    "last_commit": "[3534d4664b82712917ca676f5430685f91397ca3] Store object holder handlers per registry name (#10899)",
     "data": {
         "net.minecraftforge.fml.config": [
             {

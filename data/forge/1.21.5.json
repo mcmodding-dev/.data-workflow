@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260924020253",
-    "commit_date": "20260923221438",
+    "lastupdated": "20261013042254",
+    "commit_date": "20261012234151",
     "version": "1.21.5",
-    "last_commit": "[7a37f17c89ccc119bf7620f512a04bfb3c4f8f66] Use vanilla's entrypoint for GameTest servers (#10884)",
+    "last_commit": "[fc27a3572232ccc40fb5fc5a3983dbbd3a26a972] Store object holder handlers per registry name (#10899)\n\nCo-authored-by: LexManos <LexManos@gmail.com>",
     "data": {
         "net.minecraftforge.fml.config": [
             {

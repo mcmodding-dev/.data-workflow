@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260722012732",
-    "commit_date": "20260721181617",
+    "lastupdated": "20261013042249",
+    "commit_date": "20261013005151",
     "version": "1.20.x",
-    "last_commit": "[71d814ffa64fce31b5bf4bebf04915f299a69ae8] Update equality check for RegistryObject to include RegistryObject#key. (#10856)",
+    "last_commit": "[82696a8a76813aed3ac01df238f17d682dd2735e] Store object holder handlers per registry name (#10899)\n\nCo-authored-by: LexManos <LexManos@gmail.com>",
     "data": {
         "net.minecraftforge.fml.config": [
             {

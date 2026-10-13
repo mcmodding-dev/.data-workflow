@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260814005944",
-    "commit_date": "20260813202855",
+    "lastupdated": "20261013042258",
+    "commit_date": "20261012210810",
     "version": "1.21.11",
-    "last_commit": "[1dab50ca003abc59e4115a329bcb46f76c105e15] Fix mod packets being processed after vanilla packets when received in the same tick.",
+    "last_commit": "[c7ea5c8bb1deac4f3a80122eb985e538e79897ec] Add patches to fix new Eclipse compiler issues",
     "data": {
         "net.minecraftforge.fml.config": [
             {

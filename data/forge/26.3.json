@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261010031057",
-    "commit_date": "20261009201839",
+    "lastupdated": "20261013042303",
+    "commit_date": "20261012201832",
     "version": "26.3",
-    "last_commit": "[4249a25ec7154c121d9b3196f491e99717568e71] Fix Spectator Mode having block overlay when inside blocks. Fixes #10900",
+    "last_commit": "[aa4e31beab4ec2311b2fd57e8b7b7d96f2a1d90d] Store object holder handlers per registry name (#10899)",
     "data": {
         "net.minecraftforge.fml.config": [
             {

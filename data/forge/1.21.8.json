@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260816003655",
-    "commit_date": "20260815074145",
+    "lastupdated": "20261013042255",
+    "commit_date": "20261012231907",
     "version": "1.21.8",
-    "last_commit": "[23856b57a987f91acb311790e0f36dfd45cb783d] Fix IForgeBlockStateModel.getModelData not being called correct for `#getParticleIcon` (#10818) (#10874)\n\nCo-authored-by: Martijn van den Brand <MartijnvandenBrand@outlook.com>",
+    "last_commit": "[6162ec30bd9da5f7b0c95d90cf5454b86379225b] Store object holder handlers per registry name (#10899)\n\nCo-authored-by: LexManos <LexManos@gmail.com>",
     "data": {
         "net.minecraftforge.fml.config": [
             {

@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260816003656",
-    "commit_date": "20260815074129",
+    "lastupdated": "20261013042256",
+    "commit_date": "20261012220655",
     "version": "1.21.10",
-    "last_commit": "[057fc3a309082551ece3c39141062eb4fb417ea3] Fix IForgeBlockStateModel.getModelData not being called correct for `#getParticleIcon` (#10818) (#10873)\n\nCo-authored-by: Martijn van den Brand <MartijnvandenBrand@outlook.com>",
+    "last_commit": "[126f4739e909e9ea32fd4d8ce96cba990ec10a64] Add patch for new Eclipse Compiler",
     "data": {
         "net.minecraftforge.fml.config": [
             {
