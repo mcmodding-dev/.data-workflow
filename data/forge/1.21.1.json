@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261013042250",
-    "commit_date": "20261013002950",
+    "lastupdated": "20261014023317",
+    "commit_date": "20261013170337",
     "version": "1.21.1",
-    "last_commit": "[abf2889b11602d75fd78e056e66e002a15417ee5] Store object holder handlers per registry name (#10899)\n\nCo-authored-by: LexManos <LexManos@gmail.com>",
+    "last_commit": "[32359d7e76b6a9955cd72c437dfb7ecb79bd85c0] Fix legacy object holders not being fired in the registry specific codepath\nBetter optimize the scanning for object holders by unrolling streams.",
     "data": {
         "net.minecraftforge.fml.config": [
             {
