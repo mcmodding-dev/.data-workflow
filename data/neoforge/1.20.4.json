@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260429201152",
-    "commit_date": "20251022145913",
+    "lastupdated": "20261015021400",
+    "commit_date": "20261014155310",
     "version": "1.20.4",
-    "last_commit": "[0231aaa5428ab51452952a62d4d0b9b3b18cbc9e] Backport to 1.20.4: Add Deprecation Message for `IdMappingEvent` (#2718)\n\nCo-authored-by: ChampionAsh5357 <19510740+ChampionAsh5357@users.noreply.github.com>",
+    "last_commit": "[cde4799f4c688b41fdd37c110832386e13af8e2a] Enforce ad-hoc channel identifier limits.",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

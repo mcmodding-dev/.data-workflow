@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260831020919",
-    "commit_date": "20260830205109",
+    "lastupdated": "20261015021402",
+    "commit_date": "20261014150912",
     "version": "1.20.6",
-    "last_commit": "[bf18eb3bce8a37e3a5e5c0cd8bacd9db557b87ae] Backport to 1.20.6: Increase memory used for forked compiler (#3445)\n\nCo-authored-by: sciwhiz12 <21304337+sciwhiz12@users.noreply.github.com>",
+    "last_commit": "[1e64ab3ea0d46846d1643b6e669e51b4f745dc1a] Enforce ad-hoc channel identifier limits.",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

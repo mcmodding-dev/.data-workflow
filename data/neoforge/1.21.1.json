@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261011024315",
-    "commit_date": "20261010204842",
+    "lastupdated": "20261015021404",
+    "commit_date": "20261014144924",
     "version": "1.21.1",
-    "last_commit": "[3cae64530de368936d4c07497d3f0a25e2f9ffec] Backport to 1.21.1: Fix `Item#onLeftClickEntity` being called using the wrong item stack during spin attacks (#3627)\n\nCo-authored-by: KnightMiner <12155288+KnightMiner@users.noreply.github.com>",
+    "last_commit": "[00c6a3fd23d80ce54ec834a7e25d09fba37927e9] Enforce ad-hoc channel identifier limits.",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

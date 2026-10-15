@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261011024321",
-    "commit_date": "20261010141439",
+    "lastupdated": "20261015021416",
+    "commit_date": "20261015013216",
     "version": "26.2.x",
-    "last_commit": "[3ce439069c2ee969578bec230e986b3e6e889548] Update Mixin dependencies (#3623)",
+    "last_commit": "[4e2117162e07bdf22de7e705a26fa0a0ae382350] Enforce ad-hoc channel identifier limits.",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20260716012714",
-    "commit_date": "20260715210117",
+    "lastupdated": "20261015021411",
+    "commit_date": "20261014144509",
     "version": "1.21.8",
-    "last_commit": "[cd5c25d24cf8e58f4b35a67a895090b0111cd991] Backport to 1.21.8: Use extension interface for TooltipFlag patch, and add shouldDisplayAllInformation method (#3310)\n\nCo-authored-by: pupnewfster <1203288+pupnewfster@users.noreply.github.com>",
+    "last_commit": "[0bfea34379469465e797e0c02b6542549e24025d] Enforce ad-hoc channel identifier limits.",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

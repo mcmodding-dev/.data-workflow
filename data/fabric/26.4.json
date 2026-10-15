@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261014023251",
-    "commit_date": "20261013154744",
+    "lastupdated": "20261015021331",
+    "commit_date": "20261014101911",
     "version": "26.4",
-    "last_commit": "[57203d495f31ee63d02be09612dab896eeab8506] 26.4-snapshot-4 (#5642)\n\n* 26.4-snapshot-4\n\n* Bump version",
+    "last_commit": "[a9051a14f224a70d73165ebeb55abc8e991660c9] Bump version",
     "data": {
         "fabric-advancement-api-v1": [
             {

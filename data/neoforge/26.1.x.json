@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261011024319",
-    "commit_date": "20261010204828",
+    "lastupdated": "20261015021414",
+    "commit_date": "20261014144224",
     "version": "26.1.x",
-    "last_commit": "[213fd2bf81b251cf847aa05750fd655adae67c0e] Backport to 26.1.x: Fix `Item#onLeftClickEntity` being called using the wrong item stack during spin attacks (#3626)\n\nCo-authored-by: KnightMiner <12155288+KnightMiner@users.noreply.github.com>",
+    "last_commit": "[099bfe0eb169ee6b46be27852ff7ce6b2c4a049e] Enforce ad-hoc channel identifier limits.",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -5252,7 +5252,7 @@
                 "package": "net.neoforged.neoforge.event.enchanting",
                 "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedEntityLootEvent.java#L28",
                 "cancellable": false,
-                "description": "Fired on the server when an entity is dropping loot and the level of a specific enchantment is being queried. Notably, this fires when EnchantedCountIncreaseFunction or LootItemRandomChanceWithEnchantedBonusCondition are evaluated, as well as when EQUIPMENT_DROPS is being processed. Mods that implement similar loot conditions or functions should fire this event as well. If you do not need the additional context of this event, prefer GetEnchantmentLevelEvent for managing enchantment levels",
+                "description": "",
                 "side": null,
                 "deprecated": false,
                 "hasResult": false,
@@ -6114,6 +6114,48 @@
                         "type": "SpawnGroupData",
                         "kind": "field",
                         "mutable": true
+                    }
+                ]
+            },
+            {
+                "event": "GetEquipmentDropChanceEvent",
+                "package": "net.neoforged.neoforge.event.entity.living",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/entity/living/GetEquipmentDropChanceEvent.java#L29",
+                "cancellable": false,
+                "description": "",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "level",
+                        "type": "ServerLevel",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "killingBlow",
+                        "type": "DamageSource",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "chance",
+                        "type": "MutableFloat",
+                        "kind": "field",
+                        "mutable": true
+                    },
+                    {
+                        "name": "originalChance",
+                        "type": "float",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "slot",
+                        "type": "EquipmentSlot",
+                        "kind": "field",
+                        "mutable": false
                     }
                 ]
             },
