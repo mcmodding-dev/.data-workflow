@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261013042256",
-    "commit_date": "20261012220655",
+    "lastupdated": "20261016020451",
+    "commit_date": "20261013020753",
     "version": "1.21.10",
-    "last_commit": "[126f4739e909e9ea32fd4d8ce96cba990ec10a64] Add patch for new Eclipse Compiler",
+    "last_commit": "[e1e23e911825674110242640efb7d80080cfc268] Add protection against large network channel lists",
     "data": {
         "net.minecraftforge.fml.config": [
             {

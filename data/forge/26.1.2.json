@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261013042300",
-    "commit_date": "20261012204608",
+    "lastupdated": "20261016020455",
+    "commit_date": "20261013021117",
     "version": "26.1.2",
-    "last_commit": "[fafa95bdf4ef7cd606a46126957c4741139b6cfa] Store object holder handlers per registry name (#10899)",
+    "last_commit": "[cedee17635e88b6d8dee7da4968a165c8afc31f5] Add protection against large network channel lists",
     "data": {
         "net.minecraftforge.fml.config": [
             {

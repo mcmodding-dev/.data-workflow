@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261015021414",
-    "commit_date": "20261014144224",
+    "lastupdated": "20261016020504",
+    "commit_date": "20261015174033",
     "version": "26.1.x",
-    "last_commit": "[099bfe0eb169ee6b46be27852ff7ce6b2c4a049e] Enforce ad-hoc channel identifier limits.",
+    "last_commit": "[02fa4bbcb70cf41520eaf0ea3979d2f4b2b3d5b9] Create stacks on-demand from templates in DataComponentFluidIngredient (#3638)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

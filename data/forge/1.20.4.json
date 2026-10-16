@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261014023312",
-    "commit_date": "20261013164351",
+    "lastupdated": "20261016020443",
+    "commit_date": "20261015033100",
     "version": "1.20.4",
-    "last_commit": "[f0ef4fe307523c6e1747f227730dba30a3e96408] Fix legacy object holders not being fired in the registry specific codepath\nBetter optimize the scanning for object holders by unrolling streams.",
+    "last_commit": "[e00bddd6d8311b4e9e70432fe572e3f40c8b3b52] Add protection against large network channel lists\n\n(cherry picked from commit 162908338bbda96431ffec48249fe5101dd67d2c)",
     "data": {
         "net.minecraftforge.fml.config": [
             {

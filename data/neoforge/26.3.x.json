@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261015021418",
-    "commit_date": "20261015013134",
+    "lastupdated": "20261016020506",
+    "commit_date": "20261015183202",
     "version": "26.3.x",
-    "last_commit": "[3009ea023a1c687da93e3ff567ebb2b0904f8b1b] Enforce ad-hoc channel identifier limits.",
+    "last_commit": "[b5ccbe0fe920c581ca129c511bf8d82764363946] Datamap for flammable blocks (#3608)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
