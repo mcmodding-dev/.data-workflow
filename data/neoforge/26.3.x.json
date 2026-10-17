@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261016020506",
-    "commit_date": "20261015183202",
+    "lastupdated": "20261017015928",
+    "commit_date": "20261016153831",
     "version": "26.3.x",
-    "last_commit": "[b5ccbe0fe920c581ca129c511bf8d82764363946] Datamap for flammable blocks (#3608)",
+    "last_commit": "[6e7fde45465956619426568c5a5c2220fa46c8bb] Add Poplar Chest Boats to Boat tag (#3658)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
