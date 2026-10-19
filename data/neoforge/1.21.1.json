@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261015021404",
-    "commit_date": "20261014144924",
+    "lastupdated": "20261019021522",
+    "commit_date": "20261018132918",
     "version": "1.21.1",
-    "last_commit": "[00c6a3fd23d80ce54ec834a7e25d09fba37927e9] Enforce ad-hoc channel identifier limits.",
+    "last_commit": "[61e7f77a815e998bc623f95014df3f4f997fb088] Add enchanted loot events to 1.21 (#3616)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {
@@ -4326,6 +4326,66 @@
         ],
         "net.neoforged.neoforge.event.enchanting": [
             {
+                "event": "EnchantedBlockLootEvent",
+                "package": "net.neoforged.neoforge.event.enchanting",
+                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedBlockLootEvent.java#L29",
+                "cancellable": false,
+                "description": "Fired on the server when a block's loot table queries the level of an enchantment to determine what the block will drop. Notably, this fires when ApplyBonusCount or BonusLevelTableCondition check the level of an enchantment in-context. Mods that implement similar loot conditions or functions should fire this event as well. If you do not need the additional context of this event, prefer GetEnchantmentLevelEvent for managing enchantment levels",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "tool",
+                        "type": "ItemStack",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "enchantment",
+                        "type": "Holder<Enchantment>",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "enchantmentLevel",
+                        "type": "int",
+                        "kind": "field",
+                        "mutable": true
+                    }
+                ]
+            },
+            {
+                "event": "EnchantedEntityLootEvent",
+                "package": "net.neoforged.neoforge.event.enchanting",
+                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedEntityLootEvent.java#L28",
+                "cancellable": false,
+                "description": "Fired on the server when an entity is dropping loot and the level of a specific enchantment is being queried. Notably, this fires when EnchantedCountIncreaseFunction or LootItemRandomChanceWithEnchantedBonusCondition are evaluated. Mods that implement similar loot conditions or functions should fire this event as well. This event does not affect the drop chances of equipment. If you need to change that, use GetEnchantmentLevelEvent. If you do not need the additional context of this event, prefer GetEnchantmentLevelEvent for managing enchantment levels",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "damageSource",
+                        "type": "DamageSource",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "enchantment",
+                        "type": "Holder<Enchantment>",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "enchantmentLevel",
+                        "type": "int",
+                        "kind": "field",
+                        "mutable": true
+                    }
+                ]
+            },
+            {
                 "event": "EnchantmentLevelSetEvent",
                 "package": "net.neoforged.neoforge.event.enchanting",
                 "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantmentLevelSetEvent.java#L20",
@@ -5150,6 +5210,48 @@
                         "type": "SpawnGroupData",
                         "kind": "field",
                         "mutable": true
+                    }
+                ]
+            },
+            {
+                "event": "GetEquipmentDropChanceEvent",
+                "package": "net.neoforged.neoforge.event.entity.living",
+                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/entity/living/GetEquipmentDropChanceEvent.java#L32",
+                "cancellable": false,
+                "description": "Fired on the server when an entity is dying to determine the chance of dropping worn equipment after enchantments process EQUIPMENT_DROPS. The entity that was killed and is dropping equipment is accessible in getEntity(). Use getKillingBlow() for the killing entity. Only fired if the initial drop chance was greater than 0, meaning it will not fire for cosmetic equipment such as pumpkins during Halloween. Will be fired for equipment that was picked up by the entity with a guaranteed drop, use isPreserved() to check for that. If your goal is to implement looting like behavior from an item stack used in the main hand, and you do not need the additional context, prefer GetEnchantmentLevelEvent for managing enchantment levels",
+                "side": null,
+                "deprecated": false,
+                "hasResult": false,
+                "fields": [
+                    {
+                        "name": "level",
+                        "type": "ServerLevel",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "killingBlow",
+                        "type": "DamageSource",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "chance",
+                        "type": "MutableFloat",
+                        "kind": "field",
+                        "mutable": true
+                    },
+                    {
+                        "name": "originalChance",
+                        "type": "float",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "slot",
+                        "type": "EquipmentSlot",
+                        "kind": "field",
+                        "mutable": false
                     }
                 ]
             },

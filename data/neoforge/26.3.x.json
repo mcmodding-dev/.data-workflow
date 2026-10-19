@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261018015802",
-    "commit_date": "20261018013900",
+    "lastupdated": "20261019021529",
+    "commit_date": "20261018132011",
     "version": "26.3.x",
-    "last_commit": "[7dea2e143557de8961e40e72e1c31a9a235c4602] [26.3] Expose ModelData to Blocks (#3651)\n\nCo-authored-by: Dennis C <11262040+XFactHD@users.noreply.github.com>",
+    "last_commit": "[3d0f0c05b05252fcb4d2e74824bae5ac929dbacd] [26.3] Fall back to unknown table ID in unnamed loot tables (#3668)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
