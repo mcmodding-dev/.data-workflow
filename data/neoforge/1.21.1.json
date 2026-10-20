@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261019021522",
-    "commit_date": "20261018132918",
+    "lastupdated": "20261020023019",
+    "commit_date": "20261019033632",
     "version": "1.21.1",
-    "last_commit": "[61e7f77a815e998bc623f95014df3f4f997fb088] Add enchanted loot events to 1.21 (#3616)",
+    "last_commit": "[e0e7ab5d273fdc034f23fee7bf91c61ae39d3019] Backport to 1.21.1: Check AttachmentSyncHandler#syncToPlayer() for initial sync (#3670)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>\nCo-authored-by: neoforged-automation[bot] <177631280+neoforged-automation[bot]@users.noreply.github.com>\nCo-authored-by: sciwhiz12 <arnoldnunag12@gmail.com>",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

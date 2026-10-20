@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261019021529",
-    "commit_date": "20261018132011",
+    "lastupdated": "20261020023026",
+    "commit_date": "20261020022338",
     "version": "26.3.x",
-    "last_commit": "[3d0f0c05b05252fcb4d2e74824bae5ac929dbacd] [26.3] Fall back to unknown table ID in unnamed loot tables (#3668)",
+    "last_commit": "[407e6e28845fde45dbaf33d272a302515f50585f] Fix BootstrapContext#holderLookup not resolving currently-building registries (#3674)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -7266,7 +7266,7 @@
             {
                 "event": "ArrowLooseEvent",
                 "package": "net.neoforged.neoforge.event.entity.player",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/ArrowLooseEvent.java#L30",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/entity/player/ArrowLooseEvent.java#L31",
                 "cancellable": true,
                 "description": "ArrowLooseEvent is fired when a player stops using a bow. This event is fired whenever a player stops using a bow in Level, LivingEntity, int). bow contains the ItemBow ItemStack that was used in this event. charge contains the value for how much the player had charged before stopping the shot. This event is ICancellableEvent. If this event is canceled, the player does not stop using the bow. For crossbows, the charge will always be 1; Set it to -1 in order to prevent firing the arrow. This event is fired on the EVENT_BUS",
                 "side": null,
