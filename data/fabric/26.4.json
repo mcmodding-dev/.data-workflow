@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261020022945",
-    "commit_date": "20261019100508",
+    "lastupdated": "20261021022320",
+    "commit_date": "20261020161859",
     "version": "26.4",
-    "last_commit": "[c5062c62051798a6a25f7c4354183e06cc649c1a] Bump version",
+    "last_commit": "[dc58e4061f34e3e77d12ede2bfc00dee74e564f7] 26.4-snapshot-5 (#5663)\n\n* 26.4-snapshot-5\n\n* Bump versions",
     "data": {
         "fabric-advancement-api-v1": [
             {
@@ -2058,8 +2058,8 @@
                 "interface": "BeforeInit",
                 "variable": "BEFORE_INIT",
                 "function": "void beforeInit(Minecraft client, Screen screen, int scaledWidth, int scaledHeight);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L72",
-                "description": "An event that is called before int) a screen is initialized to its default state. It should be noted some methods in Screens such as a screen's font may not be initialized yet, and as such their use is discouraged. Typically this event is used to register screen events such as listening to when child elements are added to the screen. ------ Uncomment when child add/remove event is added for elements--> You can still use AFTER_INIT to register events such as keyboard and mouse events. The ScreenExtensions provided by the info parameter may be used to register tick, render events, keyboard, mouse, additional and removal of child elements (including buttons). For example, to register an event on container-like screens after render, the following code could be used:\n```\n{@code\n&#64;Override\npublic void onInitializeClient() {\n\tScreenEvents.BEFORE_INIT.register((client, screen, scaledWidth, scaledHeight) -> {\n\t\tif (screen instanceof AbstractContainerScreen) {\n\t\t\tScreenEvents.afterExtract(screen).register((screen1, graphics, mouseX, mouseY, tickProgress) -> {\n\t\t\t\t...\n\t\t\t});\n\t\t}\n\t});\n}\n}\n```\nThis event indicates a screen has been resized, and therefore is being re-initialized. This event can also indicate that the previous screen has been changed",
+                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L74",
+                "description": "An event that is called before int) a screen is initialized to its default state. It should be noted some methods in Screens such as a screen's font may not be initialized yet, and as such their use is discouraged. Typically this event is used to register screen events such as listening to when child elements are added to the screen. ------ Uncomment when child add/remove event is added for elements--> You can still use AFTER_INIT to register events such as keyboard and mouse events. The ScreenExtensions provided by the info parameter may be used to register tick, render events, keyboard, mouse, additional and removal of child elements (including buttons). For example, to register an event on container-like screens after render, the following code could be used:\n```\n{@code\n&#64;Override\npublic void onInitializeClient() {\n\tScreenEvents.BEFORE_INIT.register((client, screen, scaledWidth, scaledHeight) -> {\n\t\tif (screen instanceof AbstractContainerScreen) {\n\t\t\tScreenEvents.afterExtract(screen).register((screen1, graphics) -> {\n\t\t\t\t...\n\t\t\t});\n\t\t}\n\t});\n}\n}\n```\nThis event indicates a screen has been resized, and therefore is being re-initialized. This event can also indicate that the previous screen has been changed",
                 "side": "client",
                 "deprecated": false
             },
@@ -2069,8 +2069,8 @@
                 "interface": "AfterInit",
                 "variable": "AFTER_INIT",
                 "function": "void afterInit(Minecraft client, Screen screen, int scaledWidth, int scaledHeight);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L99",
-                "description": "An event that is called after int) a screen is initialized to its default state. Typically this event is used to modify a screen after the screen has been initialized. Modifications such as changing sizes of buttons, removing buttons and adding/removing child elements to the screen can be done safely using this event. For example, to add a button to the title screen, the following code could be used:\n```\n{@code\nScreenEvents.AFTER_INIT.register((client, screen, scaledWidth, scaledHeight) -> {\n\tif (screen instanceof TitleScreen) {\n\t\tScreens.getWidgets(screen).add(new Button(...));\n\t}\n});\n}\n```\nNote that by adding an element to a screen, the element is not automatically drawn. Unless the element is button, you need to call the specific int, int, float) extractRenderState} methods in the corresponding screen events. This event can also indicate that the previous screen has been closed",
+                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L101",
+                "description": "An event that is called after int) a screen is initialized to its default state. Typically this event is used to modify a screen after the screen has been initialized. Modifications such as changing sizes of buttons, removing buttons and adding/removing child elements to the screen can be done safely using this event. For example, to add a button to the title screen, the following code could be used:\n```\n{@code\nScreenEvents.AFTER_INIT.register((client, screen, scaledWidth, scaledHeight) -> {\n\tif (screen instanceof TitleScreen) {\n\t\tScreens.getWidgets(screen).add(new Button(...));\n\t}\n});\n}\n```\nNote that by adding an element to a screen, the element is not automatically drawn. Unless the element is button, you need to call the specific extractRenderState(GuiGraphicsExtractor) extractRenderState} methods in the corresponding screen events. This event can also indicate that the previous screen has been closed",
                 "side": "client",
                 "deprecated": false
             },
@@ -2080,7 +2080,7 @@
                 "interface": "Remove",
                 "variable": "REMOVE",
                 "function": "void onRemove(Screen screen);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L195",
+                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L197",
                 "description": "An event that is called after removed() is called. This event signifies that the screen is now closed. This event is typically used to undo any screen specific state changes or to terminate threads spawned by a screen. This event may precede initialization events BEFORE_INIT but there is no guarantee that event will be called immediately afterwards",
                 "side": "client",
                 "deprecated": false
@@ -2090,8 +2090,8 @@
                 "package": "net.fabricmc.fabric.api.client.screen.v1",
                 "interface": "BeforeExtract",
                 "variable": "BEFORE_EXTRACT",
-                "function": "void beforeExtract(Screen screen, GuiGraphicsExtractor graphics, int mouseX, int mouseY, float tickProgress);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L200",
+                "function": "void beforeExtract(Screen screen, GuiGraphicsExtractor graphics);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L202",
                 "description": "An event that is called before a screen is extracted",
                 "side": "client",
                 "deprecated": false
@@ -2101,8 +2101,8 @@
                 "package": "net.fabricmc.fabric.api.client.screen.v1",
                 "interface": "AfterBackground",
                 "variable": "AFTER_BACKGROUND",
-                "function": "void afterBackground(Screen screen, GuiGraphicsExtractor graphics, int mouseX, int mouseY, float tickProgress);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L205",
+                "function": "void afterBackground(Screen screen, GuiGraphicsExtractor graphics);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L207",
                 "description": "An event that is called after a screen's background is extracted",
                 "side": "client",
                 "deprecated": false
@@ -2112,8 +2112,8 @@
                 "package": "net.fabricmc.fabric.api.client.screen.v1",
                 "interface": "AfterForeground",
                 "variable": "AFTER_FOREGROUND",
-                "function": "void afterForeground(Screen screen, GuiGraphicsExtractor graphics, int mouseX, int mouseY, float tickProgress);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L210",
+                "function": "void afterForeground(Screen screen, GuiGraphicsExtractor graphics);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L212",
                 "description": "An event that is called after a screen's foreground is extracted",
                 "side": "client",
                 "deprecated": false
@@ -2123,8 +2123,8 @@
                 "package": "net.fabricmc.fabric.api.client.screen.v1",
                 "interface": "AfterExtract",
                 "variable": "AFTER_EXTRACT",
-                "function": "void afterExtract(Screen screen, GuiGraphicsExtractor graphics, int mouseX, int mouseY, float tickProgress);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L215",
+                "function": "void afterExtract(Screen screen, GuiGraphicsExtractor graphics);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L217",
                 "description": "An event that is called after a screen is extracted",
                 "side": "client",
                 "deprecated": false
@@ -2135,7 +2135,7 @@
                 "interface": "BeforeTick",
                 "variable": "BEFORE_TICK",
                 "function": "void beforeTick(Screen screen);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L220",
+                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L222",
                 "description": "An event that is called before a screen is ticked",
                 "side": "client",
                 "deprecated": false
@@ -2146,7 +2146,7 @@
                 "interface": "AfterTick",
                 "variable": "AFTER_TICK",
                 "function": "void afterTick(Screen screen);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L225",
+                "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-screen-api-v1/src/client/java/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.java#L227",
                 "description": "An event that is called after a screen is ticked",
                 "side": "client",
                 "deprecated": false
