@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261020023026",
-    "commit_date": "20261020022338",
+    "lastupdated": "20261022021919",
+    "commit_date": "20261021083142",
     "version": "26.3.x",
-    "last_commit": "[407e6e28845fde45dbaf33d272a302515f50585f] Fix BootstrapContext#holderLookup not resolving currently-building registries (#3674)",
+    "last_commit": "[090aba227fefe4bf0f5eaf5834c68851498c1040] [26.3] Make collision test flaky and JVM session independent (#3639)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

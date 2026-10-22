@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261017015919",
-    "commit_date": "20261016204027",
+    "lastupdated": "20261022021909",
+    "commit_date": "20261021180226",
     "version": "26.3",
-    "last_commit": "[55f03a2d86fec8f44722ee3d2d5f2d60cb93c5e6] Fix incorrect filter when placing items on bundles. Closes #10902",
+    "last_commit": "[7d0bd1898fd0190a83ff218c3fc2bd773630ee3f] 26.3 RB 1",
     "data": {
         "net.minecraftforge.fml.config": [
             {
