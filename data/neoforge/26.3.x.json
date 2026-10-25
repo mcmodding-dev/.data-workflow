@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261022021919",
-    "commit_date": "20261021083142",
+    "lastupdated": "20261025020933",
+    "commit_date": "20261025020433",
     "version": "26.3.x",
-    "last_commit": "[090aba227fefe4bf0f5eaf5834c68851498c1040] [26.3] Make collision test flaky and JVM session independent (#3639)",
+    "last_commit": "[4c8ef28312f1f96a757e38c48fc6a87cc1b86a31] Added a few recipe book related helpers (#3687)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -1868,7 +1868,7 @@
             {
                 "event": "RegisterRecipeBookSearchCategoriesEvent",
                 "package": "net.neoforged.neoforge.client.event",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/client/java/net/neoforged/neoforge/client/event/RegisterRecipeBookSearchCategoriesEvent.java#L24",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/client/java/net/neoforged/neoforge/client/event/RegisterRecipeBookSearchCategoriesEvent.java#L27",
                 "cancellable": false,
                 "description": "Event to register ExtendedRecipeBookCategory instances for search. Modded equivalent of vanilla's SearchRecipeBookCategory. This event is fired on the mod-specific event bus, only on the logical client",
                 "side": "client",
@@ -1878,6 +1878,12 @@
                     {
                         "name": "categories",
                         "type": "Map<ExtendedRecipeBookCategory, List<RecipeBookCategory>>",
+                        "kind": "field",
+                        "mutable": false
+                    },
+                    {
+                        "name": "recipeDisplaySearchInfo",
+                        "type": "List<RecipeDisplayResultInfo>",
                         "kind": "field",
                         "mutable": false
                     }
@@ -5246,7 +5252,7 @@
             {
                 "event": "EnchantedBlockLootEvent",
                 "package": "net.neoforged.neoforge.event.enchanting",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedBlockLootEvent.java#L29",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedBlockLootEvent.java#L31",
                 "cancellable": false,
                 "description": "Fired on the server when a block's loot table queries the level of an enchantment to determine what the block will drop. Notably, this fires when ApplyBonusCount or BonusLevelTableCondition check the level of an enchantment in-context. Mods that implement similar loot conditions or functions should fire this event as well. If you do not need the additional context of this event, prefer GetEnchantmentLevelEvent for managing enchantment levels",
                 "side": null,
@@ -5270,13 +5276,19 @@
                         "type": "int",
                         "kind": "field",
                         "mutable": true
+                    },
+                    {
+                        "name": "entity",
+                        "type": "Entity",
+                        "kind": "field",
+                        "mutable": false
                     }
                 ]
             },
             {
                 "event": "EnchantedEntityLootEvent",
                 "package": "net.neoforged.neoforge.event.enchanting",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedEntityLootEvent.java#L27",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.3.x/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedEntityLootEvent.java#L29",
                 "cancellable": false,
                 "description": "",
                 "side": null,
