@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261016020504",
-    "commit_date": "20261015174033",
+    "lastupdated": "20261026021008",
+    "commit_date": "20261025060612",
     "version": "26.1.x",
-    "last_commit": "[02fa4bbcb70cf41520eaf0ea3979d2f4b2b3d5b9] Create stacks on-demand from templates in DataComponentFluidIngredient (#3638)",
+    "last_commit": "[cbbb7a833c20577dcebdc74e16bdb15466bf3da2] Backport to 26.1.x: Check AttachmentSyncHandler#syncToPlayer() for initial sync (#3671)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
@@ -5220,7 +5220,7 @@
             {
                 "event": "EnchantedBlockLootEvent",
                 "package": "net.neoforged.neoforge.event.enchanting",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedBlockLootEvent.java#L29",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedBlockLootEvent.java#L31",
                 "cancellable": false,
                 "description": "Fired on the server when a block's loot table queries the level of an enchantment to determine what the block will drop. Notably, this fires when ApplyBonusCount or BonusLevelTableCondition check the level of an enchantment in-context. Mods that implement similar loot conditions or functions should fire this event as well. If you do not need the additional context of this event, prefer GetEnchantmentLevelEvent for managing enchantment levels",
                 "side": null,
@@ -5244,13 +5244,19 @@
                         "type": "int",
                         "kind": "field",
                         "mutable": true
+                    },
+                    {
+                        "name": "entity",
+                        "type": "Entity",
+                        "kind": "field",
+                        "mutable": false
                     }
                 ]
             },
             {
                 "event": "EnchantedEntityLootEvent",
                 "package": "net.neoforged.neoforge.event.enchanting",
-                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedEntityLootEvent.java#L28",
+                "url": "https://github.com/neoforged/NeoForge/blob/26.1.x/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedEntityLootEvent.java#L29",
                 "cancellable": false,
                 "description": "",
                 "side": null,

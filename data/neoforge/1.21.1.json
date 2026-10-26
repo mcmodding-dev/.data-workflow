@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261020023019",
-    "commit_date": "20261019033632",
+    "lastupdated": "20261026021003",
+    "commit_date": "20261025055623",
     "version": "1.21.1",
-    "last_commit": "[e0e7ab5d273fdc034f23fee7bf91c61ae39d3019] Backport to 1.21.1: Check AttachmentSyncHandler#syncToPlayer() for initial sync (#3670)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>\nCo-authored-by: neoforged-automation[bot] <177631280+neoforged-automation[bot]@users.noreply.github.com>\nCo-authored-by: sciwhiz12 <arnoldnunag12@gmail.com>",
+    "last_commit": "[624c929f49920c250166e2a8df7af87f16d220ef] [1.21.1] Add additional context to enchanted loot events (#3690)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {
@@ -4328,7 +4328,7 @@
             {
                 "event": "EnchantedBlockLootEvent",
                 "package": "net.neoforged.neoforge.event.enchanting",
-                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedBlockLootEvent.java#L29",
+                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedBlockLootEvent.java#L31",
                 "cancellable": false,
                 "description": "Fired on the server when a block's loot table queries the level of an enchantment to determine what the block will drop. Notably, this fires when ApplyBonusCount or BonusLevelTableCondition check the level of an enchantment in-context. Mods that implement similar loot conditions or functions should fire this event as well. If you do not need the additional context of this event, prefer GetEnchantmentLevelEvent for managing enchantment levels",
                 "side": null,
@@ -4352,13 +4352,19 @@
                         "type": "int",
                         "kind": "field",
                         "mutable": true
+                    },
+                    {
+                        "name": "entity",
+                        "type": "Entity",
+                        "kind": "field",
+                        "mutable": false
                     }
                 ]
             },
             {
                 "event": "EnchantedEntityLootEvent",
                 "package": "net.neoforged.neoforge.event.enchanting",
-                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedEntityLootEvent.java#L28",
+                "url": "https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/event/enchanting/EnchantedEntityLootEvent.java#L30",
                 "cancellable": false,
                 "description": "Fired on the server when an entity is dropping loot and the level of a specific enchantment is being queried. Notably, this fires when EnchantedCountIncreaseFunction or LootItemRandomChanceWithEnchantedBonusCondition are evaluated. Mods that implement similar loot conditions or functions should fire this event as well. This event does not affect the drop chances of equipment. If you need to change that, use GetEnchantmentLevelEvent. If you do not need the additional context of this event, prefer GetEnchantmentLevelEvent for managing enchantment levels",
                 "side": null,
