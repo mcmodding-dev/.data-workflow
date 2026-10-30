@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261026021008",
-    "commit_date": "20261025060612",
+    "lastupdated": "20261030032229",
+    "commit_date": "20261029111515",
     "version": "26.1.x",
-    "last_commit": "[cbbb7a833c20577dcebdc74e16bdb15466bf3da2] Backport to 26.1.x: Check AttachmentSyncHandler#syncToPlayer() for initial sync (#3671)\n\nCo-authored-by: XFactHD <11262040+XFactHD@users.noreply.github.com>",
+    "last_commit": "[67b94a8c09e550ec61708ce0e3d951e60fe3ac9a] Fix misaligned fluid render overlay API patch (#3697)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

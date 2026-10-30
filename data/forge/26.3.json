@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261022021909",
-    "commit_date": "20261021180226",
+    "lastupdated": "20261030032220",
+    "commit_date": "20261029191744",
     "version": "26.3",
-    "last_commit": "[7d0bd1898fd0190a83ff218c3fc2bd773630ee3f] 26.3 RB 1",
+    "last_commit": "[da7e5f8bfa0bf2744e1fbd0e07bea86956729092] Fix EntityTeleportEvent.ChorusFruit is not fired Closes #10906",
     "data": {
         "net.minecraftforge.fml.config": [
             {
@@ -434,11 +434,11 @@
             {
                 "event": "GatherAtlasMetadataSectionsEvent",
                 "package": "net.minecraftforge.client.event",
-                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/client/event/GatherAtlasMetadataSectionsEvent.java#L17",
+                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/client/event/GatherAtlasMetadataSectionsEvent.java#L22",
                 "cancellable": false,
-                "description": "Fired when an Atlas is being loaded. This allows you to add custom metadata sections that will be loaded from the sprite's .mcmeta file",
+                "description": "Fired when an Atlas is being loaded. This allows you to add custom metadata sections that will be loaded from the sprite's .mcmeta file\nDeprecated: This event is scheduled for removal in 26.4 due to a lack of adoption by mods, in order to ease porting.",
                 "side": null,
-                "deprecated": false,
+                "deprecated": true,
                 "hasResult": false,
                 "fields": [
                     {
@@ -3900,11 +3900,11 @@
             {
                 "event": "LivingMakeBrainEvent",
                 "package": "net.minecraftforge.event.entity.living",
-                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/entity/living/LivingMakeBrainEvent.java#L28",
+                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/entity/living/LivingMakeBrainEvent.java#L33",
                 "cancellable": false,
-                "description": "LivingMakeBrainEvent is fired whenever a new Brain instance is created using makeBrain(Dynamic). To access the internal BrainBuilder, call getTypedBrainBuilder(LivingEntity) using the downcasted LivingEntity obtained from getEntity(). The BrainBuilder will initially contain all the state found in the original Brain instance. After this event is posted, a fresh Brain instance will be created using the encapsulated state found in the BrainBuilder and replace the previously created Brain instance for the entity. This event is fired via the Brain, Dynamic)",
+                "description": "LivingMakeBrainEvent is fired whenever a new Brain instance is created using makeBrain(Dynamic). To access the internal BrainBuilder, call getTypedBrainBuilder(LivingEntity) using the downcasted LivingEntity obtained from getEntity(). The BrainBuilder will initially contain all the state found in the original Brain instance. After this event is posted, a fresh Brain instance will be created using the encapsulated state found in the BrainBuilder and replace the previously created Brain instance for the entity. This event is fired via the Brain, Dynamic)\nDeprecated: This event is scheduled for removal in 26.4 due to a lack of adoption by mods, in order to ease porting.",
                 "side": null,
-                "deprecated": false,
+                "deprecated": true,
                 "hasResult": false,
                 "fields": [
                     {
@@ -3924,11 +3924,11 @@
             {
                 "event": "LivingPackSizeEvent",
                 "package": "net.minecraftforge.event.entity.living",
-                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/entity/living/LivingPackSizeEvent.java#L16",
+                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/entity/living/LivingPackSizeEvent.java#L20",
                 "cancellable": false,
                 "description": "",
                 "side": null,
-                "deprecated": false,
+                "deprecated": true,
                 "hasResult": false,
                 "fields": [
                     {
@@ -5704,11 +5704,11 @@
             {
                 "event": "AlterGroundEvent",
                 "package": "net.minecraftforge.event.level",
-                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/level/AlterGroundEvent.java#L26",
+                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/level/AlterGroundEvent.java#L31",
                 "cancellable": false,
-                "description": "This event is fired when BlockPos) attempts to alter a ground block when generating a feature. An example of this would be large spruce trees converting grass blocks into podzol. This event is not cancellable. This event is fired only on the logical server",
+                "description": "This event is fired when BlockPos) attempts to alter a ground block when generating a feature. An example of this would be large spruce trees converting grass blocks into podzol. This event is not cancellable. This event is fired only on the logical server\nDeprecated: This event is scheduled for removal in 26.4 due to a lack of adoption by mods, in order to ease porting.",
                 "side": "server",
-                "deprecated": false,
+                "deprecated": true,
                 "hasResult": false,
                 "fields": [
                     {
@@ -5866,11 +5866,11 @@
             {
                 "event": "BlockFeatureGrowEvent",
                 "package": "net.minecraftforge.event.level",
-                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/level/BlockFeatureGrowEvent.java#L31",
+                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/level/BlockFeatureGrowEvent.java#L36",
                 "cancellable": false,
-                "description": "This event is fired whenever a sapling, fungus, mushroom or azalea grows into a tree. This event is not cancellable but does have a result. ALLOW and DEFAULT will allow the sapling to grow using the features set on the event. DENY will prevent the sapling from growing. This event is fired only on the logical server",
+                "description": "This event is fired whenever a sapling, fungus, mushroom or azalea grows into a tree. This event is not cancellable but does have a result. ALLOW and DEFAULT will allow the sapling to grow using the features set on the event. DENY will prevent the sapling from growing. This event is fired only on the logical server\nDeprecated: This event is scheduled for removal in 26.4 due to a lack of adoption by mods, in order to ease porting.",
                 "side": "server",
-                "deprecated": false,
+                "deprecated": true,
                 "hasResult": false,
                 "fields": [
                     {
