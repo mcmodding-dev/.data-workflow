@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261026021010",
-    "commit_date": "20261025062436",
+    "lastupdated": "20261101030113",
+    "commit_date": "20261031035223",
     "version": "26.3.x",
-    "last_commit": "[3bb720446f9290c23eaf493a467a3eaaa93efe1b] [26.3] Allow Recipe Outputs to be Scoped for Namespaces and Conditions (#3643)",
+    "last_commit": "[544ffdd9308b7e217f35228381a26353d864ddb6] Add Game Session Attachments (#3679)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
