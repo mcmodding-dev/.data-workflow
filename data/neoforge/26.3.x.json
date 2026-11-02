@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261101030113",
-    "commit_date": "20261031035223",
+    "lastupdated": "20261102031135",
+    "commit_date": "20261101154331",
     "version": "26.3.x",
-    "last_commit": "[544ffdd9308b7e217f35228381a26353d864ddb6] Add Game Session Attachments (#3679)",
+    "last_commit": "[b45f8c9d069cfb0099fae5bd1262b27ac4c1e7b4] Fix registryFriendlyLengthPrefixed dropping the connection type (#3712)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
