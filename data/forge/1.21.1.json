@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261016020445",
-    "commit_date": "20261015031333",
+    "lastupdated": "20261103042725",
+    "commit_date": "20261103020001",
     "version": "1.21.1",
-    "last_commit": "[8199135df7b0ce1e321c5a59ac3e4e982f301812] Add protection against large network channel lists",
+    "last_commit": "[beb5ccc3781cccb417686c879f2cc3186adbfde4] Fix missing forge config UI translation keys (#10914)",
     "data": {
         "net.minecraftforge.fml.config": [
             {

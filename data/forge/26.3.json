@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261030032220",
-    "commit_date": "20261029191744",
+    "lastupdated": "20261103042736",
+    "commit_date": "20261102222152",
     "version": "26.3",
-    "last_commit": "[da7e5f8bfa0bf2744e1fbd0e07bea86956729092] Fix EntityTeleportEvent.ChorusFruit is not fired Closes #10906",
+    "last_commit": "[ad5ca0b67d82230ef11e81a73a18b04f0fb10438] Deprecate more rarely used APIs for removal (#10907)",
     "data": {
         "net.minecraftforge.fml.config": [
             {
@@ -3128,11 +3128,11 @@
             {
                 "event": "EntityTeleportEvent.EntityRandom",
                 "package": "net.minecraftforge.event.entity",
-                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/entity/EntityTeleportEvent.java#L97",
+                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/entity/EntityTeleportEvent.java#L102",
                 "cancellable": true,
-                "description": "EntityTeleportEvent.EntityRandom is fired before an Entity randomly teleports. This event is cancelable. If the event is cancelled, the entity will not be teleported. This event is only fired on the SERVER side",
+                "description": "EntityTeleportEvent.EntityRandom is fired before an Entity randomly teleports. This event is cancelable. If the event is cancelled, the entity will not be teleported. This event is only fired on the SERVER side\nDeprecated: This event is scheduled for removal in 26.4 due to a lack of adoption by mods, in order to ease porting.",
                 "side": "server",
-                "deprecated": false,
+                "deprecated": true,
                 "hasResult": false,
                 "fields": [
                     {
@@ -3146,7 +3146,7 @@
             {
                 "event": "EntityTeleportEvent.EnderPearl",
                 "package": "net.minecraftforge.event.entity",
-                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/entity/EntityTeleportEvent.java#L119",
+                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/entity/EntityTeleportEvent.java#L124",
                 "cancellable": true,
                 "description": "EntityTeleportEvent.EnderPearl is fired before an Entity is teleported from an EnderPearlEntity. This event is cancellable. If the event is cancelled, the entity will not be teleported. This event is only fired on the SERVER side",
                 "side": "server",
@@ -3182,7 +3182,7 @@
             {
                 "event": "EntityTeleportEvent.ChorusFruit",
                 "package": "net.minecraftforge.event.entity",
-                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/entity/EntityTeleportEvent.java#L165",
+                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/entity/EntityTeleportEvent.java#L170",
                 "cancellable": true,
                 "description": "EntityTeleportEvent.ChorusFruit is fired before a LivingEntity is teleported due to consuming Chorus Fruit. This event is cancellable. If the event is cancelled, the entity will not be teleported. This event is only fired on the SERVER side",
                 "side": "server",
@@ -4338,11 +4338,11 @@
             {
                 "event": "ZombieEvent.SummonAidEvent",
                 "package": "net.minecraftforge.event.entity.living",
-                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/entity/living/ZombieEvent.java#L58",
+                "url": "https://github.com/MinecraftForge/MinecraftForge/blob/26.3/src/main/java/net/minecraftforge/event/entity/living/ZombieEvent.java#L63",
                 "cancellable": false,
-                "description": "SummonAidEvent is fired when a Zombie Entity is summoned. This event is fired whenever a Zombie Entity is summoned in float). This event is fired via the Level, int, int, int, LivingEntity, double). getCustomSummonedAid() remains null, but can be populated with a custom EntityZombie which will be spawned. getLevel() contains the world that this summoning is occurring in. getX() contains the x-coordinate at which this summoning event is occurring. getY() contains the y-coordinate at which this summoning event is occurring. getZ() contains the z-coordinate at which this summoning event is occurring. getAttacker() contains the living Entity that attacked and caused this event to fire. getSummonChance() contains the likelihood that a Zombie would successfully be summoned. This event has a result: ALLOW Zombie is summoned. DENY Zombie is not summoned",
+                "description": "SummonAidEvent is fired when a Zombie Entity is summoned. This event is fired whenever a Zombie Entity is summoned in float). This event is fired via the Level, int, int, int, LivingEntity, double). getCustomSummonedAid() remains null, but can be populated with a custom EntityZombie which will be spawned. getLevel() contains the world that this summoning is occurring in. getX() contains the x-coordinate at which this summoning event is occurring. getY() contains the y-coordinate at which this summoning event is occurring. getZ() contains the z-coordinate at which this summoning event is occurring. getAttacker() contains the living Entity that attacked and caused this event to fire. getSummonChance() contains the likelihood that a Zombie would successfully be summoned. This event has a result: ALLOW Zombie is summoned. DENY Zombie is not summoned\nDeprecated: This event is scheduled for removal in 26.4 due to a lack of adoption by mods, in order to ease porting.",
                 "side": null,
-                "deprecated": false,
+                "deprecated": true,
                 "hasResult": false,
                 "fields": [
                     {
