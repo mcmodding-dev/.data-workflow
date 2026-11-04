@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261028025508",
-    "commit_date": "20261027170834",
+    "lastupdated": "20261104034549",
+    "commit_date": "20261103161934",
     "version": "26.4",
-    "last_commit": "[229059c03051652fb30e41910ef02b5603c2d470] 26.4-snapshot-6 (#5667)\n\n* 26.4-snapshot-6\n\n* Bump version",
+    "last_commit": "[fd8b9c6bbd7cf065d0265c7e94684585bf737da1] Fix slot clicks and dragging with snapshot 7\u2019s slot groups.\n\nFixes #5681",
     "data": {
         "fabric-advancement-api-v1": [
             {
