@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261014023310",
-    "commit_date": "20261013162104",
+    "lastupdated": "20261109033042",
+    "commit_date": "20261108173933",
     "version": "1.20.1",
-    "last_commit": "[d13dd327bdc75c010f3358992e80e7e92f51e030] Fix legacy object holders not being fired in the registry specific codepath\nBetter optimize the scanning for object holders by unrolling streams.",
+    "last_commit": "[c974df523e776da36f436433e8623307d433f381] Update MDK to use FG7 (#10923)",
     "data": {
         "net.minecraftforge.fml.config": [
             {
