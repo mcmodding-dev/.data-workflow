@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261104034547",
-    "commit_date": "20261103092112",
+    "lastupdated": "20261110050339",
+    "commit_date": "20261109152228",
     "version": "26.3",
-    "last_commit": "[47a39d69aa86b530b27366a92a97b6faeeb5c7d2] Bump version",
+    "last_commit": "[324b6d3aeebdda30c1bccbc743a10c72edb370e5] Bump version",
     "data": {
         "fabric-advancement-api-v1": [
             {
@@ -1291,6 +1291,105 @@
                 "deprecated": false
             },
             {
+                "file": "ClientReceiveMessageEvents.java",
+                "package": "net.fabricmc.fabric.api.client.message.v1",
+                "interface": "AllowTitle",
+                "variable": "ALLOW_TITLE",
+                "function": "boolean allowReceiveTitle(Component title);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-message-api-v1/src/client/java/net/fabricmc/fabric/api/client/message/v1/ClientReceiveMessageEvents.java#L156",
+                "description": "An event triggered when the client receives a title from the server, before the HUD is updated. Mods can use this to block the title. All listeners are called. If any listener returns false, TITLE_CANCELED is triggered instead of MODIFY_TITLE and TITLE",
+                "side": "client",
+                "deprecated": false
+            },
+            {
+                "file": "ClientReceiveMessageEvents.java",
+                "package": "net.fabricmc.fabric.api.client.message.v1",
+                "interface": "ModifyTitle",
+                "variable": "MODIFY_TITLE",
+                "function": "Component modifyReceivedTitle(Component title);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-message-api-v1/src/client/java/net/fabricmc/fabric/api/client/message/v1/ClientReceiveMessageEvents.java#L172",
+                "description": "An event triggered to modify a title received from the server, before the HUD is updated. Is not called when the title is blocked. Each listener receives the title returned by the previous listener. Use TITLE if not modifying the title",
+                "side": "client",
+                "deprecated": false
+            },
+            {
+                "file": "ClientReceiveMessageEvents.java",
+                "package": "net.fabricmc.fabric.api.client.message.v1",
+                "interface": "Title",
+                "variable": "TITLE",
+                "function": "void onReceiveTitle(Component title);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-message-api-v1/src/client/java/net/fabricmc/fabric/api/client/message/v1/ClientReceiveMessageEvents.java#L186",
+                "description": "An event triggered when the client receives a title from the server, before the HUD is updated. Receives the result of MODIFY_TITLE and is not called when the title is blocked. Mods can use this to listen to the title",
+                "side": "client",
+                "deprecated": false
+            },
+            {
+                "file": "ClientReceiveMessageEvents.java",
+                "package": "net.fabricmc.fabric.api.client.message.v1",
+                "interface": "TitleCanceled",
+                "variable": "TITLE_CANCELED",
+                "function": "void onReceiveTitleCanceled(Component title);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-message-api-v1/src/client/java/net/fabricmc/fabric/api/client/message/v1/ClientReceiveMessageEvents.java#L196",
+                "description": "An event triggered when receiving a title is canceled with ALLOW_TITLE. Receives the original title from the server",
+                "side": "client",
+                "deprecated": false
+            },
+            {
+                "file": "ClientReceiveMessageEvents.java",
+                "package": "net.fabricmc.fabric.api.client.message.v1",
+                "interface": "AllowSubtitle",
+                "variable": "ALLOW_SUBTITLE",
+                "function": "boolean allowReceiveSubtitle(Component subtitle);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-message-api-v1/src/client/java/net/fabricmc/fabric/api/client/message/v1/ClientReceiveMessageEvents.java#L209",
+                "description": "An event triggered when the client receives a subtitle from the server, before the HUD is updated. Mods can use this to block the subtitle. All listeners are called. If any listener returns false, SUBTITLE_CANCELED is triggered instead of MODIFY_SUBTITLE and SUBTITLE",
+                "side": "client",
+                "deprecated": false
+            },
+            {
+                "file": "ClientReceiveMessageEvents.java",
+                "package": "net.fabricmc.fabric.api.client.message.v1",
+                "interface": "ModifySubtitle",
+                "variable": "MODIFY_SUBTITLE",
+                "function": "Component modifyReceivedSubtitle(Component subtitle);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-message-api-v1/src/client/java/net/fabricmc/fabric/api/client/message/v1/ClientReceiveMessageEvents.java#L225",
+                "description": "An event triggered to modify a subtitle received from the server, before the HUD is updated. Is not called when the subtitle is blocked. Each listener receives the subtitle returned by the previous listener. Use SUBTITLE if not modifying the subtitle",
+                "side": "client",
+                "deprecated": false
+            },
+            {
+                "file": "ClientReceiveMessageEvents.java",
+                "package": "net.fabricmc.fabric.api.client.message.v1",
+                "interface": "Subtitle",
+                "variable": "SUBTITLE",
+                "function": "void onReceiveSubtitle(Component subtitle);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-message-api-v1/src/client/java/net/fabricmc/fabric/api/client/message/v1/ClientReceiveMessageEvents.java#L239",
+                "description": "An event triggered when the client receives a subtitle from the server, before the HUD is updated. Receives the result of MODIFY_SUBTITLE and is not called when the subtitle is blocked. Mods can use this to listen to the subtitle",
+                "side": "client",
+                "deprecated": false
+            },
+            {
+                "file": "ClientReceiveMessageEvents.java",
+                "package": "net.fabricmc.fabric.api.client.message.v1",
+                "interface": "SubtitleCanceled",
+                "variable": "SUBTITLE_CANCELED",
+                "function": "void onReceiveSubtitleCanceled(Component subtitle);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-message-api-v1/src/client/java/net/fabricmc/fabric/api/client/message/v1/ClientReceiveMessageEvents.java#L249",
+                "description": "An event triggered when receiving a subtitle is canceled with ALLOW_SUBTITLE. Receives the original subtitle from the server",
+                "side": "client",
+                "deprecated": false
+            },
+            {
+                "file": "ClientReceiveMessageEvents.java",
+                "package": "net.fabricmc.fabric.api.client.message.v1",
+                "interface": "ClearTitles",
+                "variable": "CLEAR_TITLES",
+                "function": "void onClearTitles(boolean resetTimes);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-message-api-v1/src/client/java/net/fabricmc/fabric/api/client/message/v1/ClientReceiveMessageEvents.java#L259",
+                "description": "An event triggered when the server requests that titles and subtitles be cleared, before the HUD is updated. This is not triggered when a title expires or is cleared locally",
+                "side": "client",
+                "deprecated": false
+            },
+            {
                 "file": "ClientSendMessageEvents.java",
                 "package": "net.fabricmc.fabric.api.client.message.v1",
                 "interface": "AllowChat",
@@ -1943,10 +2042,21 @@
             {
                 "file": "LevelRenderEvents.java",
                 "package": "net.fabricmc.fabric.api.client.rendering.v1.level",
+                "interface": "BeforeRenderPass",
+                "variable": "BEFORE_RENDER_PASS",
+                "function": "void beforeRenderPass(LevelTerrainRenderContext context);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L57",
+                "description": "Called before the main RenderPass is opened, after the sky is drawn to the appropriate framebuffers and all chunks to be rendered are uploaded to GPU, and before START_MAIN. The main render pass draws opaque terrain and solid features, and also translucent terrain and features when improved transparency is disabled. START_MAIN, AFTER_OPAQUE_TERRAIN and AFTER_SOLID_FEATURES are always called while it is open, so they are not a place to open a render pass of your own. Use this event instead when you need your own RenderPass that runs before the main one, for example to draw into a texture that is sampled during the main pass. Any render pass opened in this event must be closed before the callback returns. To draw as part of the main render pass, use START_MAIN or one of the later events instead",
+                "side": "client",
+                "deprecated": false
+            },
+            {
+                "file": "LevelRenderEvents.java",
+                "package": "net.fabricmc.fabric.api.client.rendering.v1.level",
                 "interface": "StartMain",
                 "variable": "START_MAIN",
                 "function": "void startMain(LevelTerrainRenderContext context);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L46",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L67",
                 "description": "Called at the start of the main pass, after the sky is drawn to the appropriate framebuffers and all chunks to be rendered are uploaded to GPU, and before any chunks are drawn to the appropriate framebuffers",
                 "side": "client",
                 "deprecated": false
@@ -1957,7 +2067,7 @@
                 "interface": "AfterOpaqueTerrain",
                 "variable": "AFTER_OPAQUE_TERRAIN",
                 "function": "void afterOpaqueTerrain(LevelTerrainRenderContext context);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L58",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L79",
                 "description": "Called after opaque terrain is drawn to the appropriate framebuffers, and before any submit nodes are added to the submit node storage. Use this event to render additional opaque terrain-like geometry",
                 "side": "client",
                 "deprecated": false
@@ -1968,7 +2078,7 @@
                 "interface": "CollectSubmits",
                 "variable": "COLLECT_SUBMITS",
                 "function": "void collectSubmits(LevelRenderContext context);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L71",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L92",
                 "description": "Called after opaque terrain is drawn to the appropriate framebuffers and all submit nodes from entities, block entities, and particles are added to the submit node storage, and before any submit geometry is drawn to the appropriate framebuffers. Use this event to add additional submits to submitNodeCollector()",
                 "side": "client",
                 "deprecated": false
@@ -1979,7 +2089,7 @@
                 "interface": "AfterSolidFeatures",
                 "variable": "AFTER_SOLID_FEATURES",
                 "function": "void afterSolidFeatures(LevelRenderContext context);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L81",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L102",
                 "description": "Called after the solid geometry of submits collected from entities, block entities, and particles are drawn to the appropriate framebuffers",
                 "side": "client",
                 "deprecated": false
@@ -1990,7 +2100,7 @@
                 "interface": "AfterTranslucentFeatures",
                 "variable": "AFTER_TRANSLUCENT_FEATURES",
                 "function": "void afterTranslucentFeatures(LevelRenderContext context);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L91",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L112",
                 "description": "Called after the translucent geometry of submits collected from entities and block entities are drawn to the appropriate framebuffers. Note that this excludes translucent particle geometry, which is rendered much later",
                 "side": "client",
                 "deprecated": false
@@ -2001,7 +2111,7 @@
                 "interface": "BeforeBlockOutline",
                 "variable": "BEFORE_BLOCK_OUTLINE",
                 "function": "boolean beforeBlockOutline(LevelRenderContext context, BlockOutlineRenderState outlineRenderState);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L114",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L135",
                 "description": "Called after block outline render checks are made and before the default block outline is drawn to the appropriate framebuffers. This will NOT be called if the default outline render state was set to null in AFTER_BLOCK_OUTLINE_EXTRACTION. Use this to replace the default block outline rendering for specific blocks that need special outline rendering or to add information that doesn't replace the block outline. Subscribers cannot affect each other or detect if another subscriber is also handling a specific block. If two subscribers render for the same block, both renders will appear. Returning false from any event subscriber will cancel the default block outline render. This has no effect on other subscribers to this event - all subscribers will always be called. Canceling is appropriate when the subscriber replacing the default block outline render for a specific block",
                 "side": "client",
                 "deprecated": false
@@ -2012,7 +2122,7 @@
                 "interface": "BeforeGizmos",
                 "variable": "BEFORE_GIZMOS",
                 "function": "void beforeGizmos(LevelRenderContext context);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L131",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L152",
                 "description": "Called after all geometry of submits collected from entities, block entities, and particles (except translucent particle geometry), the block breaking overlay, and the block outline for solid blocks are drawn to the appropriate framebuffers, and before gizmos are collected",
                 "side": "client",
                 "deprecated": false
@@ -2023,7 +2133,7 @@
                 "interface": "BeforeTranslucentTerrain",
                 "variable": "BEFORE_TRANSLUCENT_TERRAIN",
                 "function": "void beforeTranslucentTerrain(LevelRenderContext context);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L142",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L163",
                 "description": "Called after opaque terrain, entities, block entities, solid particles, overlays, and gizmos are drawn to the appropriate framebuffers, and before translucent terrain and translucent particles are drawn to the appropriate framebuffers",
                 "side": "client",
                 "deprecated": false
@@ -2034,8 +2144,19 @@
                 "interface": "AfterTranslucentTerrain",
                 "variable": "AFTER_TRANSLUCENT_TERRAIN",
                 "function": "void afterTranslucentTerrain(LevelRenderContext context);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L154",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L175",
                 "description": "Called after terrain, entities, block entities, solid particles, overlays, and gizmos are drawn to the appropriate framebuffers, and before translucent particles are drawn to the appropriate framebuffers. Use this event to render additional translucent terrain-like geometry",
+                "side": "client",
+                "deprecated": false
+            },
+            {
+                "file": "LevelRenderEvents.java",
+                "package": "net.fabricmc.fabric.api.client.rendering.v1.level",
+                "interface": "AfterRenderPass",
+                "variable": "AFTER_RENDER_PASS",
+                "function": "void afterRenderPass(LevelRenderContext context);",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L193",
+                "description": "Called after the main RenderPass is closed, and before END_MAIN. When improved transparency is disabled, the main render pass has drawn terrain, solid and translucent features, clouds, weather and the world border at this point. When it is enabled, only opaque terrain and solid features have been drawn, and translucent geometry is drawn afterwards in separate render passes. In both cases, entity outlines, see-through features and always-on-top gizmos are drawn after this event. Use this event when you need your own RenderPass that runs right after the main one, for example to read from or post-process what it drew. Any render pass opened in this event must be closed before the callback returns",
                 "side": "client",
                 "deprecated": false
             },
@@ -2045,7 +2166,7 @@
                 "interface": "EndMain",
                 "variable": "END_MAIN",
                 "function": "void endMain(LevelRenderContext context);",
-                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L165",
+                "url": "https://github.com/FabricMC/fabric/blob/26.3/fabric-rendering-v1/src/client/java/net/fabricmc/fabric/api/client/rendering/v1/level/LevelRenderEvents.java#L204",
                 "description": "Called at the end of the main render pass, after terrain, entities, block entities, and particles are drawn to the appropriate framebuffers, and before clouds, weather, and late debug are drawn to the appropriate framebuffers and before fabulous translucent framebuffers are combined",
                 "side": "client",
                 "deprecated": false

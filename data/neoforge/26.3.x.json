@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261102031135",
-    "commit_date": "20261101154331",
+    "lastupdated": "20261110050408",
+    "commit_date": "20261109173416",
     "version": "26.3.x",
-    "last_commit": "[b45f8c9d069cfb0099fae5bd1262b27ac4c1e7b4] Fix registryFriendlyLengthPrefixed dropping the connection type (#3712)",
+    "last_commit": "[085df7067b275093488ba7e265bf541b7be10a7c] Utilize field redirector coremod for Entity.type and BlockEntity.type to provide an easier time for mods to override them (#3721)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
