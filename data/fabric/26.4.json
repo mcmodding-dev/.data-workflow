@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261110050341",
-    "commit_date": "20261109152234",
+    "lastupdated": "20261111033756",
+    "commit_date": "20261110183224",
     "version": "26.4",
-    "last_commit": "[6a09a97cb06dcdd568d7cb79689c6760d495d22b] Bump version",
+    "last_commit": "[a287670105ef11d3d0b4804c8d16f5cf5cbd22c9] 26.4-snapshot-8 (#5686)\n\n* HolderGetter\n\n* Some easy fixes\n\n* Debug config command fix\n\n* Easy fixes\n\n* harder fixes\n\n* Fix vulkan client test\n\n* Fix OGL\n\n* Bump version",
     "data": {
         "fabric-advancement-api-v1": [
             {
@@ -708,7 +708,7 @@
                 "variable": "MODIFY",
                 "function": ");",
                 "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/api/item/v1/EnchantmentEvents.java#L84",
-                "description": "An event that allows an Enchantment to be modified without needing to fully override an enchantment. This should only be used to modify the behavior of external enchantments, where 'external' means either vanilla or from another mod. For instance, a mod might add a bleed effect to Sharpness (and only Sharpness). For your own enchantments, you should simply define them in your mod's data pack. See the Enchantment Definition page on the Minecraft Wiki for more information. Note: If you wish to modify the exclusive set of the enchantment, consider extending the relevant tag through your mod's data pack instead\nDeprecated: Use MODIFY_WITH_LOOKUP instead, which provides registry access via RegistryInfoLookup",
+                "description": "An event that allows an Enchantment to be modified without needing to fully override an enchantment. This should only be used to modify the behavior of external enchantments, where 'external' means either vanilla or from another mod. For instance, a mod might add a bleed effect to Sharpness (and only Sharpness). For your own enchantments, you should simply define them in your mod's data pack. See the Enchantment Definition page on the Minecraft Wiki for more information. Note: If you wish to modify the exclusive set of the enchantment, consider extending the relevant tag through your mod's data pack instead\nDeprecated: Use MODIFY_WITH_LOOKUP instead, which provides registry access via Provider",
                 "side": null,
                 "deprecated": true
             },
@@ -719,7 +719,7 @@
                 "variable": "MODIFY_WITH_LOOKUP",
                 "function": ");",
                 "url": "https://github.com/FabricMC/fabric/blob/26.4/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/api/item/v1/EnchantmentEvents.java#L107",
-                "description": "An event that allows an Enchantment to be modified without needing to fully override an enchantment. This should only be used to modify the behavior of external enchantments, where 'external' means either vanilla or from another mod. For instance, a mod might add a bleed effect to Sharpness (and only Sharpness). For your own enchantments, you should simply define them in your mod's data pack. See the Enchantment Definition page on the Minecraft Wiki for more information. Note: If you wish to modify the exclusive set of the enchantment, consider extending the relevant tag through your mod's data pack instead. This is the preferred replacement for MODIFY, providing access to registry information via RegistryInfoLookup",
+                "description": "An event that allows an Enchantment to be modified without needing to fully override an enchantment. This should only be used to modify the behavior of external enchantments, where 'external' means either vanilla or from another mod. For instance, a mod might add a bleed effect to Sharpness (and only Sharpness). For your own enchantments, you should simply define them in your mod's data pack. See the Enchantment Definition page on the Minecraft Wiki for more information. Note: If you wish to modify the exclusive set of the enchantment, consider extending the relevant tag through your mod's data pack instead. This is the preferred replacement for MODIFY, providing access to registry information via Provider",
                 "side": null,
                 "deprecated": true
             },
