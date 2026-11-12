@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261111033756",
-    "commit_date": "20261110183224",
+    "lastupdated": "20261112044605",
+    "commit_date": "20261111133443",
     "version": "26.4",
-    "last_commit": "[a287670105ef11d3d0b4804c8d16f5cf5cbd22c9] 26.4-snapshot-8 (#5686)\n\n* HolderGetter\n\n* Some easy fixes\n\n* Debug config command fix\n\n* Easy fixes\n\n* harder fixes\n\n* Fix vulkan client test\n\n* Fix OGL\n\n* Bump version",
+    "last_commit": "[2fa7e16f41fafa0bac829871862e0cce05b2dd47] Bump version",
     "data": {
         "fabric-advancement-api-v1": [
             {
