@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261103042736",
-    "commit_date": "20261102222152",
+    "lastupdated": "20261113035823",
+    "commit_date": "20261112212541",
     "version": "26.3",
-    "last_commit": "[ad5ca0b67d82230ef11e81a73a18b04f0fb10438] Deprecate more rarely used APIs for removal (#10907)",
+    "last_commit": "[8ec868509887a1c77ef2cbbae1720b912336e83f] Fix test detection in gradle",
     "data": {
         "net.minecraftforge.fml.config": [
             {

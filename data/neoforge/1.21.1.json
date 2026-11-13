@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261026021003",
-    "commit_date": "20261025055623",
+    "lastupdated": "20261113035829",
+    "commit_date": "20261112082133",
     "version": "1.21.1",
-    "last_commit": "[624c929f49920c250166e2a8df7af87f16d220ef] [1.21.1] Add additional context to enchanted loot events (#3690)",
+    "last_commit": "[2c7df4359fadfd08329c6bd88fa697b5b6d41d28] Backport to 1.21.1: fix(network): correctly assign client/server versions in negotiation mismatch error (#3734)\n\nCo-authored-by: igoreccard <64649427+igoreccard@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {
