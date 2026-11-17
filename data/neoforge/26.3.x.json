@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261113035837",
-    "commit_date": "20261112193835",
+    "lastupdated": "20261117053638",
+    "commit_date": "20261117033720",
     "version": "26.3.x",
-    "last_commit": "[ac357cc57b285ce9b469d7fca9b01d9830ae8a25] Add extension method for when items are ticked in an inventory on the client side (#3733)",
+    "last_commit": "[35f04b739c729730a38d515708247953831b2e06] New Crowdin updates (#3632)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

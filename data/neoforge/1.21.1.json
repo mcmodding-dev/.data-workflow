@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261113035829",
-    "commit_date": "20261112082133",
+    "lastupdated": "20261117053628",
+    "commit_date": "20261117031345",
     "version": "1.21.1",
-    "last_commit": "[2c7df4359fadfd08329c6bd88fa697b5b6d41d28] Backport to 1.21.1: fix(network): correctly assign client/server versions in negotiation mismatch error (#3734)\n\nCo-authored-by: igoreccard <64649427+igoreccard@users.noreply.github.com>",
+    "last_commit": "[89e887b367ab0c11cb58ce8500920efadc17b803] New Crowdin updates (#3648)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {

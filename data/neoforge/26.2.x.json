@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261015021416",
-    "commit_date": "20261015013216",
+    "lastupdated": "20261117053636",
+    "commit_date": "20261117032628",
     "version": "26.2.x",
-    "last_commit": "[4e2117162e07bdf22de7e705a26fa0a0ae382350] Enforce ad-hoc channel identifier limits.",
+    "last_commit": "[b6c967adb1ed258f36639204cdea70800d198c0f] New Crowdin updates (#3650)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

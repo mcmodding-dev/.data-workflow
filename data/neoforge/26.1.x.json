@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261102031132",
-    "commit_date": "20261101215809",
+    "lastupdated": "20261117053634",
+    "commit_date": "20261117032318",
     "version": "26.1.x",
-    "last_commit": "[4aab59803729b963379d6c124d02917d5e0f7c88] Backport to 26.1.x: Create new damage container when blocking a goat's attack (#3715)\n\nCo-authored-by: sciwhiz12 <21304337+sciwhiz12@users.noreply.github.com>",
+    "last_commit": "[987db6c05358dc7199c00b073c2a12c548eb0401] New Crowdin updates (#3649)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
