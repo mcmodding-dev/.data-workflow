@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261117053638",
-    "commit_date": "20261117033720",
+    "lastupdated": "20261118050047",
+    "commit_date": "20261117234441",
     "version": "26.3.x",
-    "last_commit": "[35f04b739c729730a38d515708247953831b2e06] New Crowdin updates (#3632)",
+    "last_commit": "[bfed31772c6bc92db201d36421b1a90e428227af] Fix page arrow direction in RTL languages (#3735)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

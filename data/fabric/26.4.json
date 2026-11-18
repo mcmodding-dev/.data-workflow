@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261112044605",
-    "commit_date": "20261111133443",
+    "lastupdated": "20261118050000",
+    "commit_date": "20261117172827",
     "version": "26.4",
-    "last_commit": "[2fa7e16f41fafa0bac829871862e0cce05b2dd47] Bump version",
+    "last_commit": "[fae1020b592acec522a7407cf3b553fed0afa7f7] 26.4 snapshot 10 (#5695)\n\n* initial changes\n\n* 26.4-snapshot-10\n\n* Bump version\n\n---------\n\nCo-authored-by: Jab125 <67534807+Jab125@users.noreply.github.com>",
     "data": {
         "fabric-advancement-api-v1": [
             {
