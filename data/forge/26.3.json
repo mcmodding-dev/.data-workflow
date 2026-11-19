@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261113035823",
-    "commit_date": "20261112212541",
+    "lastupdated": "20261119045516",
+    "commit_date": "20261118210913",
     "version": "26.3",
-    "last_commit": "[8ec868509887a1c77ef2cbbae1720b912336e83f] Fix test detection in gradle",
+    "last_commit": "[6a06826b149192c72faca0bb68df35bc28238c18] Fixed RemoveSpawnsBiomeModifier not properly functioning due to working on a copy of the biome info (#10925)",
     "data": {
         "net.minecraftforge.fml.config": [
             {
