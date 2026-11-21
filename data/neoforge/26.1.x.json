@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261117053634",
-    "commit_date": "20261117032318",
+    "lastupdated": "20261121044055",
+    "commit_date": "20261120064634",
     "version": "26.1.x",
-    "last_commit": "[987db6c05358dc7199c00b073c2a12c548eb0401] New Crowdin updates (#3649)",
+    "last_commit": "[be921464ddd409dadcb7652d57c8ac0ea9903bcb] [26.1] Fix mod list appearing empty when searching while scrolled (#3686)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

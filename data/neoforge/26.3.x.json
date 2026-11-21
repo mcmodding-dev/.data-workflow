@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261118050047",
-    "commit_date": "20261117234441",
+    "lastupdated": "20261121044057",
+    "commit_date": "20261120084629",
     "version": "26.3.x",
-    "last_commit": "[bfed31772c6bc92db201d36421b1a90e428227af] Fix page arrow direction in RTL languages (#3735)",
+    "last_commit": "[0da72d30889eb4d37eebbb70c84b83701829a6b5] [26.3.x] Update FancyModLoader to v12.0.16 and Mixin to 0.17.5+mixin.0.8.7 (#3749)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
