@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261121044055",
-    "commit_date": "20261120064634",
+    "lastupdated": "20261122035505",
+    "commit_date": "20261121111158",
     "version": "26.1.x",
-    "last_commit": "[be921464ddd409dadcb7652d57c8ac0ea9903bcb] [26.1] Fix mod list appearing empty when searching while scrolled (#3686)",
+    "last_commit": "[0e715c5ab499cfde5fe98683c87f6564c4f34b9d] Backport to 26.1.x: Let `PieceBeardifierModifier` pieces keep their jigsaw junctions (#3736)\n\nCo-authored-by: BarionLP <76686287+BarionLP@users.noreply.github.com>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
