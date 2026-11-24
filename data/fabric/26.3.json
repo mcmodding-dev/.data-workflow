@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261112044603",
-    "commit_date": "20261111133431",
+    "lastupdated": "20261124072809",
+    "commit_date": "20261123132549",
     "version": "26.3",
-    "last_commit": "[b8eae124e57bfd2b4034a3236f0bb461c395b48f] Bump version",
+    "last_commit": "[495da79f62942fa2630b576ce2075536d37b8223] Install Maven SFTP host key",
     "data": {
         "fabric-advancement-api-v1": [
             {
