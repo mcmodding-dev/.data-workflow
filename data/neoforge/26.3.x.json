@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261124072858",
-    "commit_date": "20261124031726",
+    "lastupdated": "20261125055817",
+    "commit_date": "20261124235307",
     "version": "26.3.x",
-    "last_commit": "[0d71aacf1f326e81e5f458a886f470ea0e73d8ef] [26.3] Port manual test mods to game tests (#3752)",
+    "last_commit": "[84d0790633e43646f2710751a1a73db8fab30671] [26.3] Allow datamaps to provide client defaults (#3747)",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {

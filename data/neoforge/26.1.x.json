@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261122035505",
-    "commit_date": "20261121111158",
+    "lastupdated": "20261125055815",
+    "commit_date": "20261124073440",
     "version": "26.1.x",
-    "last_commit": "[0e715c5ab499cfde5fe98683c87f6564c4f34b9d] Backport to 26.1.x: Let `PieceBeardifierModifier` pieces keep their jigsaw junctions (#3736)\n\nCo-authored-by: BarionLP <76686287+BarionLP@users.noreply.github.com>",
+    "last_commit": "[86fc2f8aa36389e6d59af8eef2137c5dbe53dbd0] Backport the overhauled mods list screen and related changes (#3473)\n\nCo-authored-by: mezz <tehgeek@gmail.com>\nCo-authored-by: Matt Sturgeon <matt@sturgeon.me.uk>\nCo-authored-by: ChampionAsh5357 <ash@ashwork.net>",
     "data": {
         "net.neoforged.neoforge.client.event": [
             {
