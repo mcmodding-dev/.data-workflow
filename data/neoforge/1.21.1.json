@@ -1,8 +1,8 @@
 {
-    "lastupdated": "20261117053628",
-    "commit_date": "20261117031345",
+    "lastupdated": "20261126055050",
+    "commit_date": "20261126022752",
     "version": "1.21.1",
-    "last_commit": "[89e887b367ab0c11cb58ce8500920efadc17b803] New Crowdin updates (#3648)",
+    "last_commit": "[2ffbdab6d4ef41bce895fbeb14cca0795af239f0] Fix empty mod list when scrolled while searching (#3770)",
     "data": {
         "net.neoforged.neoforge.capabilities": [
             {
